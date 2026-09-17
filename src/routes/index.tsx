@@ -157,7 +157,7 @@ function Index() {
               <span className="h-2 w-2 rounded-full bg-rainbow" /> stajnia otwarta dla wszystkich
             </span>
             <h1 className="mt-6 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
-              Galopem <span className="text-rainbow">ku tęczy</span>
+              Galopem ku tęczy
             </h1>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
               Jeździectwo bez presji i bez schematów. Uczymy się od koni uważności, odwagi
@@ -180,7 +180,7 @@ function Index() {
                 ["100%", "bez przymusu"],
               ].map(([k, v]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-4">
-                  <dt className="font-display text-2xl text-rainbow">{k}</dt>
+                  <dt className="font-display text-2xl text-primary">{k}</dt>
                   <dd className="mt-1 text-xs font-medium text-muted-foreground">{v}</dd>
                 </div>
               ))}
@@ -198,22 +198,6 @@ function Index() {
         </div>
       </section>
 
-      {/* MARQUEE */}
-      <div className="overflow-hidden border-y border-border bg-rainbow py-3">
-        <div className="flex w-max animate-marquee gap-8 whitespace-nowrap font-display text-lg text-primary-foreground">
-          {Array.from({ length: 2 }).map((_, r) => (
-            <div key={r} className="flex gap-8">
-              {["radość", "zaufanie", "kolor", "empatia", "wolność", "wspólnota", "odwaga", "koń przede wszystkim"].map(
-                (w) => (
-                  <span key={w} className="flex items-center gap-8">
-                    {w} <span aria-hidden>✳</span>
-                  </span>
-                ),
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* O NAS */}
       <section id="o-nas" className="px-5 py-24">
@@ -225,14 +209,14 @@ function Index() {
               className="aspect-square w-full rounded-[2rem] object-cover"
             />
             <div className="absolute -bottom-6 -right-4 hidden rounded-3xl border border-border bg-card p-5 shadow-xl sm:block">
-              <p className="font-display text-2xl text-rainbow">Bez ostrogi.</p>
+              <p className="font-display text-2xl text-primary">Bez ostrogi.</p>
               <p className="text-sm text-muted-foreground">Za to z ogromną cierpliwością.</p>
             </div>
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
             <h2 className="mt-3 text-4xl sm:text-5xl">
-              Nasza filozofia pracy <span className="text-rainbow">z końmi</span>
+              Nasza filozofia pracy z końmi
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
               Wierzymy, że koń nie jest sprzętem sportowym. Jest partnerem, który ma swoje
@@ -266,7 +250,7 @@ function Index() {
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Oferta</p>
             <h2 className="mt-3 text-4xl sm:text-5xl">
-              Wybierz swój <span className="text-rainbow">kolor</span>
+              Wybierz swój kolor
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Sześć dróg do koni — od pierwszego dotknięcia grzywy po tygodniowy obóz.
@@ -320,7 +304,7 @@ function Index() {
             <div className="min-w-0">
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Galeria</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
-                Zdjęcia i <span className="text-rainbow">filmy</span>
+                Zdjęcia i filmy
               </h2>
             </div>
             <p className="max-w-sm text-sm text-muted-foreground">
@@ -374,7 +358,7 @@ function Index() {
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kontakt</p>
               <h2 className="mt-3 text-4xl">
-                Napisz do nas — <span className="text-rainbow">zapraszamy</span>
+                Napisz do nas — zapraszamy
               </h2>
               <p className="mt-4 text-muted-foreground">
                 Nie wiesz, co wybrać? Napisz kilka słów o sobie, a podpowiemy, od czego
