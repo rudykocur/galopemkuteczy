@@ -65,8 +65,8 @@
   --color-rainbow-4: var(--rainbow-4);
   --color-rainbow-5: var(--rainbow-5);
   --color-rainbow-6: var(--rainbow-6);
-  --font-display: "Syne", sans-serif;
-  --font-sans: "Lora", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
 }
 
 :root {
@@ -174,7 +174,7 @@
 
 @utility font-display {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
@@ -197,7 +197,7 @@
   }
   h1, h2, h3 {
     font-family: var(--font-display);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.1;
   }
