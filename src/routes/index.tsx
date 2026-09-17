@@ -98,6 +98,7 @@ const gallery = [
   { src: g2, alt: "Jeździec podczas zajęć", span: "" },
   { src: g3, alt: "Detal — grzywa konia", span: "" },
   { src: g4, alt: "Stajnia o zachodzie słońca", span: "sm:col-span-2" },
+  { src: heroImg, alt: "Jeźdźczyni na koniu w porannym świetle", span: "col-span-2 sm:col-span-2" },
 ];
 
 function Index() {
