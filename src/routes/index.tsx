@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import logoAsset from "@/assets/logo.png.asset.json";
 import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about.jpg";
 import g1 from "@/assets/gallery-1.jpg";
@@ -97,6 +98,7 @@ const gallery = [
   { src: g2, alt: "Jeździec podczas zajęć", span: "" },
   { src: g3, alt: "Detal — grzywa konia", span: "" },
   { src: g4, alt: "Stajnia o zachodzie słońca", span: "sm:col-span-2" },
+  { src: heroImg, alt: "Jeźdźczyni na koniu w porannym świetle", span: "col-span-2 sm:col-span-2" },
 ];
 
 function Index() {
@@ -120,7 +122,11 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:flex sm:justify-between">
           <a href="#top" className="flex min-w-0 items-center gap-3">
-            <span className="h-9 w-9 shrink-0 rounded-full bg-rainbow" />
+            <img
+              src={logoAsset.url}
+              alt="Logo Galopem ku tęczy"
+              className="h-11 w-11 shrink-0 rounded-full object-cover"
+            />
             <span className="truncate font-display text-lg sm:text-xl">Galopem ku tęczy</span>
           </a>
           <nav className="hidden items-center gap-1 md:flex">
@@ -184,9 +190,9 @@ function Index() {
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-rainbow opacity-70 blur-[2px]" />
             <img
-              src={heroImg}
-              alt="Koń galopujący po łące w ciepłym świetle"
-              className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl"
+              src={logoAsset.url}
+              alt="Logo Galopem ku tęczy — sylwetki dziewczyny i konia"
+              className="relative mx-auto w-full max-w-lg rounded-[2rem] bg-card object-contain p-6 shadow-2xl"
             />
           </div>
         </div>
@@ -435,7 +441,11 @@ function Index() {
       <footer className="border-t border-border px-5 py-10">
         <div className="mx-auto grid max-w-6xl gap-4 sm:flex sm:items-center sm:justify-between">
           <div className="flex min-w-0 items-center gap-3">
-            <span className="h-8 w-8 shrink-0 rounded-full bg-rainbow" />
+            <img
+              src={logoAsset.url}
+              alt="Logo Galopem ku tęczy"
+              className="h-10 w-10 shrink-0 rounded-full object-cover"
+            />
             <span className="truncate font-display">Galopem ku tęczy</span>
           </div>
           <p className="text-sm text-muted-foreground">
