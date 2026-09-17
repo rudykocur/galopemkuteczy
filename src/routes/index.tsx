@@ -127,7 +127,7 @@ function Index() {
               alt="Logo Galopem ku tęczy"
               className="h-11 w-11 shrink-0 rounded-full object-cover"
             />
-            <span className="truncate font-display text-lg sm:text-xl">Galopem ku tęczy</span>
+            <span className="whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
           </a>
           <nav className="hidden items-center gap-1 md:flex">
             {nav.map((n) => (
@@ -188,11 +188,11 @@ function Index() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-rainbow opacity-70 blur-[2px]" />
+            <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-25 blur-3xl" />
             <img
               src={logoAsset.url}
               alt="Logo Galopem ku tęczy — sylwetki dziewczyny i konia"
-              className="relative mx-auto w-full max-w-lg rounded-[2rem] bg-card object-contain p-6 shadow-2xl"
+              className="relative mx-auto w-full max-w-lg object-contain"
             />
           </div>
         </div>
