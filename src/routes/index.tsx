@@ -124,9 +124,9 @@ function Index() {
         <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:flex sm:justify-between">
           <a href="#top" className="flex min-w-0 items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={logoTransparent}
               alt="Logo Galopem ku tęczy"
-              className="h-11 w-11 shrink-0 rounded-full object-cover"
+              className="h-11 w-11 shrink-0 object-contain"
             />
             <span className="whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
           </a>
@@ -191,7 +191,7 @@ function Index() {
           <div className="relative">
             <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-25 blur-3xl" />
             <img
-              src={logoAsset.url}
+              src={logoTransparent}
               alt="Logo Galopem ku tęczy — sylwetki dziewczyny i konia"
               className="relative mx-auto w-full max-w-lg object-contain"
             />
