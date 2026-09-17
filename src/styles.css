@@ -66,13 +66,13 @@
   --color-rainbow-5: var(--rainbow-5);
   --color-rainbow-6: var(--rainbow-6);
   --font-display: "Syne", sans-serif;
-  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Lora", Georgia, serif;
 }
 
 :root {
   --radius: 1.25rem;
   --background: oklch(0.97 0.022 92);
-  --foreground: oklch(0.27 0.09 288);
+  --foreground: oklch(0.24 0.09 288);
   --rainbow-1: oklch(0.82 0.11 340);
   --rainbow-2: oklch(0.6 0.19 330);
   --rainbow-3: oklch(0.47 0.19 305);
@@ -80,17 +80,17 @@
   --rainbow-5: oklch(0.53 0.13 248);
   --rainbow-6: oklch(0.7 0.1 220);
   --card: oklch(0.995 0.008 92);
-  --card-foreground: oklch(0.27 0.09 288);
+  --card-foreground: oklch(0.24 0.09 288);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
   --primary: oklch(0.5 0.2 315);
   --primary-foreground: oklch(0.98 0.015 92);
   --secondary: oklch(0.93 0.035 320);
-  --secondary-foreground: oklch(0.3 0.1 290);
+  --secondary-foreground: oklch(0.26 0.1 290);
   --muted: oklch(0.94 0.025 300);
   --muted-foreground: oklch(0.5 0.07 290);
   --accent: oklch(0.82 0.11 340);
-  --accent-foreground: oklch(0.27 0.09 288);
+  --accent-foreground: oklch(0.24 0.09 288);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.89 0.035 300);
@@ -192,10 +192,13 @@
 @layer base {
   body {
     font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.75;
   }
   h1, h2, h3 {
     font-family: var(--font-display);
     font-weight: 800;
     letter-spacing: -0.02em;
+    line-height: 1.1;
   }
 }
