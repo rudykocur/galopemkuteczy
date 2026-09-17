@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import logoAsset from "@/assets/logo.png.asset.json";
+import logoTransparent from "@/assets/logo-transparent.png";
 import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about.jpg";
 import g1 from "@/assets/gallery-1.jpg";
