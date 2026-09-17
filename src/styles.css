@@ -72,7 +72,7 @@
 :root {
   --radius: 1.25rem;
   --background: oklch(0.97 0.022 92);
-  --foreground: oklch(0.27 0.09 288);
+  --foreground: oklch(0.24 0.09 288);
   --rainbow-1: oklch(0.82 0.11 340);
   --rainbow-2: oklch(0.6 0.19 330);
   --rainbow-3: oklch(0.47 0.19 305);
@@ -192,10 +192,13 @@
 @layer base {
   body {
     font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.75;
   }
   h1, h2, h3 {
     font-family: var(--font-display);
     font-weight: 800;
     letter-spacing: -0.02em;
+    line-height: 1.1;
   }
 }
