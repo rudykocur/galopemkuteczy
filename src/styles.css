@@ -159,17 +159,11 @@
 
 @theme inline {
   --animate-drift: drift 18s ease-in-out infinite;
-  --animate-marquee: marquee 26s linear infinite;
 }
 
 @keyframes drift {
   0%, 100% { transform: translate3d(0,0,0) scale(1); }
   50% { transform: translate3d(0,-24px,0) scale(1.06); }
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
 }
 
 @utility font-display {
@@ -178,12 +172,6 @@
   letter-spacing: -0.02em;
 }
 
-@utility text-rainbow {
-  background-image: linear-gradient(100deg, var(--rainbow-1), var(--rainbow-2), var(--rainbow-4), var(--rainbow-5), var(--rainbow-6));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 
 @utility bg-rainbow {
   background-image: linear-gradient(100deg, var(--rainbow-1), var(--rainbow-2), var(--rainbow-3), var(--rainbow-4), var(--rainbow-5), var(--rainbow-6));
