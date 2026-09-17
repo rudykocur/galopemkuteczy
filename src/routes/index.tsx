@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import logoAsset from "@/assets/logo.png.asset.json";
+import logoTransparent from "@/assets/logo-transparent.png";
 import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about.jpg";
 import g1 from "@/assets/gallery-1.jpg";
@@ -123,11 +124,11 @@ function Index() {
         <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:flex sm:justify-between">
           <a href="#top" className="flex min-w-0 items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={logoTransparent}
               alt="Logo Galopem ku tęczy"
-              className="h-11 w-11 shrink-0 rounded-full object-cover"
+              className="h-11 w-11 shrink-0 object-contain"
             />
-            <span className="truncate font-display text-lg sm:text-xl">Galopem ku tęczy</span>
+            <span className="whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
           </a>
           <nav className="hidden items-center gap-1 md:flex">
             {nav.map((n) => (
@@ -188,11 +189,11 @@ function Index() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-rainbow opacity-70 blur-[2px]" />
+            <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-25 blur-3xl" />
             <img
-              src={logoAsset.url}
+              src={logoTransparent}
               alt="Logo Galopem ku tęczy — sylwetki dziewczyny i konia"
-              className="relative mx-auto w-full max-w-lg rounded-[2rem] bg-card object-contain p-6 shadow-2xl"
+              className="relative mx-auto w-full max-w-lg object-contain"
             />
           </div>
         </div>
