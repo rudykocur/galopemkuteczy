@@ -321,7 +321,7 @@ function Index() {
               </h2>
             </div>
             <p className="max-w-sm text-sm text-muted-foreground">
-              Kadry z zajęć, treningów i zwykłych stajennych poranków.
+              Kadry z zajęć, treningów i zwykłej stajennej sielanki
             </p>
           </div>
 
