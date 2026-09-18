@@ -204,8 +204,8 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="relative">
             <img
-              src={aboutImg}
-              alt="Opiekunka głaszcząca konia w stajni"
+              src={aboutImg.url}
+              alt="Dwie opiekunki z końmi na łące o zachodzie słońca"
               className="aspect-square w-full rounded-[2rem] object-cover"
             />
             <div className="absolute -bottom-6 -right-4 hidden rounded-3xl border border-border bg-card p-5 shadow-xl sm:block">
