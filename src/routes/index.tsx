@@ -19,6 +19,8 @@ import galleryRide from "@/assets/gallery-ride.jpg.asset.json";
 import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
 import videoAsset from "@/assets/konie-jedza.mp4.asset.json";
 import videoPoster from "@/assets/video-poster.jpg.asset.json";
+import video2Asset from "@/assets/film2.mp4.asset.json";
+import video2Poster from "@/assets/film2-poster.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -341,21 +343,38 @@ function Index() {
             ))}
           </div>
 
-          <figure className="mx-auto mt-4 w-full max-w-sm">
-            <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-foreground/5 shadow-xl">
-              <video
-                src={videoAsset.url}
-                poster={videoPoster.url}
-                controls
-                playsInline
-                preload="metadata"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <figcaption className="mt-3 text-center text-xs font-semibold text-muted-foreground">
-               Poranne jedzonko Płotki i Badgera :)
-            </figcaption>
-          </figure>
+          <div className="mx-auto mt-4 grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
+            <figure>
+              <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-foreground/5 shadow-xl">
+                <video
+                  src={videoAsset.url}
+                  poster={videoPoster.url}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-xs font-semibold text-muted-foreground">
+                 Poranne jedzonko Płotki i Badgera :)
+              </figcaption>
+            </figure>
+            <figure>
+              <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-foreground/5 shadow-xl">
+                <video
+                  src={video2Asset.url}
+                  poster={video2Poster.url}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-xs font-semibold text-muted-foreground">
+                Kolorowe chwile z końmi
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
