@@ -391,7 +391,7 @@ function Index() {
                 />
               </div>
               <figcaption className="mt-3 text-center text-xs font-semibold text-muted-foreground">
-                Kolorowe chwile z końmi
+                warsztaty w stajni Żabinko
               </figcaption>
             </figure>
           </div>
