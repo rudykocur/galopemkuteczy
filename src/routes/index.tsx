@@ -189,7 +189,7 @@ function Index() {
 
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
           <div>
-            <h1 className="mt-6 whitespace-nowrap text-5xl leading-[0.95] sm:text-6xl">
+            <h1 className="whitespace-nowrap text-5xl leading-[0.95] sm:text-6xl">
               Galopem ku tęczy
             </h1>
             <p className="mt-4 font-display text-sm font-medium uppercase tracking-[0.35em] text-primary sm:text-base">
