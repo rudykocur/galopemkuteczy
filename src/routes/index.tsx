@@ -367,7 +367,6 @@ function Index() {
                   ["Telefon", "+48 792 693 822 / +48 507 155 401"],
                   ["E-mail", "galopemkuteczy@gmail.com"],
                   ["Stajnia", "Kawalkada, okolice Murowanej Gośliny"],
-                  ["", ""],
                 ].map(([k, v], i) => (
                   <li key={k} className="flex items-start gap-3">
                     <span
@@ -375,15 +374,12 @@ function Index() {
                       style={{ backgroundColor: `var(--rainbow-${i + 1})` }}
                     />
                     <span>
-                      {k && <span className="font-semibold">{k}:</span>}{k && " "}
+                      <span className="font-semibold">{k}:</span>{" "}
                       <span className="text-muted-foreground">{v}</span>
                     </span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-xs text-muted-foreground">
-                
-              </p>
             </div>
 
             <form onSubmit={submit} className="grid gap-4">
