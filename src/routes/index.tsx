@@ -7,12 +7,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import logoTransparent from "@/assets/logo-transparent.png";
-import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about-us.jpg.asset.json";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
+import galleryField from "@/assets/gallery-field.jpg.asset.json";
+import galleryGrooming from "@/assets/gallery-grooming.jpg.asset.json";
+import galleryWalk from "@/assets/gallery-walk.jpg.asset.json";
+import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
 import videoImg from "@/assets/video-2.jpg";
 
 export const Route = createFileRoute("/")({
@@ -94,11 +93,10 @@ const values = [
 ];
 
 const gallery = [
-  { src: g1, alt: "Koń na łące w słońcu", span: "sm:col-span-2 sm:row-span-2" },
-  { src: g2, alt: "Jeździec podczas zajęć", span: "" },
-  { src: g3, alt: "Detal — grzywa konia", span: "" },
-  { src: g4, alt: "Stajnia o zachodzie słońca", span: "sm:col-span-2" },
-  { src: heroImg, alt: "Jeźdźczyni na koniu w porannym świetle", span: "col-span-2 sm:col-span-2" },
+  { src: galleryField.url, alt: "Konie z siodłami na łące", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
+  { src: galleryGrooming.url, alt: "Czesanie konia pod wiatą", span: "", pos: "object-center" },
+  { src: galleryWalk.url, alt: "Spacer z koniem leśną ścieżką", span: "", pos: "object-center" },
+  { src: gallerySnow.url, alt: "Zimowy spacer z koniem", span: "sm:col-span-2", pos: "object-[center_30%]" },
 ];
 
 function Index() {
@@ -321,7 +319,7 @@ function Index() {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`h-full w-full object-cover ${img.pos} transition-transform duration-500 group-hover:scale-105`}
                 />
               </figure>
             ))}
