@@ -11,7 +11,7 @@ import aboutImg from "@/assets/about-us.jpg.asset.json";
 import galleryField from "@/assets/gallery-field.jpg.asset.json";
 import galleryGrooming from "@/assets/gallery-grooming.jpg.asset.json";
 import galleryWalk from "@/assets/gallery-walk.jpg.asset.json";
-import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
+import galleryPony from "@/assets/gallery-pony.jpg.asset.json";
 import videoImg from "@/assets/video-2.jpg";
 
 export const Route = createFileRoute("/")({
@@ -96,7 +96,7 @@ const gallery = [
   { src: galleryField.url, alt: "Konie z siodłami na łące", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
   { src: galleryGrooming.url, alt: "Czesanie konia pod wiatą", span: "", pos: "object-center" },
   { src: galleryWalk.url, alt: "Spacer z koniem leśną ścieżką", span: "", pos: "object-center" },
-  { src: gallerySnow.url, alt: "Zimowy spacer z koniem", span: "sm:col-span-2", pos: "object-[center_30%]" },
+  { src: galleryPony.url, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
 ];
 
 function Index() {
