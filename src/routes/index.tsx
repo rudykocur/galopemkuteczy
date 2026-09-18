@@ -319,7 +319,7 @@ function Index() {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`h-full w-full object-cover ${img.pos} transition-transform duration-500 group-hover:scale-105`}
                 />
               </figure>
             ))}
