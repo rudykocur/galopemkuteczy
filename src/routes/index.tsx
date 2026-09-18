@@ -48,10 +48,9 @@ const nav = [
   { label: "Kontakt", href: "#kontakt" },
 ];
 
-// Podmień "#" na pełne adresy profili, np. "https://facebook.com/galopemkuteczy"
 const socials = [
-  { label: "Facebook", href: "#", Icon: Facebook },
-  { label: "Instagram", href: "#", Icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61574890477695", Icon: Facebook },
+  { label: "Instagram", href: "https://www.instagram.com/galopem_ku_teczy/", Icon: Instagram },
 ];
 
 const offers = [
@@ -415,6 +414,8 @@ function Index() {
                   <a
                     key={label}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={label}
                     title={label}
                     className="grid h-11 w-11 place-items-center rounded-full border border-border bg-background text-foreground transition-colors hover:border-primary hover:bg-secondary hover:text-primary"
