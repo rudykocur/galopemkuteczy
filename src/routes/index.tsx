@@ -78,11 +78,11 @@ const offers = [
     items: ["Praca z ziemi", "Warsztaty relacyjne", "Grupy i zespoły"],
   },
   {
-    title: "Obozy i półkolonie",
+    title: "Szkolenie Koni",
     price: "od 1200 zł / tydzień",
     color: "var(--rainbow-5)",
-    desc: "Tygodnie pełne koni, koloru i przyjaźni — dla dzieci i młodzieży.",
-    items: ["Codzienne jazdy", "Opieka nad koniem", "Zajęcia twórcze"],
+    desc: "Pomagamy w pracy z końmi od najmłodszych lat zwierzaczka",
+    items: ["", "Opieka nad koniem", "Zajęcia twórcze"],
   },
   {
     title: "Spotkania integracyjne",
@@ -212,7 +212,7 @@ function Index() {
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">
               {[
                 ["12", "koni w stajni"],
-                ["9 lat", "z jeźdźcami"],
+                ["10 lat", "z jeźdźcami"],
                 ["100%", "bez przymusu"],
               ].map(([k, v]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-4">
