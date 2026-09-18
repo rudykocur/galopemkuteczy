@@ -395,6 +395,19 @@ function Index() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-8 flex items-center gap-3">
+                {socials.map(({ label, href, Icon }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    aria-label={label}
+                    title={label}
+                    className="grid h-11 w-11 place-items-center rounded-full border border-border bg-background text-foreground transition-colors hover:border-primary hover:bg-secondary hover:text-primary"
+                  >
+                    <Icon size={20} strokeWidth={1.8} />
+                  </a>
+                ))}
+              </div>
             </div>
 
             <form onSubmit={submit} className="grid gap-4">
