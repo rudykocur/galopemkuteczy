@@ -17,7 +17,8 @@ import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
 import galleryLesson from "@/assets/gallery-lesson.jpg.asset.json";
 import galleryRide from "@/assets/gallery-ride.jpg.asset.json";
 import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
-import videoImg from "@/assets/video-2.jpg";
+import videoAsset from "@/assets/konie-jedza.mp4.asset.json";
+import videoPoster from "@/assets/video-poster.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -340,26 +341,21 @@ function Index() {
             ))}
           </div>
 
-          <div className="relative mt-4 overflow-hidden rounded-3xl">
-            <img
-              src={videoImg}
-              alt="Kadr z filmu z zajęć jeździeckich"
-              className="h-64 w-full object-cover sm:h-96"
-            />
-            <div className="absolute inset-0 grid place-items-center bg-foreground/25">
-              <button
-                type="button"
-                onClick={() => toast("Film pojawi się tutaj — wyślij nam nagranie, a je wstawimy.")}
-                className="grid h-20 w-20 place-items-center rounded-full bg-rainbow text-2xl text-primary-foreground shadow-2xl transition-transform hover:scale-110"
-                aria-label="Odtwórz film"
-              >
-                ▶
-              </button>
+          <figure className="mx-auto mt-4 w-full max-w-sm">
+            <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-foreground/5 shadow-xl">
+              <video
+                src={videoAsset.url}
+                poster={videoPoster.url}
+                controls
+                playsInline
+                preload="metadata"
+                className="h-full w-full object-cover"
+              />
             </div>
-            <figcaption className="absolute bottom-4 left-5 rounded-full bg-card/90 px-4 py-1.5 text-xs font-semibold">
-              Dzień w stajni — 2:14
+            <figcaption className="mt-3 text-center text-xs font-semibold text-muted-foreground">
+              Dzień w stajni
             </figcaption>
-          </div>
+          </figure>
         </div>
       </section>
 
