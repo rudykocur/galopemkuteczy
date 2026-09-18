@@ -12,6 +12,10 @@ import galleryField from "@/assets/gallery-field.jpg.asset.json";
 import galleryGrooming from "@/assets/gallery-grooming.jpg.asset.json";
 import galleryWalk from "@/assets/gallery-walk.jpg.asset.json";
 import galleryPony from "@/assets/gallery-pony.jpg.asset.json";
+import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
+import galleryLesson from "@/assets/gallery-lesson.jpg.asset.json";
+import galleryRide from "@/assets/gallery-ride.jpg.asset.json";
+import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
 import videoImg from "@/assets/video-2.jpg";
 
 export const Route = createFileRoute("/")({
@@ -97,6 +101,10 @@ const gallery = [
   { src: galleryGrooming.url, alt: "Czesanie konia pod wiatą", span: "", pos: "object-center" },
   { src: galleryWalk.url, alt: "Spacer z koniem leśną ścieżką", span: "", pos: "object-center" },
   { src: galleryPony.url, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
+  { src: gallerySnow.url, alt: "Zimowy spacer z koniem", span: "", pos: "object-[center_25%]" },
+  { src: galleryLesson.url, alt: "Lekcja jazdy na ujeżdżalni", span: "", pos: "object-center" },
+  { src: galleryRide.url, alt: "Jazda w siodle na padoku", span: "", pos: "object-center" },
+  { src: galleryArena.url, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
 ];
 
 function Index() {
