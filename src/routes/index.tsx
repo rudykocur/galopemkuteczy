@@ -17,7 +17,8 @@ import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
 import galleryLesson from "@/assets/gallery-lesson.jpg.asset.json";
 import galleryRide from "@/assets/gallery-ride.jpg.asset.json";
 import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
-import videoImg from "@/assets/video-2.jpg";
+import videoAsset from "@/assets/konie-jedza.mp4.asset.json";
+import videoPoster from "@/assets/video-poster.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
