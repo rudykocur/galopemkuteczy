@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
+import { Facebook, Instagram } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -42,6 +43,12 @@ const nav = [
   { label: "Oferta", href: "#oferta" },
   { label: "Galeria", href: "#galeria" },
   { label: "Kontakt", href: "#kontakt" },
+];
+
+// Podmień "#" na pełne adresy profili, np. "https://facebook.com/galopemkuteczy"
+const socials = [
+  { label: "Facebook", href: "#", Icon: Facebook },
+  { label: "Instagram", href: "#", Icon: Instagram },
 ];
 
 const offers = [
@@ -388,6 +395,19 @@ function Index() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-8 flex items-center gap-3">
+                {socials.map(({ label, href, Icon }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    aria-label={label}
+                    title={label}
+                    className="grid h-11 w-11 place-items-center rounded-full border border-border bg-background text-foreground transition-colors hover:border-primary hover:bg-secondary hover:text-primary"
+                  >
+                    <Icon size={20} strokeWidth={1.8} />
+                  </a>
+                ))}
+              </div>
             </div>
 
             <form onSubmit={submit} className="grid gap-4">
