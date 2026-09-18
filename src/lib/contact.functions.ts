@@ -48,6 +48,8 @@ export const sendContactMessage = createServerFn({ method: "POST" })
           html,
           text,
           reply_to: data.email,
+          purpose: "transactional",
+          idempotency_key: `contact-${Date.now()}-${Math.random().toString(36).slice(2)}`,
           label: "contact-form",
         },
         { apiKey },
