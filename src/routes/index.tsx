@@ -375,7 +375,7 @@ function Index() {
                       style={{ backgroundColor: `var(--rainbow-${i + 1})` }}
                     />
                     <span>
-                      <span className="font-semibold">{k}:</span>{" "}
+                      {k && <span className="font-semibold">{k}:</span>}{k && " "}
                       <span className="text-muted-foreground">{v}</span>
                     </span>
                   </li>
