@@ -256,11 +256,11 @@ function Index() {
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Oferta</p>
             <h2 className="mt-3 text-4xl sm:text-5xl">
-              Wybierz swój kolor
+              Znajdź swoją drogę do koni
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Sześć dróg do koni — od pierwszego dotknięcia grzywy po tygodniowy obóz.
-              Wszystkie prowadzą w to samo miejsce: do zaufania.
+              Od pierwszego dotknięcia grzywy po tygodniowy obóz — wszystkie
+              drogi prowadzą w to samo miejsce: do zaufania.
             </p>
           </div>
 
