@@ -94,10 +94,10 @@ const values = [
 ];
 
 const gallery = [
-  { src: galleryField.src ?? galleryField, alt: "Konie z siodłami na łące", span: "sm:col-span-2 sm:row-span-2" },
-  { src: galleryGrooming.src ?? galleryGrooming, alt: "Czesanie konia pod wiatą", span: "" },
-  { src: galleryWalk.src ?? galleryWalk, alt: "Spacer z koniem leśną ścieżką", span: "" },
-  { src: gallerySnow.src ?? gallerySnow, alt: "Zimowy spacer z koniem", span: "sm:col-span-2" },
+  { src: galleryField.url, alt: "Konie z siodłami na łące", span: "sm:col-span-2 sm:row-span-2" },
+  { src: galleryGrooming.url, alt: "Czesanie konia pod wiatą", span: "" },
+  { src: galleryWalk.url, alt: "Spacer z koniem leśną ścieżką", span: "" },
+  { src: gallerySnow.url, alt: "Zimowy spacer z koniem", span: "sm:col-span-2" },
 ];
 
 function Index() {
