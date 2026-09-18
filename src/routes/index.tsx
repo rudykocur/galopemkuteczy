@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
+import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
 import { Facebook, Instagram } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
