@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import logoAsset from "@/assets/logo.png.asset.json";
 import logoTransparent from "@/assets/logo-transparent.png";
 import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about.jpg";
@@ -427,11 +426,11 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-4 sm:flex sm:items-center sm:justify-between">
           <div className="flex min-w-0 items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={logoTransparent}
               alt="Logo Galopem ku tęczy"
-              className="h-10 w-10 shrink-0 rounded-full object-cover"
+              className="h-10 w-10 shrink-0 object-contain"
             />
-            <span className="truncate font-display">Galopem ku tęczy</span>
+            <span className="whitespace-nowrap font-display">Galopem ku tęczy</span>
           </div>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} — jeździectwo pełne koloru i szacunku.
