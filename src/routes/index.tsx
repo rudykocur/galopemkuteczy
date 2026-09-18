@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import logoTransparent from "@/assets/logo-transparent.png";
-import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about-us.jpg.asset.json";
 import galleryField from "@/assets/gallery-field.jpg.asset.json";
 import galleryGrooming from "@/assets/gallery-grooming.jpg.asset.json";
