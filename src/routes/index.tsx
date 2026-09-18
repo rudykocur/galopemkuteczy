@@ -192,9 +192,12 @@ function Index() {
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-muted-foreground">
               <span className="h-2 w-2 rounded-full bg-rainbow" /> stajnia otwarta dla wszystkich
             </span>
-            <h1 className="mt-6 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 whitespace-nowrap text-5xl leading-[0.95] sm:text-6xl">
               Galopem ku tęczy
             </h1>
+            <p className="mt-4 font-display text-sm font-medium uppercase tracking-[0.35em] text-primary sm:text-base">
+              Relacyjne Jeżdziectwo
+            </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
               Jeździectwo bez presji i bez schematów. Uczymy się od koni uważności, odwagi
               i radości — w kolorach, które nikogo nie wykluczają.
