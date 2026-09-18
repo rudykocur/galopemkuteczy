@@ -353,7 +353,7 @@ function Index() {
               />
             </div>
             <figcaption className="mt-3 text-center text-xs font-semibold text-muted-foreground">
-              Dzień w stajni
+               Poranne jedzonko Płotki i Badgera :)
             </figcaption>
           </figure>
         </div>
