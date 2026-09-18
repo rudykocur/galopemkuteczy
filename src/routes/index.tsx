@@ -190,7 +190,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-              <span className="h-2 w-2 rounded-full bg-rainbow" /> stajnia otwarta dla wszystkich
+              <span className="h-2 w-2 rounded-full bg-rainbow" /> OTWARTOŚĆ DLA WSZYSTKICH
             </span>
             <h1 className="mt-6 whitespace-nowrap text-5xl leading-[0.95] sm:text-6xl">
               Galopem ku tęczy
