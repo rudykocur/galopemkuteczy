@@ -55,14 +55,14 @@ const socials = [
 const offers = [
   {
     title: "Jazdy indywidualne",
-    price: "od 120 zł / 45 min",
+    price: "od 200 zł / 90 min",
     color: "var(--rainbow-1)",
     desc: "Spokojna praca jeden na jeden — dopasowana do Twojego poziomu, tempa i odwagi.",
     items: ["Pierwszy kontakt z koniem", "Praca nad postawą", "Jazda w terenie"],
   },
   {
     title: "Zajęcia grupowe",
-    price: "od 90 zł / os.",
+    price: "od 150 zł / os.",
     color: "var(--rainbow-2)",
     desc: "Małe grupy, dużo śmiechu i wspólnego kibicowania sobie w postępach.",
     items: ["Grupy 3–5 osób", "Zajęcia na ujeżdżalni", "Stałe terminy tygodniowe"],
