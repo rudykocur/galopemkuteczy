@@ -356,18 +356,18 @@ function Index() {
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kontakt</p>
               <h2 className="mt-3 text-4xl">
-                Napisz do nas — zapraszamy
+                Napisz do nas
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Nie wiesz, co wybrać? Napisz kilka słów o sobie, a podpowiemy, od czego
+                Napisz kilka słów o sobie, a podpowiemy, od czego
                 najlepiej zacząć.
               </p>
               <ul className="mt-8 space-y-4 text-sm">
                 {[
-                  ["Telefon", "+48 000 000 000"],
-                  ["E-mail", "kontakt@galopemkuteczy.pl"],
-                  ["Stajnia", "ul. Polna 1, okolice Warszawy"],
-                  ["Godziny", "pon.–sob. 9:00–19:00"],
+                  ["Telefon", "+48 792 693 822 / 507 155 401"],
+                  ["E-mail", "galopemkuteczy@gmail.com"],
+                  ["Stajnia", "Kawalkada, okolice Murowanej Gośliny"],
+                  ["", ""],
                 ].map(([k, v], i) => (
                   <li key={k} className="flex items-start gap-3">
                     <span
@@ -382,7 +382,7 @@ function Index() {
                 ))}
               </ul>
               <p className="mt-6 text-xs text-muted-foreground">
-                Dane kontaktowe są przykładowe — podaj nam prawdziwe, a je uzupełnimy.
+                
               </p>
             </div>
 
