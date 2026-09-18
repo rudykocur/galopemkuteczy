@@ -48,7 +48,6 @@ const nav = [
   { label: "Kontakt", href: "#kontakt" },
 ];
 
-// Podmień "#" na pełne adresy profili, np. "https://facebook.com/galopemkuteczy"
 const socials = [
   { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61574890477695", Icon: Facebook },
   { label: "Instagram", href: "https://www.instagram.com/galopem_ku_teczy/", Icon: Instagram },
