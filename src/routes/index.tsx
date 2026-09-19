@@ -19,6 +19,13 @@ import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
 import galleryLesson from "@/assets/gallery-lesson.jpg.asset.json";
 import galleryRide from "@/assets/gallery-ride.jpg.asset.json";
 import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
+import galleryPortraitHorse from "@/assets/gallery-portrait-horse.jpg.asset.json";
+import galleryExtraOne from "@/assets/gallery-extra-one.jpg.asset.json";
+import galleryExtraTwo from "@/assets/gallery-extra-two.jpg.asset.json";
+import galleryLiberty from "@/assets/gallery-liberty.jpg.asset.json";
+import gallerySunset from "@/assets/gallery-sunset.jpg.asset.json";
+import galleryWorkshop from "@/assets/gallery-workshop.jpg.asset.json";
+import galleryPortraitSmile from "@/assets/gallery-portrait-smile.jpg.asset.json";
 import videoAsset from "@/assets/konie-jedza.mp4.asset.json";
 import videoPoster from "@/assets/video-poster.jpg.asset.json";
 import video2Asset from "@/assets/film2.mp4.asset.json";
@@ -116,6 +123,13 @@ const gallery = [
   { src: galleryLesson.url, alt: "Lekcja jazdy na ujeżdżalni", span: "", pos: "object-center" },
   { src: galleryRide.url, alt: "Jazda w siodle na padoku", span: "", pos: "object-center" },
   { src: galleryArena.url, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
+  { src: galleryPortraitHorse.url, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:row-span-2", pos: "object-center" },
+  { src: galleryExtraOne.url, alt: "Relacyjna praca z koniem", span: "", pos: "object-center" },
+  { src: galleryExtraTwo.url, alt: "Chwila bliskości z koniem", span: "", pos: "object-center" },
+  { src: galleryLiberty.url, alt: "Koń pracujący swobodnie na piaszczystym placu", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
+  { src: gallerySunset.url, alt: "Spokojne spotkanie z koniem o zachodzie słońca", span: "sm:col-span-2", pos: "object-[center_55%]" },
+  { src: galleryWorkshop.url, alt: "Warsztaty przy okrągłym wybiegu", span: "", pos: "object-center" },
+  { src: galleryPortraitSmile.url, alt: "Uśmiechnięta opiekunka podczas dnia w stajni", span: "", pos: "object-[center_35%]" },
 ];
 
 function Index() {
