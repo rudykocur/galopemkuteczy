@@ -20,6 +20,7 @@ import galleryLesson from "@/assets/gallery-lesson.jpg.asset.json";
 import galleryRide from "@/assets/gallery-ride.jpg.asset.json";
 import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
 import galleryPortraitHorse from "@/assets/gallery-portrait-horse.jpg.asset.json";
+import galleryHug from "@/assets/gallery-hug.jpg.asset.json";
 import galleryExtraOne from "@/assets/gallery-extra-one.jpg.asset.json";
 import galleryExtraTwo from "@/assets/gallery-extra-two.jpg.asset.json";
 import galleryLiberty from "@/assets/gallery-liberty.jpg.asset.json";
@@ -124,6 +125,7 @@ const gallery = [
   { src: galleryRide.url, alt: "Jazda w siodle na padoku", span: "", pos: "object-center" },
   { src: galleryArena.url, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
   { src: galleryPortraitHorse.url, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
+  { src: galleryHug.url, alt: "Przytulenie konia pod błękitnym niebem", span: "sm:col-span-2 sm:row-span-2", pos: "object-[center_35%]" },
   { src: galleryExtraOne.url, alt: "Relacyjna praca z koniem", span: "", pos: "object-center" },
   { src: galleryExtraTwo.url, alt: "Chwila bliskości z koniem", span: "", pos: "object-center" },
   { src: galleryLiberty.url, alt: "Koń pracujący swobodnie na piaszczystym placu", span: "sm:col-span-2", pos: "object-center" },
