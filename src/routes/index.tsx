@@ -17,7 +17,7 @@ import galleryWalk from "@/assets/gallery-walk.jpg.asset.json";
 import galleryPony from "@/assets/gallery-pony.jpg.asset.json";
 import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
 import galleryLesson from "@/assets/gallery-lesson.jpg.asset.json";
-import galleryRide from "@/assets/gallery-ride.jpg.asset.json";
+import galleryAgata from "@/assets/gallery-agata.jpg.asset.json";
 import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
 import galleryPortraitHorse from "@/assets/gallery-portrait-horse.jpg.asset.json";
 import galleryHug from "@/assets/gallery-hug.jpg.asset.json";
@@ -122,7 +122,7 @@ const gallery = [
   { src: galleryPony.url, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
   { src: gallerySnow.url, alt: "Zimowy spacer z koniem", span: "", pos: "object-[center_25%]" },
   { src: galleryLesson.url, alt: "Lekcja jazdy na ujeżdżalni", span: "", pos: "object-center" },
-  { src: galleryRide.url, alt: "Jazda w siodle na padoku", span: "", pos: "object-center" },
+  { src: galleryAgata.url, alt: "Prowadzenie konia na padoku o zachodzie", span: "", pos: "object-[center_40%]" },
   { src: galleryArena.url, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
   { src: galleryPortraitHorse.url, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
   { src: galleryHug.url, alt: "Przytulenie konia pod błękitnym niebem", span: "sm:col-span-2 sm:row-span-2", pos: "object-[center_72%]" },
