@@ -122,7 +122,7 @@ const gallery = [
   { src: galleryPony.url, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
   { src: gallerySnow.url, alt: "Zimowy spacer z koniem", span: "", pos: "object-[center_25%]" },
   { src: galleryLesson.url, alt: "Lekcja jazdy na ujeżdżalni", span: "", pos: "object-center" },
-  { src: galleryAgata.url, alt: "Prowadzenie konia na padoku o zachodzie", span: "", pos: "object-[center_62%]" },
+  { src: galleryAgata.url, alt: "Prowadzenie konia na padoku o zachodzie", span: "", pos: "object-center" },
   { src: galleryArena.url, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
   { src: galleryPortraitHorse.url, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
   { src: galleryHug.url, alt: "Przytulenie konia pod błękitnym niebem", span: "sm:col-span-2 sm:row-span-2", pos: "object-[center_72%]" },
