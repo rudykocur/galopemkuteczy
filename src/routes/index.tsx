@@ -130,7 +130,7 @@ const gallery = [
   { src: galleryExtraTwo.url, alt: "Chwila bliskości z koniem", span: "", pos: "object-center" },
   { src: galleryLiberty.url, alt: "Koń pracujący swobodnie na piaszczystym placu", span: "sm:col-span-2", pos: "object-center" },
   { src: gallerySunset.url, alt: "Spokojne spotkanie z koniem o zachodzie słońca", span: "sm:col-span-2", pos: "object-[center_55%]" },
-  { src: galleryWorkshop.url, alt: "Warsztaty przy okrągłym wybiegu", span: "", pos: "object-center" },
+  { src: galleryWorkshop.url, alt: "Warsztaty przy okrągłym wybiegu", span: "", pos: "object-[center_8%]" },
   { src: galleryPortraitSmile.url, alt: "Uśmiechnięta opiekunka podczas dnia w stajni", span: "", pos: "object-[center_35%]" },
 ];
 
