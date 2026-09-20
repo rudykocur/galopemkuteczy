@@ -127,7 +127,7 @@ const gallery = [
   { src: galleryPortraitHorse.url, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
   { src: galleryHug.url, alt: "Przytulenie konia pod błękitnym niebem", span: "sm:col-span-2 sm:row-span-2", pos: "object-[center_72%]" },
   { src: galleryExtraOne.url, alt: "Relacyjna praca z koniem", span: "", pos: "object-center" },
-  { src: galleryExtraTwo.url, alt: "Chwila bliskości z koniem", span: "", pos: "object-center" },
+  { src: galleryExtraTwo.url, alt: "Chwila bliskości z koniem", span: "", pos: "object-[center_32%]" },
   { src: galleryLiberty.url, alt: "Koń pracujący swobodnie na piaszczystym placu", span: "sm:col-span-2", pos: "object-center" },
   { src: gallerySunset.url, alt: "Spokojne spotkanie z koniem o zachodzie słońca", span: "sm:col-span-2", pos: "object-[center_55%]" },
   { src: galleryWorkshop.url, alt: "Warsztaty przy okrągłym wybiegu", span: "", pos: "object-[center_8%]" },
