@@ -154,6 +154,15 @@ const gallery = [
 function Index() {
   const [sending, setSending] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
+  const [reviewsPaused, setReviewsPaused] = useState(false);
+
+  useEffect(() => {
+    if (reviewsPaused) return;
+    const timer = setInterval(() => {
+      setReviewIndex((current) => (current + 1) % reviews.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [reviewsPaused]);
 
   const sendFn = useServerFn(sendContactMessage);
 
