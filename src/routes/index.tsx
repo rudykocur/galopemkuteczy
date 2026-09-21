@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
-import { Facebook, Instagram } from "lucide-react";
+import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,6 +46,8 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Odważna, empatyczna praca z końmi. Zajęcia, warsztaty i obozy dla każdego.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: Index,
@@ -115,6 +117,21 @@ const values = [
   { title: "Uczymy uważności", desc: "Konie czytają emocje — dzięki nim uczysz się siebie." },
 ];
 
+const reviews = [
+  {
+    author: "Gosia Moszyk",
+    text: "To coś innego niż jazda konna. Dziękuję dziewczynom za to, że zaprosiły nas w świat uważności i obcowania z końmi inaczej. Miałam w sobie dużo lęku i obaw, jak to będzie, a pod koniec warsztatów miałam gotowość do jasnego, przytulania i bliskiego kontaktu…",
+  },
+  {
+    author: "Ola Jastrząbek",
+    text: "Byłam w piątek u Aleks i Ani i było genialnie — bez pośpiechu, bez presji, lekko, superciekawie, w wolności. W końcu ktoś dał mi poznać konie, opowiedział o nich i ich potrzebach w inny sposób. Czuję, że już się ich nie boję i lepiej umiem z nimi współdziałać. Wyszłam tak zrelaksowana i odprężona jak rzadko kiedy.",
+  },
+  {
+    author: "Olga Bober",
+    text: "Najlepsi trenerzy, jakich poznałam! Cierpliwi, wyrozumiali i bardzo otwarci. Słuchają, czego potrzebują jeźdźcy i konie. Niesamowicie profesjonalni, ale przy tym luźni i kochani.",
+  },
+];
+
 const gallery = [
   { src: galleryField.url, alt: "Konie z siodłami na łące", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
   { src: galleryGrooming.url, alt: "Czesanie konia pod wiatą", span: "", pos: "object-center" },
@@ -136,6 +153,7 @@ const gallery = [
 
 function Index() {
   const [sending, setSending] = useState(false);
+  const [reviewIndex, setReviewIndex] = useState(0);
 
   const sendFn = useServerFn(sendContactMessage);
 
@@ -410,6 +428,83 @@ function Index() {
                 warsztaty w stajni Żabinko
               </figcaption>
             </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* OPINIE */}
+      <section aria-labelledby="opinie-heading" className="bg-secondary/50 px-5 py-24">
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Opinie</p>
+            <h2 id="opinie-heading" className="mt-3 text-4xl sm:text-5xl">
+              Co mówią o nas
+            </h2>
+          </div>
+
+          <div className="relative mt-10 overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+            <div className="h-2 bg-rainbow" />
+            <div className="grid min-h-[29rem] sm:min-h-[25rem]">
+              {reviews.map((review, index) => (
+                <figure
+                  key={review.author}
+                  aria-hidden={index !== reviewIndex}
+                  className={`col-start-1 row-start-1 flex flex-col items-center justify-center px-7 py-12 text-center transition-all duration-500 sm:px-16 ${
+                    index === reviewIndex
+                      ? "translate-x-0 opacity-100"
+                      : index < reviewIndex
+                        ? "-translate-x-8 opacity-0 pointer-events-none"
+                        : "translate-x-8 opacity-0 pointer-events-none"
+                  }`}
+                >
+                  <Quote aria-hidden className="mb-6 h-10 w-10 text-primary" strokeWidth={1.5} />
+                  <blockquote className="max-w-3xl font-display text-xl leading-relaxed text-foreground sm:text-2xl">
+                    „{review.text}”
+                  </blockquote>
+                  <figcaption className="mt-7">
+                    <span className="block font-bold text-primary">{review.author}</span>
+                    <span className="mt-1 block text-sm text-muted-foreground">Opinia z Facebooka</span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <div className="flex items-center justify-center gap-5 border-t border-border px-5 py-5">
+              <Button
+                type="button"
+                variant="outline"
+                size="icon"
+                className="rounded-full"
+                aria-label="Poprzednia opinia"
+                onClick={() => setReviewIndex((current) => (current - 1 + reviews.length) % reviews.length)}
+              >
+                <ChevronLeft />
+              </Button>
+              <div className="flex gap-2" aria-label={`Opinia ${reviewIndex + 1} z ${reviews.length}`}>
+                {reviews.map((review, index) => (
+                  <button
+                    key={review.author}
+                    type="button"
+                    aria-label={`Pokaż opinię ${index + 1}`}
+                    aria-current={index === reviewIndex ? "true" : undefined}
+                    onClick={() => setReviewIndex(index)}
+                    className={`h-2.5 rounded-full transition-all ${
+                      index === reviewIndex ? "w-8 bg-primary" : "w-2.5 bg-border hover:bg-muted-foreground"
+                    }`}
+                  />
+                ))}
+              </div>
+              <Button
+                type="button"
+                variant="outline"
+                size="icon"
+                className="rounded-full"
+                aria-label="Następna opinia"
+                onClick={() => setReviewIndex((current) => (current + 1) % reviews.length)}
+              >
+                <ChevronRight />
+              </Button>
+            </div>
           </div>
         </div>
       </section>
