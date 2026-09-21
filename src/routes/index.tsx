@@ -442,11 +442,11 @@ function Index() {
       </section>
 
       {/* OPINIE */}
-      <section aria-labelledby="opinie-heading" className="bg-secondary/50 px-5 py-24">
-        <div className="mx-auto max-w-5xl">
+      <section aria-labelledby="opinie-heading" className="bg-secondary/50 px-5 py-16">
+        <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Opinie</p>
-            <h2 id="opinie-heading" className="mt-3 text-4xl sm:text-5xl">
+            <h2 id="opinie-heading" className="mt-3 text-3xl sm:text-4xl">
               Co mówią o nas
             </h2>
           </div>
