@@ -482,7 +482,7 @@ function Index() {
               ))}
             </div>
 
-            <div className="flex items-center justify-center gap-5 border-t border-border px-5 py-5">
+            <div className="flex items-center justify-center gap-5 border-t border-border px-5 py-4">
               <Button
                 type="button"
                 variant="outline"
