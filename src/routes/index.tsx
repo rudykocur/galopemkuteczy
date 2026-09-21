@@ -470,11 +470,11 @@ function Index() {
                         : "translate-x-8 opacity-0 pointer-events-none"
                   }`}
                 >
-                  <Quote aria-hidden className="mb-6 h-10 w-10 text-primary" strokeWidth={1.5} />
-                  <blockquote className="max-w-3xl font-display text-xl leading-relaxed text-foreground sm:text-2xl">
+                  <Quote aria-hidden className="mb-4 h-8 w-8 text-primary" strokeWidth={1.5} />
+                  <blockquote className="max-w-2xl font-display text-lg leading-relaxed text-foreground sm:text-xl">
                     „{review.text}”
                   </blockquote>
-                  <figcaption className="mt-7">
+                  <figcaption className="mt-5">
                     <span className="block font-bold text-primary">{review.author}</span>
                     <span className="mt-1 block text-sm text-muted-foreground">Opinia z Facebooka</span>
                   </figcaption>
