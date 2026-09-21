@@ -451,14 +451,18 @@ function Index() {
             </h2>
           </div>
 
-          <div className="relative mt-10 overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+          <div
+            className="relative mt-8 overflow-hidden rounded-3xl border border-border bg-card shadow-xl"
+            onMouseEnter={() => setReviewsPaused(true)}
+            onMouseLeave={() => setReviewsPaused(false)}
+          >
             <div className="h-2 bg-rainbow" />
-            <div className="grid min-h-[29rem] sm:min-h-[25rem]">
+            <div className="grid min-h-[22rem] sm:min-h-[19rem]">
               {reviews.map((review, index) => (
                 <figure
                   key={review.author}
                   aria-hidden={index !== reviewIndex}
-                  className={`col-start-1 row-start-1 flex flex-col items-center justify-center px-7 py-12 text-center transition-all duration-500 sm:px-16 ${
+                  className={`col-start-1 row-start-1 flex flex-col items-center justify-center px-6 py-9 text-center transition-all duration-500 sm:px-14 ${
                     index === reviewIndex
                       ? "translate-x-0 opacity-100"
                       : index < reviewIndex
