@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
@@ -154,6 +154,15 @@ const gallery = [
 function Index() {
   const [sending, setSending] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
+  const [reviewsPaused, setReviewsPaused] = useState(false);
+
+  useEffect(() => {
+    if (reviewsPaused) return;
+    const timer = setInterval(() => {
+      setReviewIndex((current) => (current + 1) % reviews.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [reviewsPaused]);
 
   const sendFn = useServerFn(sendContactMessage);
 
@@ -433,23 +442,27 @@ function Index() {
       </section>
 
       {/* OPINIE */}
-      <section aria-labelledby="opinie-heading" className="bg-secondary/50 px-5 py-24">
-        <div className="mx-auto max-w-5xl">
+      <section aria-labelledby="opinie-heading" className="bg-secondary/50 px-5 py-16">
+        <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Opinie</p>
-            <h2 id="opinie-heading" className="mt-3 text-4xl sm:text-5xl">
+            <h2 id="opinie-heading" className="mt-3 text-3xl sm:text-4xl">
               Co mówią o nas
             </h2>
           </div>
 
-          <div className="relative mt-10 overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+          <div
+            className="relative mt-8 overflow-hidden rounded-3xl border border-border bg-card shadow-xl"
+            onMouseEnter={() => setReviewsPaused(true)}
+            onMouseLeave={() => setReviewsPaused(false)}
+          >
             <div className="h-2 bg-rainbow" />
-            <div className="grid min-h-[29rem] sm:min-h-[25rem]">
+            <div className="grid min-h-[22rem] sm:min-h-[19rem]">
               {reviews.map((review, index) => (
                 <figure
                   key={review.author}
                   aria-hidden={index !== reviewIndex}
-                  className={`col-start-1 row-start-1 flex flex-col items-center justify-center px-7 py-12 text-center transition-all duration-500 sm:px-16 ${
+                  className={`col-start-1 row-start-1 flex flex-col items-center justify-center px-6 py-9 text-center transition-all duration-500 sm:px-14 ${
                     index === reviewIndex
                       ? "translate-x-0 opacity-100"
                       : index < reviewIndex
@@ -457,11 +470,11 @@ function Index() {
                         : "translate-x-8 opacity-0 pointer-events-none"
                   }`}
                 >
-                  <Quote aria-hidden className="mb-6 h-10 w-10 text-primary" strokeWidth={1.5} />
-                  <blockquote className="max-w-3xl font-display text-xl leading-relaxed text-foreground sm:text-2xl">
+                  <Quote aria-hidden className="mb-4 h-8 w-8 text-primary" strokeWidth={1.5} />
+                  <blockquote className="max-w-2xl font-display text-lg leading-relaxed text-foreground sm:text-xl">
                     „{review.text}”
                   </blockquote>
-                  <figcaption className="mt-7">
+                  <figcaption className="mt-5">
                     <span className="block font-bold text-primary">{review.author}</span>
                     <span className="mt-1 block text-sm text-muted-foreground">Opinia z Facebooka</span>
                   </figcaption>
@@ -469,7 +482,7 @@ function Index() {
               ))}
             </div>
 
-            <div className="flex items-center justify-center gap-5 border-t border-border px-5 py-5">
+            <div className="flex items-center justify-center gap-5 border-t border-border px-5 py-4">
               <Button
                 type="button"
                 variant="outline"
