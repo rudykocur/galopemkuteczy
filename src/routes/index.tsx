@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote, Sparkles } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -275,8 +275,9 @@ function Index() {
               Relacyjne Jeżdziectwo
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-              Jeździectwo bez presji i bez schematów. Uczymy się od koni uważności, odwagi
-              i radości — w kolorach, które nikogo nie wykluczają.
+              Uczymy się od koni uważności, odwagi i radości — w kolorach, które nikogo nie
+              wykluczają. Bo człowiek i koń mówią wspólnym językiem — a najnowsze badania
+              o mózgu właśnie to potwierdzają.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#oferta">
@@ -292,7 +293,7 @@ function Index() {
               {[
                 ["2/3", "różowe koniary / cudowne konie"],
                 ["15+ lat", "doświadczenia"],
-                ["0", "krzyku i pośpiechu"],
+                ["∞", "cierpliwości i ciekawości"],
               ].map(([k, v]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-4">
                   <dt className="font-display text-2xl text-primary">{k}</dt>
@@ -300,6 +301,10 @@ function Index() {
                 </div>
               ))}
             </dl>
+            <p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <Sparkles className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+              Metoda oparta na najnowszej wiedzy o mózgu konia i człowieka
+            </p>
           </div>
 
           <div className="relative">
