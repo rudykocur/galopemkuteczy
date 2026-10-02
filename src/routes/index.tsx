@@ -322,12 +322,12 @@ function Index() {
       {/* O NAS */}
       <section id="o-nas" className="px-5 py-24">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div className="relative">
+          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+            <div className="relative lg:h-full">
               <img
                 src={aboutImg.url}
                 alt="Dwie opiekunki z końmi na łące o zachodzie słońca"
-                className="aspect-square w-full rounded-[2rem] object-cover"
+                className="aspect-square w-full rounded-[2rem] object-cover lg:aspect-auto lg:h-full"
               />
             </div>
             <div>
@@ -342,7 +342,7 @@ function Index() {
                 <div className="space-y-6">
                   {team.map((m) => (
                     <article key={m.name} className="last:pb-0 [&+&]:border-t [&+&]:border-border [&+&]:pt-6">
-                      <h3 className="font-display text-xl" style={{ color: m.color }}>
+                      <h3 className="font-display text-xl">
                         {m.name}
                       </h3>
                       <p className="mt-0.5 text-sm font-medium text-primary">{m.role}</p>
