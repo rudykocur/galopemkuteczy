@@ -274,6 +274,9 @@ function Index() {
             <p className="mt-4 font-display text-sm font-medium uppercase tracking-[0.35em] text-primary sm:text-base">
               RELACYJNE JEŹDZIECTWO
             </p>
+            <p className="mt-1 text-sm text-muted-foreground sm:text-base">
+              Przez konie do twojego układu nerwowego
+            </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
               Konie uczą uważności, odwagi i radości — w kolorach, które nikogo nie
               wykluczają. Bo człowiek i koń mówią wspólnym językiem — a najnowsze badania
