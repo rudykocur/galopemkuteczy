@@ -254,7 +254,7 @@ function Index() {
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">
               {[
-                ["2/2", "różowe koniary / cudowne konie"],
+                ["2/3", "różowe koniary / cudowne konie"],
                 ["12 lat", "doświadczenia"],
                 ["100%", "budowania relacji"],
               ].map(([k, v]) => (
