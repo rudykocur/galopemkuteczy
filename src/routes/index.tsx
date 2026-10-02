@@ -189,7 +189,7 @@ const firstMeeting = [
   },
   {
     title: "Poznajesz stado",
-    desc: "Badgera, Płotkę i Lilith. Możesz je pogłaskać, wyczyścić albo po prostu pobyć obok — bez presji.",
+    desc: "Badgera, Płotkę i Lilith. Możesz je pogłaskać, wyczyścić albo po prostu pobyć obok.",
   },
   {
     title: "Praca w Twoim tempie",
