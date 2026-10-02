@@ -275,7 +275,7 @@ function Index() {
               Relacyjne Jeżdziectwo
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-              Uczymy się od koni uważności, odwagi i radości — w kolorach, które nikogo nie
+              Konie uczą uważności, odwagi i radości — w kolorach, które nikogo nie
               wykluczają. Bo człowiek i koń mówią wspólnym językiem — a najnowsze badania
               o mózgu właśnie to potwierdzają.
             </p>
@@ -303,7 +303,7 @@ function Index() {
             </dl>
             <p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
               <Sparkles className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-              Metoda oparta na najnowszej wiedzy o mózgu konia i człowieka
+              {"\n"}
             </p>
           </div>
 
