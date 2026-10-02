@@ -335,9 +335,7 @@ function Index() {
                 Dwoje ludzi i trzy konie
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Galopem ku Tęczy to mała, kolorowa stajnia: dwie instruktorki, dwa
-                konie, które znacie już z galerii, i jedna nowa dama — dopiero
-                wybierająca swoje imię.
+                {"\n"}
               </p>
               <div className="mt-8 grid gap-4">
                 {team.map((m) => (
