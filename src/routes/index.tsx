@@ -275,9 +275,7 @@ function Index() {
               RELACYJNE JEŹDZIECTWO
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-              Konie uczą uważności, odwagi i radości — w kolorach, które nikogo nie
-              wykluczają. Bo człowiek i koń mówią wspólnym językiem — a najnowsze badania
-              o mózgu właśnie to potwierdzają.
+              Konie uczą uważności, odwagi i radości.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#oferta">
