@@ -147,9 +147,9 @@ const horses = [
   },
   {
     name: "Lilith",
-    meta: "6 lat • klacz, polski arab × irish cob • gniada",
+    meta: "6 LAT • DŁUGOWŁOSA PIĘKNOŚĆ",
     color: "var(--rainbow-6)",
-    desc: "Łagodna dama stajni i wielka fanka przytulasków. Imię wybieramy właśnie teraz.",
+    desc: "Wielka fanka przytulasków. Ogromne końskie serducho w niewielkim ciele.",
   },
 ];
 
