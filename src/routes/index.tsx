@@ -430,7 +430,7 @@ function Index() {
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
-                Co nas inspiruje?
+                Filary naszej pracy
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
                 W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
