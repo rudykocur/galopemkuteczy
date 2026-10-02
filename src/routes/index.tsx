@@ -275,8 +275,10 @@ function Index() {
               Relacyjne Jeżdziectwo
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-              Jeździectwo bez presji i bez schematów. Uczymy się od koni uważności, odwagi
-              i radości — w kolorach, które nikogo nie wykluczają.
+              Uczymy się od koni uważności, odwagi i radości — w kolorach, które nikogo nie wykluczają.
+              Naszym działaniom przyświeca jedno przekonanie: człowiek i koń mówią wspólnym językiem —
+              a najnowsze badania o mózgu wciąż to potwierdzają. Nasza metoda opiera się na wiedzy,
+              nie na dawnych schematach.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#oferta">
@@ -292,7 +294,7 @@ function Index() {
               {[
                 ["2/3", "różowe koniary / cudowne konie"],
                 ["15+ lat", "doświadczenia"],
-                ["0", "krzyku i pośpiechu"],
+                ["∞", "cierpliwości i ciekawości"],
               ].map(([k, v]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-4">
                   <dt className="font-display text-2xl text-primary">{k}</dt>
