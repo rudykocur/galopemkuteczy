@@ -132,7 +132,7 @@ const inspirations = [
   {
     title: "LIMA",
     meta: "PODEJŚCIE",
-    desc: "Najmniej inwazyjnie, najmniej awersyjnie — zawsze zaczynamy od najłagodniejszej metody, jaka w danej chwili działa.",
+    desc: "Najmniej inwazyjnie, najmniej awersyjnie, czyli zawsze zaczynamy od najłagodniejszej metody, jaka w danej chwili działa.",
     color: "var(--rainbow-1)",
   },
   {
