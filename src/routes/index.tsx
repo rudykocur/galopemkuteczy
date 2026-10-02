@@ -128,7 +128,7 @@ const team = [
     name: "Ania",
     role: "Nauka jazdy konnej • Behawiorystyka zwierząt\u00a0• Trening koni\u00a0• Terapia Skoncentrowana na Rozwiązaniach\u00a0• Masaż metodą Mastersona",
     color: "var(--rainbow-3)",
-    bio: "Koń to moja pasja od dziecka. Uczę jazdy konnej w stylu western, zajmuję się behawiorystyką koni i masażem metodą Mastersona, a jako studentka psychoterapii pracuję w nurcie Terapii Skoncentrowanej na Rozwiązaniach. Fascynuje mnie neurobiologia — wiem, jak emocje wpływają na człowieka i na konia, i uczę, jak o nie dbać.",
+    bio: "Kontakt z koniem był moim marzeniem od dziecka. Jeździectwo było jedyną znaną mi drogą do poznania tych zwierząt, a ja zawsze chciałam czegoś więcej. Dziś chcę dzielić się pasją i wiedzą oraz tym, jak dobroczynne skutki ma dla człowieka spędzanie czasu z końmi bez jazdy. Fascynuje mnie neurobiologia i podobieństwa naszych ssaczych układów nerwowych.",
   },
 ];
 
