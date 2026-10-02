@@ -165,7 +165,7 @@ const slogans = [
   {
     title: "Spokój i wyrozumiałość",
     meta: "ATMOSFERA",
-    desc: "Jest za to miejsce na łzy, śmiech i pierwszy w życiu kłus.",
+    desc: "Bez oceny, bez presji, bez pośpiechu. W kontakcie ze sobą i naturą, dając sobie przestrzeń na niepowodzenia.",
     color: "var(--rainbow-1)",
   },
   {
