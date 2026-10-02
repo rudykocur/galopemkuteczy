@@ -110,6 +110,39 @@ const offers = [
   },
 ];
 
+const inspirations = [
+  {
+    title: "LIMA",
+    meta: "PODEJŚCIE",
+    desc: "Najmniej inwazyjnie, najmniej awersyjnie — zawsze zaczynamy od najłagodniejszej metody, jaka w danej chwili działa.",
+    color: "var(--rainbow-1)",
+  },
+  {
+    title: "ISES",
+    meta: "NAUKA",
+    desc: "International Society for Equitation Science — jeździectwo oparte na badaniach nad zachowaniem i dobrostanem koni.",
+    color: "var(--rainbow-2)",
+  },
+  {
+    title: "Teoria poliwagalna",
+    meta: "UKŁAD NERWOWY",
+    desc: "Bezpieczeństwo to fundament nauki — i u ludzi, i u koni. Spięte ciało nie uczy się; spokojne ciało już tak.",
+    color: "var(--rainbow-4)",
+  },
+  {
+    title: "Porozumienie bez przemocy",
+    meta: "KOMUNIKACJA",
+    desc: "Metoda Marshalla Rosenberg: mówimy o potrzebach, zamiast oceniać — także wtedy, gdy ktoś z nas ma cztery nogi.",
+    color: "var(--rainbow-5)",
+  },
+  {
+    title: "Jeździectwo oparte na dowodach",
+    meta: "EVIDENCE-BASED",
+    desc: "Decyzje oparte na badaniach, nie na tradycji „tak robimy od zawsze”.",
+    color: "var(--rainbow-6)",
+  },
+];
+
 const slogans = [
   {
     title: "Spokój i wyrozumiałość",
@@ -134,7 +167,7 @@ const slogans = [
 const firstMeeting = [
   {
     title: "Najpierw rozmowa",
-    desc: "Zapytamy o Twoje oczekiwania, obawy i cele — przy kawie albo na sianie, jak wolisz.",
+    desc: "Zapytamy o Twoje oczekiwania, obawy i cele — na sianie albo na spacerze, jak wolisz.",
   },
   {
     title: "Poznajesz stado",
@@ -416,16 +449,16 @@ function Index() {
               </div>
             </div>
           </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {slogans.map((s) => (
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {inspirations.map((s) => (
               <div
                 key={s.title}
-                className="rounded-[1.25rem] border-l-4 bg-card p-8 shadow-sm"
+                className="rounded-[1.25rem] border-l-4 bg-card p-6 shadow-sm"
                 style={{ borderLeftColor: s.color }}
               >
                 <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.meta}</p>
-                <h3 className="mt-3 font-display text-2xl leading-snug">{s.title}</h3>
-                <p className="mt-3 text-base text-muted-foreground">{s.desc}</p>
+                <h3 className="mt-2 font-display text-xl">{s.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -466,6 +499,20 @@ function Index() {
                 ))}
               </ol>
             </div>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {slogans.map((s) => (
+              <div
+                key={s.title}
+                className="rounded-[1.25rem] border-l-4 bg-card p-8 shadow-sm"
+                style={{ borderLeftColor: s.color }}
+              >
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.meta}</p>
+                <h3 className="mt-3 font-display text-2xl leading-snug">{s.title}</h3>
+                <p className="mt-3 text-base text-muted-foreground">{s.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
