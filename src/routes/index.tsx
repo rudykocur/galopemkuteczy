@@ -126,7 +126,7 @@ const team = [
   },
   {
     name: "Ania",
-    role: "Instruktorka jazdy western • Studentka psychoterapii • Behawiorystka koni",
+    role: "Nauka jazdy konnej • Behawiorystyka zwierząt\u00a0• Trening koni\u00a0• Terapia Skoncentrowana na Rozwiązaniach\u00a0• Masaż metodą Mastersona",
     color: "var(--rainbow-3)",
     bio: "Instruktorka jazdy konnej w stylu western, studentka psychoterapii i behawiorystka koni. Fanka układu nerwowego i neurobiologii — wie, jak emocje wpływają na człowieka i na konia, i uczy, jak o nie dbać.",
   },
