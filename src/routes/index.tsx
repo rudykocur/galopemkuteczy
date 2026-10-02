@@ -143,6 +143,27 @@ const inspirations = [
   },
 ];
 
+const slogans = [
+  {
+    title: "Spokój i wyrozumiałość",
+    meta: "ATMOSFERA",
+    desc: "Jest za to miejsce na łzy, śmiech i pierwszy w życiu kłus.",
+    color: "var(--rainbow-1)",
+  },
+  {
+    title: "Tęcza to obietnica.",
+    meta: "INKLUZJA",
+    desc: "Każdy jest tu na swoim miejscu — niezależnie od wieku, ciała, tożsamości i doświadczenia.",
+    color: "var(--rainbow-4)",
+  },
+  {
+    title: "Zgoda konia przede wszystkim.",
+    meta: "DOBRZESTAN",
+    desc: "Koń mówi „nie” — my słuchamy. Nie liczymy pucharów, liczymy uśmiechy i małe zwycięstwa.",
+    color: "var(--rainbow-6)",
+  },
+];
+
 const firstMeeting = [
   {
     title: "Najpierw rozmowa",
