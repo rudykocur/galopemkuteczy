@@ -144,7 +144,7 @@ const inspirations = [
   {
     title: "Teoria poliwagalna",
     meta: "UKŁAD NERWOWY",
-    desc: "Bezpieczeństwo to fundament nauki — i u ludzi, i u koni. Spięte ciało nie uczy się; spokojne ciało już tak.",
+    desc: "Poczucie bezpieczeństwa jest niezbędne do nauki u ludzi i u koni.",
     color: "var(--rainbow-4)",
   },
   {
