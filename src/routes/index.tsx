@@ -597,7 +597,7 @@ function Index() {
                 </span>
                 <h3 className="mt-5 text-xl">{o.title}</h3>
                 <p className="mt-2 flex-1 text-sm text-muted-foreground">{o.desc}</p>
-                <ul className="mt-5 space-y-2 text-sm text-foreground/80">
+                <ul className="mt-5 space-y-2.5 text-base text-foreground/80">
                   {o.items.map((it) => (
                     <li key={it}>{it}</li>
                   ))}
