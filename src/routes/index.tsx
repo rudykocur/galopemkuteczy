@@ -332,7 +332,7 @@ function Index() {
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kim jesteśmy</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
-                Dwie dziewczyny i trzy konie
+                Dwoje ludzi i trzy konie
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Galopem ku Tęczy to mała, kolorowa stajnia: dwie instruktorki, dwa
