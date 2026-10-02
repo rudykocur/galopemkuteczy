@@ -120,7 +120,7 @@ const values = [
 const team = [
   {
     name: "Alex",
-    role: "Instruktorka jazdy • Hipoterapeutka • Behawiorystka zwierząt",
+    role: "Nauka jazdy konnej • Hipoterapia • Behawiorystyka zwierząt\u00a0• Trening koni\u00a0• Polski Język Migowy\u00a0",
     color: "var(--rainbow-1)",
     bio: "Instruktorka jazdy konnej w stylu western i klasycznym, hipoterapeutka i behawiorystka zwierząt. Pracuje z końmi i jeźdźcami od 12 lat, a ostatnio uczy się polskiego języka migowego — żeby nikt nie został na zewnątrz rozmowy.",
   },
