@@ -113,17 +113,17 @@ const offers = [
 const pillars = [
   {
     title: "Komunikacja",
-    desc: "Zaczynamy od porozumienia bez przemocy — mówimy o potrzebach, zamiast oceniać. Także wtedy, gdy ktoś z nas ma cztery nogi: uczymy czytać język konia i budować z nim wspólny słownik.",
+    desc: "Zaczynamy od słuchania: czytamy język ciała konia i prosimy zamiast żądać. Uczymy porozumiewania się tak, by słyszały obie strony — te z dwiema i te z czterema nogami.",
     color: "var(--rainbow-1)",
   },
   {
     title: "Wsparcie",
-    desc: "Empatia do koni i ludzi to nasza codzienność. Zawsze wybieramy najłagodniejszą możliwą metodę (LIMA), a bezpieczeństwo budujemy na teorii poliwagalnej — bo spokojne ciało uczy się, spięte już nie.",
+    desc: "Empatia do koni i ludzi to nasza codzienność. Dobieramy tempo, metodę i poziom trudności do was obojga — dokładnie tak daleko, jak tego dnia chcecie pójść.",
     color: "var(--rainbow-2)",
   },
   {
     title: "Rozwój",
-    desc: "Stawiamy na edukację poprzez zachwyt — ciekawość uczy lepiej niż presja. Nasze decyzje opieramy na jeździectwie opartym na dowodach (ISES), a nie na „tak robimy od zawsze”.",
+    desc: "Stawiamy na edukację poprzez zachwyt: ciekawość uczy lepiej niż presja. Każde spotkanie to mały krok naprzód, który dokładamy razem — i świętujemy.",
     color: "var(--rainbow-3)",
   },
 ];
