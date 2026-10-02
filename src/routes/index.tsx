@@ -176,7 +176,7 @@ const slogans = [
   },
   {
     title: "Zgoda konia przede wszystkim.",
-    meta: "DOBRZESTAN",
+    meta: "DOBROSTAN",
     desc: "Koń mówi „nie” — my słuchamy. Nie liczymy pucharów, liczymy uśmiechy i małe zwycięstwa.",
     color: "var(--rainbow-6)",
   },
