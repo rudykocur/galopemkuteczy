@@ -170,7 +170,7 @@ const slogans = [
   },
   {
     title: "Tęcza to obietnica",
-    meta: "INKLUZJA",
+    meta: "INKLUZYWNOŚĆ",
     desc: "Każdy jest tu na swoim miejscu, niezależnie od wieku, ciała, tożsamości i doświadczenia.",
     color: "var(--rainbow-4)",
   },
