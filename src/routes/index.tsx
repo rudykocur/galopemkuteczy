@@ -146,7 +146,7 @@ const horses = [
     desc: "Uwielbia czyszczenie, drapanie, trawę i spacery do lasu. Jest ciekawska, ma zacięcie hipoterapeutyczne i z sezonu na sezon przybiera inne barwy.",
   },
   {
-    name: "Jeszcze bez imienia",
+    name: "Lilith",
     meta: "6 lat • klacz, polski arab × irish cob • gniada",
     color: "var(--rainbow-6)",
     desc: "Łagodna dama stajni i wielka fanka przytulasków. Imię wybieramy właśnie teraz.",
