@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote, Sparkles } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
