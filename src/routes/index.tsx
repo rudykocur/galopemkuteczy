@@ -272,7 +272,7 @@ function Index() {
               Galopem ku tęczy
             </h1>
             <p className="mt-4 font-display text-sm font-medium uppercase tracking-[0.35em] text-primary sm:text-base">
-              Relacyjne Jeżdziectwo
+              RELACYJNE JEŹDZIECTWO
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
               Konie uczą uważności, odwagi i radości — w kolorach, które nikogo nie
