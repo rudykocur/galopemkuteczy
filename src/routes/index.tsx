@@ -110,11 +110,44 @@ const offers = [
   },
 ];
 
-const values = [
-  { title: "Zgoda konia przede wszystkim", desc: "Pracujemy bez przymusu. Koń mówi „nie” — my słuchamy." },
-  { title: "Miejsce dla każdego", desc: "Niezależnie od wieku, ciała, tożsamości i doświadczenia." },
-  { title: "Radość ponad rywalizację", desc: "Nie liczymy pucharów. Liczymy uśmiechy i małe zwycięstwa." },
-  { title: "Uczymy uważności", desc: "Konie czytają emocje — dzięki nim uczysz się siebie." },
+const slogans = [
+  {
+    title: "Nie ma krzyku, pośpiechu ani wstydu.",
+    meta: "ATMOSFERA",
+    desc: "Jest za to miejsce na łzy, śmiech i pierwszy w życiu kłus.",
+    color: "var(--rainbow-1)",
+  },
+  {
+    title: "Tęcza to obietnica.",
+    meta: "INKLUZJA",
+    desc: "Każdy jest tu na swoim miejscu — niezależnie od wieku, ciała, tożsamości i doświadczenia.",
+    color: "var(--rainbow-4)",
+  },
+  {
+    title: "Zgoda konia przede wszystkim.",
+    meta: "DOBRZESTAN",
+    desc: "Koń mówi „nie” — my słuchamy. Nie liczymy pucharów, liczymy uśmiechy i małe zwycięstwa.",
+    color: "var(--rainbow-6)",
+  },
+];
+
+const firstMeeting = [
+  {
+    title: "Najpierw rozmowa",
+    desc: "Zapytamy o Twoje oczekiwania, obawy i cele — przy kawie albo na sianie, jak wolisz.",
+  },
+  {
+    title: "Poznajesz stado",
+    desc: "Badgera, Płotkę i Lilith. Możesz je pogłaskać, wyczyścić albo po prostu pobyć obok — bez presji.",
+  },
+  {
+    title: "Praca w Twoim tempie",
+    desc: "Praca z ziemi, ewentualnie jazda — dokładnie tak daleko, jak tego dnia chcesz pójść.",
+  },
+  {
+    title: "Omówienie i plan dalej",
+    desc: "Odpowiadamy na wszystkie pytania i wspólnie układamy dalszy plan zajęć.",
+  },
 ];
 
 const team = [
@@ -332,18 +365,16 @@ function Index() {
               <p className="mt-4 text-lg text-muted-foreground">
                 {"\n"}
               </p>
-              <div className="mt-8 rounded-[1.25rem] border border-border bg-card p-6 shadow-sm sm:p-8">
-                <div className="space-y-6">
-                  {team.map((m) => (
-                    <article key={m.name} className="last:pb-0 [&+&]:border-t [&+&]:border-border [&+&]:pt-6">
-                      <h3 className="font-display text-xl">
-                        {m.name}
-                      </h3>
-                      <p className="mt-0.5 text-sm font-medium text-primary">{m.role}</p>
-                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
-                    </article>
-                  ))}
-                </div>
+              <div className="mt-8 space-y-6">
+                {team.map((m) => (
+                  <article key={m.name} className="last:pb-0 [&+&]:border-t [&+&]:border-border [&+&]:pt-6">
+                    <h3 className="font-display text-xl">
+                      {m.name}
+                    </h3>
+                    <p className="mt-0.5 text-sm font-medium text-primary">{m.role}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
+                  </article>
+                ))}
               </div>
             </div>
           </div>
@@ -371,11 +402,6 @@ function Index() {
               <p className="mt-6 text-lg text-muted-foreground">
                 W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
               </p>
-              <p className="mt-4 text-muted-foreground">
-                Nie ma u nas krzyku, pośpiechu ani wstydu za to, że coś nie wyszło. Jest za to
-                miejsce na łzy, śmiech i pierwszy w życiu kłus. Tęcza w naszej nazwie to
-                obietnica: każdy jest tu na swoim miejscu.
-              </p>
             </div>
             <div className="relative mx-auto max-w-md">
               <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
@@ -390,17 +416,56 @@ function Index() {
               </div>
             </div>
           </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
-            {values.map((v, i) => (
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {slogans.map((s) => (
               <div
-                key={v.title}
-                className="rounded-2xl border-l-4 bg-card p-5 shadow-sm"
-                style={{ borderLeftColor: `var(--rainbow-${i + 1})` }}
+                key={s.title}
+                className="rounded-[1.25rem] border-l-4 bg-card p-8 shadow-sm"
+                style={{ borderLeftColor: s.color }}
               >
-                <h3 className="text-base">{v.title}</h3>
-                <p className="mt-1.5 text-sm text-muted-foreground">{v.desc}</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.meta}</p>
+                <h3 className="mt-3 font-display text-2xl leading-snug">{s.title}</h3>
+                <p className="mt-3 text-base text-muted-foreground">{s.desc}</p>
               </div>
             ))}
+          </div>
+
+          {/* PIERWSZE SPOTKANIE */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="relative mx-auto max-w-md lg:max-w-none">
+              <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
+              <img
+                src={galleryLesson.url}
+                alt="Zajęcia jeździeckie — klientka na koniu, obok opiekunka prowadząca lekcję"
+                className="aspect-[4/5] w-full rounded-[2rem] object-cover object-center"
+              />
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Pierwsza wizyta</p>
+              <h2 className="mt-3 text-4xl sm:text-5xl">
+                Jak wygląda pierwsze spotkanie z nami?
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                Pierwszy raz u nas to naprawdę nic strasznego. Nikt nie goni, nikt nie ocenia — a Ty decydujesz, jak daleko chcesz pójść już pierwszego dnia.
+              </p>
+              <ol className="mt-8 space-y-5">
+                {firstMeeting.map((step, i) => (
+                  <li key={step.title} className="flex items-start gap-4">
+                    <span
+                      className="mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full font-display text-sm text-primary-foreground"
+                      style={{ backgroundColor: `var(--rainbow-${i + 1})` }}
+                      aria-hidden
+                    >
+                      {i + 1}
+                    </span>
+                    <div>
+                      <h3 className="font-display text-lg">{step.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
         </div>
       </section>
