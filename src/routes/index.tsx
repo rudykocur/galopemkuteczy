@@ -376,31 +376,41 @@ function Index() {
             ))}
           </div>
 
-          <div className="mt-16 max-w-2xl">
-            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
-            <h2 className="mt-3 text-4xl sm:text-5xl">
-              Nasza filozofia pracy z końmi
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
-              Galopem ku Tęczy tworzą Alex, Ania, Badger i Płotka. Koń jest partnerem, który ma swoje nastroje, granice i historię. Dlatego każde zajęcia zaczynamy od rozmowy — z człowiekiem i z koniem.
-            </p>
-            <p className="mt-4 text-muted-foreground">
-              Nie ma u nas krzyku, pośpiechu ani wstydu za to, że coś nie wyszło. Jest za to
-              miejsce na łzy, śmiech i pierwszy w życiu kłus. Tęcza w naszej nazwie to
-              obietnica: każdy jest tu na swoim miejscu.
-            </p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {values.map((v, i) => (
-                <div
-                  key={v.title}
-                  className="rounded-2xl border-l-4 bg-card p-5 shadow-sm"
-                  style={{ borderLeftColor: `var(--rainbow-${i + 1})` }}
-                >
-                  <h3 className="text-base">{v.title}</h3>
-                  <p className="mt-1.5 text-sm text-muted-foreground">{v.desc}</p>
-                </div>
-              ))}
+          <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
+              <h2 className="mt-3 text-4xl sm:text-5xl">
+                Nasza filozofia pracy z końmi
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                Galopem ku Tęczy tworzą Alex, Ania, Badger i Płotka. Koń jest partnerem, który ma swoje nastroje, granice i historię. Dlatego każde zajęcia zaczynamy od rozmowy — z człowiekiem i z koniem.
+              </p>
+              <p className="mt-4 text-muted-foreground">
+                Nie ma u nas krzyku, pośpiechu ani wstydu za to, że coś nie wyszło. Jest za to
+                miejsce na łzy, śmiech i pierwszy w życiu kłus. Tęcza w naszej nazwie to
+                obietnica: każdy jest tu na swoim miejscu.
+              </p>
             </div>
+            <div className="relative">
+              <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
+              <img
+                src={galleryHug.url}
+                alt="Przytulenie konia pod błękitnym niebem"
+                className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_72%]"
+              />
+            </div>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            {values.map((v, i) => (
+              <div
+                key={v.title}
+                className="rounded-2xl border-l-4 bg-card p-5 shadow-sm"
+                style={{ borderLeftColor: `var(--rainbow-${i + 1})` }}
+              >
+                <h3 className="text-base">{v.title}</h3>
+                <p className="mt-1.5 text-sm text-muted-foreground">{v.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
