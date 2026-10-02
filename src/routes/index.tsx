@@ -588,14 +588,7 @@ function Index() {
                   className="absolute inset-x-0 top-0 h-1.5"
                   style={{ backgroundColor: o.color }}
                 />
-                <span
-                  className="grid h-11 w-11 place-items-center rounded-2xl font-display text-lg text-primary-foreground"
-                  style={{ backgroundColor: o.color }}
-                  aria-hidden
-                >
-                  ✦
-                </span>
-                <h3 className="mt-5 text-xl">{o.title}</h3>
+                <h3 className="text-xl">{o.title}</h3>
                 <p className="mt-2 flex-1 text-sm text-muted-foreground">{o.desc}</p>
                 <ul className="mt-5 space-y-2.5 text-base text-foreground/80">
                   {o.items.map((it) => (
