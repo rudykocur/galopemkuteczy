@@ -197,7 +197,7 @@ const firstMeeting = [
   },
   {
     title: "Omówienie i plan dalej",
-    desc: "Odpowiadamy na wszystkie pytania i wspólnie układamy dalszy plan zajęć.",
+    desc: "Odpowiadamy na wszystkie pytania i wspólnie ustalamy plany na kolejne spotkania.",
   },
 ];
 
