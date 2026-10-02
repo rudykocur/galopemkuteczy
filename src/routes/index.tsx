@@ -185,7 +185,7 @@ const slogans = [
 const firstMeeting = [
   {
     title: "Najpierw rozmowa",
-    desc: "Zapytamy o Twoje oczekiwania, obawy i cele — na sianie albo na spacerze, jak wolisz.",
+    desc: "Zapytamy o Twoje oczekiwania, obawy i doświadczenia.",
   },
   {
     title: "Poznajesz stado",
