@@ -275,10 +275,9 @@ function Index() {
               Relacyjne Jeżdziectwo
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-              Uczymy się od koni uważności, odwagi i radości — w kolorach, które nikogo nie wykluczają.
-              Naszym działaniom przyświeca jedno przekonanie: człowiek i koń mówią wspólnym językiem —
-              a najnowsze badania o mózgu wciąż to potwierdzają. Nasza metoda opiera się na wiedzy,
-              nie na dawnych schematach.
+              Uczymy się od koni uważności, odwagi i radości — w kolorach, które nikogo nie
+              wykluczają. Bo człowiek i koń mówią wspólnym językiem — a najnowsze badania
+              o mózgu właśnie to potwierdzają.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#oferta">
@@ -302,6 +301,10 @@ function Index() {
                 </div>
               ))}
             </dl>
+            <p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <Sparkles className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+              Metoda oparta na najnowszej wiedzy o mózgu konia i człowieka
+            </p>
           </div>
 
           <div className="relative">
