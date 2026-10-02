@@ -451,7 +451,7 @@ function Index() {
                 Filary naszej pracy
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
+                W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się. Zależy nam przede wszystkim na tym, by nie wywoływać strachu ani nie zadawać bólu.
               </p>
               <ul className="mt-8 space-y-4">
                 {inspirations.map((s) => (
