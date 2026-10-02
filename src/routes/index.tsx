@@ -275,8 +275,7 @@ function Index() {
               RELACYJNE JEŹDZIECTWO
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-              Nauczymy cię czytać język konia i budować z nim zaufanie — w tempie, które
-              pasuje wam obojgu. Bez wstydu, presji i pośpiechu.
+              Nauczymy Cię czytać język konia i budować z nim relację opartą na zaufaniu i poczuciu bezpieczeństwa bez wstydu, presji i pośpiechu.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#oferta">
