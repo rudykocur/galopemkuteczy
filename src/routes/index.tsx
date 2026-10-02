@@ -193,7 +193,7 @@ const firstMeeting = [
   },
   {
     title: "Praca w Twoim tempie",
-    desc: "Praca z ziemi, ewentualnie jazda — dokładnie tak daleko, jak tego dnia chcesz pójść.",
+    desc: "Wspólnie poszerzamy okno tolerancji i strefę komfortu.",
   },
   {
     title: "Omówienie i plan dalej",
