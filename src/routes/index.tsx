@@ -138,7 +138,7 @@ const inspirations = [
   {
     title: "ISES",
     meta: "NAUKA",
-    desc: "International Society for Equitation Science — jeździectwo oparte na badaniach nad zachowaniem i dobrostanem koni.",
+    desc: "International Society for Equitation Science - jeździectwo oparte na badaniach nad zachowaniem i dobrostanem koni.",
     color: "var(--rainbow-2)",
   },
   {
