@@ -526,7 +526,7 @@ function Index() {
                 Jak wygląda pierwsze spotkanie z nami?
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                Nie musisz niczego udowadniać ani „dawać rady”. Jeśli masz za sobą trudne doświadczenia ze szkółek, czujesz lęk po upadku albo po prostu chcesz poznać konie - jesteś w dobrym miejscu.
+                Jeśli masz za sobą trudne doświadczenia ze szkółek, czujesz lęk po upadku albo po prostu chcesz poznać konie - jesteś w dobrym miejscu.
               </p>
               <ol className="mt-8 space-y-5">
                 {firstMeeting.map((step, i) => (
