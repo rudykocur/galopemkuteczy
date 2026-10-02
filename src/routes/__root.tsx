@@ -34,7 +34,8 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error: unknownError, reset }: { error: unknown; reset: () => void }) {
+  const error = unknownError instanceof Error ? unknownError : new Error(String(unknownError));
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -71,6 +72,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     </div>
   );
 }
+
+// The router types expect a lazy component for errorComponent.
+const LazyErrorComponent = lazy(async () => ({ default: ErrorComponent }));
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -111,9 +115,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   notFoundComponent: NotFoundComponent,
   errorComponent: LazyErrorComponent,
 });
-
-// The router types expect a lazy component for errorComponent.
-const LazyErrorComponent = lazy(async () => ({ default: ErrorComponent }));
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
