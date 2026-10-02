@@ -274,9 +274,6 @@ function Index() {
             <p className="mt-4 font-display text-sm font-medium uppercase tracking-[0.35em] text-primary sm:text-base">
               RELACYJNE JEŹDZIECTWO
             </p>
-            <p className="mt-1 text-sm text-muted-foreground sm:text-base">
-              Przez konie do twojego układu nerwowego
-            </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
               Konie uczą uważności, odwagi i radości — w kolorach, które nikogo nie
               wykluczają. Bo człowiek i koń mówią wspólnym językiem — a najnowsze badania
@@ -294,12 +291,12 @@ function Index() {
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">
               {[
-                ["2/3", "różowe koniary / cudowne konie"],
-                ["15+ lat", "doświadczenia"],
-                ["∞", "cierpliwości i ciekawości"],
-              ].map(([k, v]) => (
+                ["2/3", "różowe koniary / cudowne konie", ""],
+                ["15+ lat", "doświadczenia", ""],
+                ["∞", "cierpliwości i ciekawości", "text-4xl"],
+              ].map(([k, v, cls]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-4">
-                  <dt className="font-display text-2xl text-primary">{k}</dt>
+                  <dt className={`font-display text-2xl text-primary ${cls}`}>{k}</dt>
                   <dd className="mt-1 text-xs font-medium text-muted-foreground">{v}</dd>
                 </div>
               ))}
