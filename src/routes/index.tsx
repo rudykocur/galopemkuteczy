@@ -113,17 +113,17 @@ const offers = [
 const pillars = [
   {
     title: "Komunikacja",
-    desc: "Zaczynamy od porozumienia bez przemocy — mówimy o potrzebach, zamiast oceniać. Także wtedy, gdy ktoś z nas ma cztery nogi: uczymy czytać język konia i budować z nim wspólny słownik.",
+    desc: "Zaczynamy od słuchania: czytamy język ciała konia i prosimy zamiast żądać. Uczymy porozumiewania się tak, by słyszały obie strony — te z dwiema i te z czterema nogami.",
     color: "var(--rainbow-1)",
   },
   {
     title: "Wsparcie",
-    desc: "Empatia do koni i ludzi to nasza codzienność. Zawsze wybieramy najłagodniejszą możliwą metodę (LIMA), a bezpieczeństwo budujemy na teorii poliwagalnej — bo spokojne ciało uczy się, spięte już nie.",
+    desc: "Empatia do koni i ludzi to nasza codzienność. Jesteśmy obok przy trudnych emocjach i pierwszych sukcesach — z uważnością na potrzeby i granice każdej istoty.",
     color: "var(--rainbow-2)",
   },
   {
     title: "Rozwój",
-    desc: "Stawiamy na edukację poprzez zachwyt — ciekawość uczy lepiej niż presja. Nasze decyzje opieramy na jeździectwie opartym na dowodach (ISES), a nie na „tak robimy od zawsze”.",
+    desc: "Stawiamy na edukację poprzez zachwyt: ciekawość uczy lepiej niż presja. Każde spotkanie to mały krok naprzód, który dokładamy razem — i świętujemy.",
     color: "var(--rainbow-3)",
   },
 ];
@@ -467,6 +467,27 @@ function Index() {
               </div>
             </div>
           </div>
+          <ul className="mt-10 space-y-4">
+            {inspirations.map((s) => (
+              <li key={s.title} className="flex items-start gap-4">
+                <span
+                  className="mt-2.5 h-3 w-3 shrink-0 rounded-full"
+                  style={{ backgroundColor: s.color }}
+                  aria-hidden
+                />
+                <div>
+                  <h3 className="font-display text-lg">
+                    {s.title}{" "}
+                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase tracking-wider text-muted-foreground">
+                      {s.meta}
+                    </span>
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {pillars.map((p, i) => (
               <div
@@ -488,27 +509,6 @@ function Index() {
               </div>
             ))}
           </div>
-
-          <ul className="mt-10 space-y-4">
-            {inspirations.map((s) => (
-              <li key={s.title} className="flex items-start gap-4">
-                <span
-                  className="mt-2.5 h-3 w-3 shrink-0 rounded-full"
-                  style={{ backgroundColor: s.color }}
-                  aria-hidden
-                />
-                <div>
-                  <h3 className="font-display text-lg">
-                    {s.title}{" "}
-                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase tracking-wider text-muted-foreground">
-                      {s.meta}
-                    </span>
-                  </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
 
           {/* PIERWSZE SPOTKANIE */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2 lg:items-center">
