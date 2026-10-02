@@ -128,6 +128,39 @@ const pillars = [
   },
 ];
 
+const inspirations = [
+  {
+    title: "LIMA",
+    meta: "PODEJŚCIE",
+    desc: "Najmniej inwazyjnie, najmniej awersyjnie — zawsze zaczynamy od najłagodniejszej metody, jaka w danej chwili działa.",
+    color: "var(--rainbow-1)",
+  },
+  {
+    title: "ISES",
+    meta: "NAUKA",
+    desc: "International Society for Equitation Science — jeździectwo oparte na badaniach nad zachowaniem i dobrostanem koni.",
+    color: "var(--rainbow-2)",
+  },
+  {
+    title: "Teoria poliwagalna",
+    meta: "UKŁAD NERWOWY",
+    desc: "Bezpieczeństwo to fundament nauki — i u ludzi, i u koni. Spięte ciało nie uczy się; spokojne ciało już tak.",
+    color: "var(--rainbow-4)",
+  },
+  {
+    title: "Porozumienie bez przemocy",
+    meta: "KOMUNIKACJA",
+    desc: "Metoda Marshalla Rosenberg: mówimy o potrzebach, zamiast oceniać — także wtedy, gdy ktoś z nas ma cztery nogi.",
+    color: "var(--rainbow-5)",
+  },
+  {
+    title: "Jeździectwo oparte na dowodach",
+    meta: "EVIDENCE-BASED",
+    desc: "Decyzje oparte na badaniach, nie na tradycji „tak robimy od zawsze”.",
+    color: "var(--rainbow-6)",
+  },
+];
+
 const slogans = [
   {
     title: "Spokój i wyrozumiałość",
