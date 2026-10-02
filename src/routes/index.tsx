@@ -369,7 +369,7 @@ function Index() {
                 Nasza filozofia pracy z końmi
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                Galopem ku Tęczy tworzą Alex, Ania, Badger i Płotka. Koń jest partnerem, który ma swoje nastroje, granice i historię. Dlatego każde zajęcia zaczynamy od rozmowy — z człowiekiem i z koniem.
+                W naszej filozofii pracy z końmi nie stosujemy jednej metody ani jednej szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
               </p>
               <p className="mt-4 text-muted-foreground">
                 Nie ma u nas krzyku, pośpiechu ani wstydu za to, że coś nie wyszło. Jest za to
