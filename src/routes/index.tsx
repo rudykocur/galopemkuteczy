@@ -394,9 +394,9 @@ function Index() {
             <div className="relative">
               <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
               <img
-                src={galleryHug.url}
-                alt="Przytulenie konia pod błękitnym niebem"
-                className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_72%]"
+                src={gallerySnow.url}
+                alt="Jazda z parasolem na śnieżnym polu"
+                className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_35%]"
               />
             </div>
           </div>
