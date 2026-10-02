@@ -435,15 +435,23 @@ function Index() {
             </div>
           </div>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {inspirations.map((s) => (
+            {pillars.map((p, i) => (
               <div
-                key={s.title}
-                className="rounded-[1.25rem] border-l-4 bg-card p-6 shadow-sm"
-                style={{ borderLeftColor: s.color }}
+                key={p.title}
+                className="rounded-[1.25rem] border-l-4 bg-card p-8 shadow-sm"
+                style={{ borderLeftColor: p.color }}
               >
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.meta}</p>
-                <h3 className="mt-2 font-display text-xl">{s.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
+                <div className="flex items-center gap-3">
+                  <span
+                    className="grid h-9 w-9 shrink-0 place-items-center rounded-full font-display text-sm text-primary-foreground"
+                    style={{ backgroundColor: p.color }}
+                    aria-hidden
+                  >
+                    {i + 1}
+                  </span>
+                  <h3 className="font-display text-2xl">{p.title}</h3>
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
               </div>
             ))}
           </div>
