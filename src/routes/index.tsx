@@ -112,7 +112,7 @@ const offers = [
 
 const slogans = [
   {
-    title: "Nie ma krzyku, pośpiechu ani wstydu.",
+    title: "Spokój i wyrozumiałość",
     meta: "ATMOSFERA",
     desc: "Jest za to miejsce na łzy, śmiech i pierwszy w życiu kłus.",
     color: "var(--rainbow-1)",
