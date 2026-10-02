@@ -141,7 +141,7 @@ const horses = [
   },
   {
     name: "Płotka",
-    meta: "2 lata • klacz, polski koń sportowy",
+    meta: "2 LATA • WYMAGAJĄCA NAUCZYCIELKA",
     color: "var(--rainbow-5)",
     desc: "Uwielbia czyszczenie, trawę, spacery do lasu i drapanie. Ma zacięcie hipoterapeutyczne, a z sezonu na sezon przybiera inne barwy.",
   },
