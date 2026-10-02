@@ -135,7 +135,7 @@ const team = [
 const horses = [
   {
     name: "Badger",
-    meta: "13 lat • wałach AQH • kary",
+    meta: "13 LAT • NAJLEPSZY PARTNER",
     color: "var(--rainbow-4)",
     desc: "Profesor w kopytach: odpowiedzialny, bardzo kontaktowy i wyjątkowo fotogeniczny.",
   },
@@ -143,7 +143,7 @@ const horses = [
     name: "Płotka",
     meta: "2 lata • klacz, polski koń sportowy",
     color: "var(--rainbow-5)",
-    desc: "Ma zacięcie hipoterapeutyczne, a z sezonu na sezon przybiera inne barwy. Uwielbia czyszczenie, trawę, spacery do lasu i drapanie.",
+    desc: "Uwielbia czyszczenie, trawę, spacery do lasu i drapanie. Ma zacięcie hipoterapeutyczne, a z sezonu na sezon przybiera inne barwy.",
   },
   {
     name: "Jeszcze bez imienia",
