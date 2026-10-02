@@ -118,7 +118,7 @@ const pillars = [
   },
   {
     title: "Wsparcie",
-    desc: "Empatia do koni i ludzi to nasza codzienność. Jesteśmy obok przy trudnych emocjach i pierwszych sukcesach — z uważnością na potrzeby i granice każdej istoty.",
+    desc: "Empatia do koni i ludzi towarzyszy nam we wszystkich interakcjach. Jesteśmy obok przy trudnych emocjach i pierwszych sukcesach, z uważnością na potrzeby i granice każdej istoty.",
     color: "var(--rainbow-2)",
   },
   {
