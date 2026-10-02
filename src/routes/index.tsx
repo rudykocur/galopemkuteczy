@@ -341,25 +341,18 @@ function Index() {
               <p className="mt-4 text-lg text-muted-foreground">
                 {"\n"}
               </p>
-              <div className="mt-8 grid gap-4">
-                {team.map((m) => (
-                  <article key={m.name} className="rounded-[1.25rem] border border-border bg-card p-5 shadow-sm">
-                    <div className="flex items-center gap-4">
-                      <span
-                        className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 bg-card font-display text-lg"
-                        style={{ borderColor: m.color, color: m.color }}
-                        aria-hidden="true"
-                      >
-                        {m.name[0]}
-                      </span>
-                      <div>
-                        <h3 className="font-display text-xl">{m.name}</h3>
-                        <p className="text-sm font-medium text-primary">{m.role}</p>
-                      </div>
-                    </div>
-                    <p className="mt-3 text-sm text-muted-foreground">{m.bio}</p>
-                  </article>
-                ))}
+              <div className="mt-8 rounded-[1.25rem] border border-border bg-card p-6 shadow-sm sm:p-8">
+                <div className="space-y-6">
+                  {team.map((m) => (
+                    <article key={m.name} className="last:pb-0 [&+&]:border-t [&+&]:border-border [&+&]:pt-6">
+                      <h3 className="font-display text-xl" style={{ color: m.color }}>
+                        {m.name}
+                      </h3>
+                      <p className="mt-0.5 text-sm font-medium text-primary">{m.role}</p>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
+                    </article>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
