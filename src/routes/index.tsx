@@ -445,16 +445,7 @@ function Index() {
           </div>
 
           <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
-              <h2 className="mt-3 text-4xl sm:text-5xl">
-                Filary naszej pracy
-              </h2>
-              <p className="mt-6 text-lg text-muted-foreground">
-                W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
-              </p>
-            </div>
-            <div className="relative mx-auto max-w-md">
+            <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
               <img
                 src={gallerySnow.url}
@@ -466,27 +457,36 @@ function Index() {
                 <p className="text-sm text-muted-foreground">Ale z cierpliwością i ciekawością.</p>
               </div>
             </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
+              <h2 className="mt-3 text-4xl sm:text-5xl">
+                Filary naszej pracy
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
+              </p>
+              <ul className="mt-8 space-y-4">
+                {inspirations.map((s) => (
+                  <li key={s.title} className="flex items-start gap-4">
+                    <span
+                      className="mt-2.5 h-3 w-3 shrink-0 rounded-full"
+                      style={{ backgroundColor: s.color }}
+                      aria-hidden
+                    />
+                    <div>
+                      <h3 className="font-display text-lg">
+                        {s.title}{" "}
+                        <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase tracking-wider text-muted-foreground">
+                          {s.meta}
+                        </span>
+                      </h3>
+                      <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <ul className="mt-10 space-y-4">
-            {inspirations.map((s) => (
-              <li key={s.title} className="flex items-start gap-4">
-                <span
-                  className="mt-2.5 h-3 w-3 shrink-0 rounded-full"
-                  style={{ backgroundColor: s.color }}
-                  aria-hidden
-                />
-                <div>
-                  <h3 className="font-display text-lg">
-                    {s.title}{" "}
-                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase tracking-wider text-muted-foreground">
-                      {s.meta}
-                    </span>
-                  </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {pillars.map((p, i) => (
