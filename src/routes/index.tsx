@@ -369,7 +369,7 @@ function Index() {
                 Co nas inspiruje?
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                W naszej filozofii pracy z końmi nie stosujemy jednej metody ani jednej szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
+                W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się.
               </p>
               <p className="mt-4 text-muted-foreground">
                 Nie ma u nas krzyku, pośpiechu ani wstydu za to, że coś nie wyszło. Jest za to
