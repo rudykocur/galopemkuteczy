@@ -169,7 +169,7 @@ const slogans = [
     color: "var(--rainbow-1)",
   },
   {
-    title: "Tęcza to obietnica.",
+    title: "Tęcza to obietnica",
     meta: "INKLUZJA",
     desc: "Każdy jest tu na swoim miejscu, niezależnie od wieku, ciała, tożsamości i doświadczenia.",
     color: "var(--rainbow-4)",
