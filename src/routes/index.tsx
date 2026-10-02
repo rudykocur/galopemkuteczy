@@ -248,7 +248,7 @@ function Index() {
               </a>
               <a href="#kontakt">
                 <Button size="lg" variant="outline" className="rounded-full border-2 px-7 text-base">
-                  Zapisz się na jazdę
+                  Umów się na spotkanie
                 </Button>
               </a>
             </div>
