@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote, Sparkles } from "lucide-react";
+import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -275,7 +275,8 @@ function Index() {
               RELACYJNE JEŹDZIECTWO
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-              Konie uczą uważności, odwagi i radości.
+              Nauczymy cię czytać język konia i budować z nim zaufanie — w tempie, które
+              pasuje wam obojgu. Bez wstydu, presji i pośpiechu.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#oferta">
@@ -290,8 +291,8 @@ function Index() {
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">
               {[
                 ["2/3", "różowe koniary / cudowne konie", ""],
-                ["15+ lat", "doświadczenia", ""],
                 ["∞", "cierpliwości i ciekawości", "text-4xl"],
+                ["15+ lat", "doświadczenia", ""],
               ].map(([k, v, cls]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-4">
                   <dt className={`font-display text-2xl text-primary ${cls}`}>{k}</dt>
@@ -299,10 +300,6 @@ function Index() {
                 </div>
               ))}
             </dl>
-            <p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
-              <Sparkles className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-              {"\n"}
-            </p>
           </div>
 
           <div className="relative">
