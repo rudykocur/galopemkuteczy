@@ -122,7 +122,7 @@ const team = [
     name: "Alex",
     role: "Nauka jazdy konnej • Hipoterapia • Behawiorystyka zwierząt\u00a0• Trening koni\u00a0• Polski Język Migowy\u00a0",
     color: "var(--rainbow-1)",
-    bio: "Koń to moja pasja od dziecka. Uczę jazdy konnej — w stylu western i klasycznym — prowadzę hipoterapię, trening koni i zajmuję się behawiorystyką zwierząt. Pracuję z końmi od kilkunastu lat, a ostatnio uczę się polskiego języka migowego, żeby nikt nie został na zewnątrz rozmowy.",
+    bio: "Konie interesowały mnie od dziecka, choć realizacja tej pasji zaczęła się w dorosłości. Dwunastoletnie doświadczenie w pracy z końmi i ludźmi pozwala mi podejść indywidualnie i kompleksowo do potrzeb człowieka i konia. Ostatnio uczę się Polskiego Języka Migowego, żeby nikt nie został na zewnątrz rozmowy.",
   },
   {
     name: "Ania",
