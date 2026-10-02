@@ -150,7 +150,7 @@ const inspirations = [
   {
     title: "Porozumienie bez przemocy",
     meta: "KOMUNIKACJA",
-    desc: "Metoda Marshalla Rosenberg: mówimy o potrzebach, zamiast oceniać — także wtedy, gdy ktoś z nas ma cztery nogi.",
+    desc: "Metoda Marshalla Rosenberga: rozmawiamy o potrzebach zamiast oceniać, także wtedy, gdy ktoś z nas ma cztery nogi.",
     color: "var(--rainbow-5)",
   },
   {
