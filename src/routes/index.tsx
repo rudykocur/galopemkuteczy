@@ -137,7 +137,7 @@ const horses = [
     name: "Badger",
     meta: "13 LAT • NAJLEPSZY PARTNER",
     color: "var(--rainbow-4)",
-    desc: "Profesor w kopytach: odpowiedzialny, bardzo kontaktowy i wyjątkowo fotogeniczny.",
+    desc: "Profesor w kopytach: odpowiedzialny, bardzo kontaktowy i wyjątkowo fotogeniczny. Najbardziej lubi jabłka Golden Delicious.",
   },
   {
     name: "Płotka",
