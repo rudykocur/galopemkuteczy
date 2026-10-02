@@ -342,7 +342,7 @@ function Index() {
                 <div className="space-y-6">
                   {team.map((m) => (
                     <article key={m.name} className="last:pb-0 [&+&]:border-t [&+&]:border-border [&+&]:pt-6">
-                      <h3 className="font-display text-xl" style={{ color: m.color }}>
+                      <h3 className="font-display text-xl">
                         {m.name}
                       </h3>
                       <p className="mt-0.5 text-sm font-medium text-primary">{m.role}</p>
