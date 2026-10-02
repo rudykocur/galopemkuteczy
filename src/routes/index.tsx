@@ -128,6 +128,39 @@ const pillars = [
   },
 ];
 
+const inspirations = [
+  {
+    title: "LIMA",
+    meta: "PODEJŚCIE",
+    desc: "Najmniej inwazyjnie, najmniej awersyjnie — zawsze zaczynamy od najłagodniejszej metody, jaka w danej chwili działa.",
+    color: "var(--rainbow-1)",
+  },
+  {
+    title: "ISES",
+    meta: "NAUKA",
+    desc: "International Society for Equitation Science — jeździectwo oparte na badaniach nad zachowaniem i dobrostanem koni.",
+    color: "var(--rainbow-2)",
+  },
+  {
+    title: "Teoria poliwagalna",
+    meta: "UKŁAD NERWOWY",
+    desc: "Bezpieczeństwo to fundament nauki — i u ludzi, i u koni. Spięte ciało nie uczy się; spokojne ciało już tak.",
+    color: "var(--rainbow-4)",
+  },
+  {
+    title: "Porozumienie bez przemocy",
+    meta: "KOMUNIKACJA",
+    desc: "Metoda Marshalla Rosenberg: mówimy o potrzebach, zamiast oceniać — także wtedy, gdy ktoś z nas ma cztery nogi.",
+    color: "var(--rainbow-5)",
+  },
+  {
+    title: "Jeździectwo oparte na dowodach",
+    meta: "EVIDENCE-BASED",
+    desc: "Decyzje oparte na badaniach, nie na tradycji „tak robimy od zawsze”.",
+    color: "var(--rainbow-6)",
+  },
+];
+
 const slogans = [
   {
     title: "Spokój i wyrozumiałość",
@@ -455,6 +488,27 @@ function Index() {
               </div>
             ))}
           </div>
+
+          <ul className="mt-10 space-y-4">
+            {inspirations.map((s) => (
+              <li key={s.title} className="flex items-start gap-4">
+                <span
+                  className="mt-2.5 h-3 w-3 shrink-0 rounded-full"
+                  style={{ backgroundColor: s.color }}
+                  aria-hidden
+                />
+                <div>
+                  <h3 className="font-display text-lg">
+                    {s.title}{" "}
+                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase tracking-wider text-muted-foreground">
+                      {s.meta}
+                    </span>
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
 
           {/* PIERWSZE SPOTKANIE */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2 lg:items-center">
