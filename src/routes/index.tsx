@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
-import { Check, ChevronLeft, ChevronRight, Facebook, Instagram, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -597,16 +597,9 @@ function Index() {
                 </span>
                 <h3 className="mt-5 text-xl">{o.title}</h3>
                 <p className="mt-2 flex-1 text-sm text-muted-foreground">{o.desc}</p>
-                <ul className="mt-5 space-y-2 text-sm">
+                <ul className="mt-5 space-y-2 text-sm text-foreground/80">
                   {o.items.map((it) => (
-                    <li key={it} className="flex items-start gap-2.5">
-                      <Check
-                        className="mt-0.5 h-4 w-4 shrink-0"
-                        style={{ color: o.color }}
-                        aria-hidden
-                      />
-                      {it}
-                    </li>
+                    <li key={it}>{it}</li>
                   ))}
                 </ul>
                 <p className="mt-6 text-xs font-bold uppercase tracking-widest" style={{ color: o.color }}>
