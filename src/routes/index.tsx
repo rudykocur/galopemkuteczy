@@ -324,10 +324,6 @@ function Index() {
                 alt="Dwie opiekunki z końmi na łące o zachodzie słońca"
                 className="aspect-square w-full rounded-[2rem] object-cover"
               />
-              <div className="absolute -bottom-6 -right-4 hidden rounded-3xl border border-border bg-card p-5 shadow-xl sm:block">
-                <p className="font-display text-2xl text-primary">Bez ostrogi.</p>
-                <p className="text-sm text-muted-foreground">Za to z ogromną cierpliwością.</p>
-              </div>
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kim jesteśmy</p>
