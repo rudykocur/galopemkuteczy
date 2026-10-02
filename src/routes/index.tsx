@@ -122,13 +122,13 @@ const team = [
     name: "Alex",
     role: "Nauka jazdy konnej • Hipoterapia • Behawiorystyka zwierząt\u00a0• Trening koni\u00a0• Polski Język Migowy\u00a0",
     color: "var(--rainbow-1)",
-    bio: "Instruktorka jazdy konnej w stylu western i klasycznym, hipoterapeutka i behawiorystka zwierząt. Pracuje z końmi i jeźdźcami od 12 lat, a ostatnio uczy się polskiego języka migowego — żeby nikt nie został na zewnątrz rozmowy.",
+    bio: "Koń to moja pasja od dziecka. Uczę jazdy konnej — w stylu western i klasycznym — prowadzę hipoterapię, trening koni i zajmuję się behawiorystyką zwierząt. Pracuję z końmi od kilkunastu lat, a ostatnio uczę się polskiego języka migowego, żeby nikt nie został na zewnątrz rozmowy.",
   },
   {
     name: "Ania",
     role: "Nauka jazdy konnej • Behawiorystyka zwierząt\u00a0• Trening koni\u00a0• Terapia Skoncentrowana na Rozwiązaniach\u00a0• Masaż metodą Mastersona",
     color: "var(--rainbow-3)",
-    bio: "Instruktorka jazdy konnej w stylu western, studentka psychoterapii i behawiorystka koni. Fanka układu nerwowego i neurobiologii — wie, jak emocje wpływają na człowieka i na konia, i uczy, jak o nie dbać.",
+    bio: "Koń to moja pasja od dziecka. Uczę jazdy konnej w stylu western, zajmuję się behawiorystyką koni i masażem metodą Mastersona, a jako studentka psychoterapii pracuję w nurcie Terapii Skoncentrowanej na Rozwiązaniach. Fascynuje mnie neurobiologia — wiem, jak emocje wpływają na człowieka i na konia, i uczę, jak o nie dbać.",
   },
 ];
 
