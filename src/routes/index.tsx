@@ -445,18 +445,6 @@ function Index() {
           </div>
 
           <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
-              <img
-                src={gallerySnow.url}
-                alt="Jazda z parasolem na śnieżnym polu"
-                className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_35%]"
-              />
-              <div className="absolute -bottom-6 -right-4 hidden rounded-3xl border border-border bg-card p-5 shadow-xl sm:block">
-                <p className="font-display text-2xl text-primary">Bez ostrogi i wędzidła.</p>
-                <p className="text-sm text-muted-foreground">Ale z cierpliwością i ciekawością.</p>
-              </div>
-            </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
@@ -485,6 +473,18 @@ function Index() {
                   </li>
                 ))}
               </ul>
+            </div>
+            <div className="relative mx-auto max-w-md lg:max-w-none">
+              <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
+              <img
+                src={gallerySnow.url}
+                alt="Jazda z parasolem na śnieżnym polu"
+                className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_35%]"
+              />
+              <div className="absolute -bottom-6 -right-4 hidden rounded-3xl border border-border bg-card p-5 shadow-xl sm:block">
+                <p className="font-display text-2xl text-primary">Bez ostrogi i wędzidła.</p>
+                <p className="text-sm text-muted-foreground">Ale z cierpliwością i ciekawością.</p>
+              </div>
             </div>
           </div>
 
