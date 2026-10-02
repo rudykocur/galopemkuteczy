@@ -113,7 +113,7 @@ const offers = [
 const pillars = [
   {
     title: "Komunikacja",
-    desc: "Zaczynamy od słuchania: czytamy język ciała konia i prosimy zamiast żądać. Uczymy porozumiewania się tak, by słyszały obie strony — te z dwiema i te z czterema nogami.",
+    desc: "Odpowiedzialność za funkcjonalne porozumienie ze zwierzęciem spoczywa na człowieku. Nauczymy Cię, jak rozumieć subtelny język konia.",
     color: "var(--rainbow-1)",
   },
   {
