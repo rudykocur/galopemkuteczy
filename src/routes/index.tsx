@@ -123,7 +123,7 @@ const pillars = [
   },
   {
     title: "Rozwój",
-    desc: "Stawiamy na edukację poprzez zachwyt: ciekawość uczy lepiej niż presja. Każde spotkanie to mały krok naprzód.",
+    desc: "Stawiamy na edukację poprzez zachwyt: ciekawość uczy lepiej niż presja. Każde spotkanie to mały krok naprzód, a każdy mały krok to sukces.",
     color: "var(--rainbow-3)",
   },
 ];
