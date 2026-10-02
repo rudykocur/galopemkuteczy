@@ -467,6 +467,27 @@ function Index() {
               </div>
             </div>
           </div>
+          <ul className="mt-10 space-y-4">
+            {inspirations.map((s) => (
+              <li key={s.title} className="flex items-start gap-4">
+                <span
+                  className="mt-2.5 h-3 w-3 shrink-0 rounded-full"
+                  style={{ backgroundColor: s.color }}
+                  aria-hidden
+                />
+                <div>
+                  <h3 className="font-display text-lg">
+                    {s.title}{" "}
+                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase tracking-wider text-muted-foreground">
+                      {s.meta}
+                    </span>
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {pillars.map((p, i) => (
               <div
@@ -488,27 +509,6 @@ function Index() {
               </div>
             ))}
           </div>
-
-          <ul className="mt-10 space-y-4">
-            {inspirations.map((s) => (
-              <li key={s.title} className="flex items-start gap-4">
-                <span
-                  className="mt-2.5 h-3 w-3 shrink-0 rounded-full"
-                  style={{ backgroundColor: s.color }}
-                  aria-hidden
-                />
-                <div>
-                  <h3 className="font-display text-lg">
-                    {s.title}{" "}
-                    <span className="ml-1 align-middle text-[0.65rem] font-semibold uppercase tracking-wider text-muted-foreground">
-                      {s.meta}
-                    </span>
-                  </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
 
           {/* PIERWSZE SPOTKANIE */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2 lg:items-center">
