@@ -599,10 +599,11 @@ function Index() {
                 <p className="mt-2 flex-1 text-sm text-muted-foreground">{o.desc}</p>
                 <ul className="mt-5 space-y-2 text-sm">
                   {o.items.map((it) => (
-                    <li key={it} className="flex items-start gap-2">
-                      <span
-                        className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
-                        style={{ backgroundColor: o.color }}
+                    <li key={it} className="flex items-start gap-2.5">
+                      <Check
+                        className="mt-0.5 h-4 w-4 shrink-0"
+                        style={{ color: o.color }}
+                        aria-hidden
                       />
                       {it}
                     </li>
