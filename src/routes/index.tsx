@@ -592,7 +592,14 @@ function Index() {
                 <p className="mt-2 flex-1 text-sm text-muted-foreground">{o.desc}</p>
                 <ul className="mt-5 space-y-2.5 text-base text-foreground/80">
                   {o.items.map((it) => (
-                    <li key={it}>{it}</li>
+                    <li key={it} className="flex items-baseline gap-3">
+                      <span
+                        aria-hidden
+                        className="h-1.5 w-1.5 shrink-0 translate-y-[-0.15rem] rounded-full"
+                        style={{ backgroundColor: o.color }}
+                      />
+                      {it}
+                    </li>
                   ))}
                 </ul>
                 <p className="mt-6 text-xs font-bold uppercase tracking-widest" style={{ color: o.color }}>
