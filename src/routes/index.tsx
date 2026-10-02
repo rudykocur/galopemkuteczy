@@ -55,6 +55,7 @@ export const Route = createFileRoute("/")({
 
 const nav = [
   { label: "O nas", href: "#o-nas" },
+  { label: "Kim jesteśmy", href: "#zespol" },
   { label: "Oferta", href: "#oferta" },
   { label: "Galeria", href: "#galeria" },
   { label: "Kontakt", href: "#kontakt" },
@@ -115,6 +116,42 @@ const values = [
   { title: "Miejsce dla każdego", desc: "Niezależnie od wieku, ciała, tożsamości i doświadczenia." },
   { title: "Radość ponad rywalizację", desc: "Nie liczymy pucharów. Liczymy uśmiechy i małe zwycięstwa." },
   { title: "Uczymy uważności", desc: "Konie czytają emocje — dzięki nim uczysz się siebie." },
+];
+
+const team = [
+  {
+    name: "Alex",
+    role: "Instruktorka jazdy • Hipoterapeutka • Behawiorystka zwierząt",
+    color: "var(--rainbow-1)",
+    bio: "Instruktorka jazdy konnej w stylu western i klasycznym, hipoterapeutka i behawiorystka zwierząt. Pracuje z końmi i jeźdźcami od 12 lat, a ostatnio uczy się polskiego języka migowego — żeby nikt nie został na zewnątrz rozmowy.",
+  },
+  {
+    name: "Ania",
+    role: "Instruktorka jazdy western • Studentka psychoterapii • Behawiorystka koni",
+    color: "var(--rainbow-3)",
+    bio: "Instruktorka jazdy konnej w stylu western, studentka psychoterapii i behawiorystka koni. Fanka układu nerwowego i neurobiologii — wie, jak emocje wpływają na człowieka i na konia, i uczy, jak o nie dbać.",
+  },
+];
+
+const horses = [
+  {
+    name: "Badger",
+    meta: "13 lat • wałach AQH • kary",
+    color: "var(--rainbow-4)",
+    desc: "Profesor w kopytach: odpowiedzialny, bardzo kontaktowy i wyjątkowo fotogeniczny.",
+  },
+  {
+    name: "Płotka",
+    meta: "2 lata • klacz, polski koń sportowy",
+    color: "var(--rainbow-5)",
+    desc: "Ma zacięcie hipoterapeutyczne, a z sezonu na sezon przybiera inne barwy. Uwielbia czyszczenie, trawę, spacery do lasu i drapanie.",
+  },
+  {
+    name: "Jeszcze bez imienia",
+    meta: "6 lat • klacz, polski arab × irish cob • gniada",
+    color: "var(--rainbow-6)",
+    desc: "Łagodna dama stajni i wielka fanka przytulasków. Imię wybieramy właśnie teraz.",
+  },
 ];
 
 const reviews = [
@@ -298,7 +335,7 @@ function Index() {
               Nasza filozofia pracy z końmi
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              Galopem ku Tęczy tworzą Alex, Ania, Badger i PłotkaKoń jest partnerem, który ma swoje nastroje, granice i historię. Dlatego każde zajęcia zaczynamy od rozmowy — z człowiekiem i z koniem.
+              Galopem ku Tęczy tworzą Alex, Ania, Badger i Płotka. Koń jest partnerem, który ma swoje nastroje, granice i historię. Dlatego każde zajęcia zaczynamy od rozmowy — z człowiekiem i z koniem.
             </p>
             <p className="mt-4 text-muted-foreground">
               Nie ma u nas krzyku, pośpiechu ani wstydu za to, że coś nie wyszło. Jest za to
@@ -317,6 +354,58 @@ function Index() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ZESPÓŁ */}
+      <section id="zespol" className="px-5 pb-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kim jesteśmy</p>
+            <h2 className="mt-3 text-4xl sm:text-5xl">
+              Dwie dziewczyny i trzy konie
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Galopem ku Tęczy to mała, kolorowa stajnia: dwie instruktorki, dwa
+              konie, które znacie już z galerii, i jedna nowa dama — dopiero
+              wybierająca swoje imię.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {team.map((m) => (
+              <article key={m.name} className="rounded-[1.25rem] border border-border bg-card p-7 shadow-sm">
+                <div className="flex items-center gap-4">
+                  <span
+                    className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 bg-card font-display text-xl"
+                    style={{ borderColor: m.color, color: m.color }}
+                    aria-hidden="true"
+                  >
+                    {m.name[0]}
+                  </span>
+                  <div>
+                    <h3 className="font-display text-2xl">{m.name}</h3>
+                    <p className="text-sm font-medium text-primary">{m.role}</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-muted-foreground">{m.bio}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            {horses.map((h) => (
+              <article
+                key={h.name}
+                className="rounded-[1.25rem] border-l-4 bg-card p-6 shadow-sm"
+                style={{ borderLeftColor: h.color }}
+              >
+                <h3 className="font-display text-xl">{h.name}</h3>
+                <p className="mt-0.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">{h.meta}</p>
+                <p className="mt-3 text-sm text-muted-foreground">{h.desc}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
