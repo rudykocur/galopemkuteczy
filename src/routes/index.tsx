@@ -143,7 +143,7 @@ const horses = [
     name: "Płotka",
     meta: "2 LATA • WYMAGAJĄCA NAUCZYCIELKA",
     color: "var(--rainbow-5)",
-    desc: "Uwielbia czyszczenie, trawę, spacery do lasu i drapanie. Ma zacięcie hipoterapeutyczne, a z sezonu na sezon przybiera inne barwy.",
+    desc: "Uwielbia czyszczenie, drapanie, trawę i spacery do lasu. Jest ciekawska, ma zacięcie hipoterapeutyczne i z sezonu na sezon przybiera inne barwy.",
   },
   {
     name: "Jeszcze bez imienia",
