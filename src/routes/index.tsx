@@ -298,9 +298,7 @@ function Index() {
               Nasza filozofia pracy z końmi
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              Wierzymy, że koń nie jest sprzętem sportowym. Jest partnerem, który ma swoje
-              nastroje, granice i historię. Dlatego każde zajęcia zaczynamy od rozmowy —
-              z człowiekiem i z koniem.
+              Galopem ku Tęczy tworzą Alex, Ania, Badger i PłotkaKoń jest partnerem, który ma swoje nastroje, granice i historię. Dlatego każde zajęcia zaczynamy od rozmowy — z człowiekiem i z koniem.
             </p>
             <p className="mt-4 text-muted-foreground">
               Nie ma u nas krzyku, pośpiechu ani wstydu za to, że coś nie wyszło. Jest za to
