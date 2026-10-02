@@ -573,8 +573,8 @@ function Index() {
               Znajdź swoją drogę do koni
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Od pierwszego dotknięcia grzywy po tygodniowy obóz — wszystkie
-              drogi prowadzą w to samo miejsce: do zaufania.
+              Bez jazdy albo z jazdą, u nas na łące albo u Ciebie w stajni —
+              każda z tych dróg prowadzi w to samo miejsce: do zaufania.
             </p>
           </div>
 
@@ -608,8 +608,8 @@ function Index() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-6 font-display text-base" style={{ color: o.color }}>
-                  {o.price}
+                <p className="mt-6 text-xs font-bold uppercase tracking-widest" style={{ color: o.color }}>
+                  {o.meta}
                 </p>
               </article>
             ))}
