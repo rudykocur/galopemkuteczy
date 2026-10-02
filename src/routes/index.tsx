@@ -110,36 +110,21 @@ const offers = [
   },
 ];
 
-const inspirations = [
+const pillars = [
   {
-    title: "LIMA",
-    meta: "PODEJŚCIE",
-    desc: "Najmniej inwazyjnie, najmniej awersyjnie — zawsze zaczynamy od najłagodniejszej metody, jaka w danej chwili działa.",
+    title: "Komunikacja",
+    desc: "Zaczynamy od porozumienia bez przemocy — mówimy o potrzebach, zamiast oceniać. Także wtedy, gdy ktoś z nas ma cztery nogi: uczymy czytać język konia i budować z nim wspólny słownik.",
     color: "var(--rainbow-1)",
   },
   {
-    title: "ISES",
-    meta: "NAUKA",
-    desc: "International Society for Equitation Science — jeździectwo oparte na badaniach nad zachowaniem i dobrostanem koni.",
+    title: "Wsparcie",
+    desc: "Empatia do koni i ludzi to nasza codzienność. Zawsze wybieramy najłagodniejszą możliwą metodę (LIMA), a bezpieczeństwo budujemy na teorii poliwagalnej — bo spokojne ciało uczy się, spięte już nie.",
     color: "var(--rainbow-2)",
   },
   {
-    title: "Teoria poliwagalna",
-    meta: "UKŁAD NERWOWY",
-    desc: "Bezpieczeństwo to fundament nauki — i u ludzi, i u koni. Spięte ciało nie uczy się; spokojne ciało już tak.",
-    color: "var(--rainbow-4)",
-  },
-  {
-    title: "Porozumienie bez przemocy",
-    meta: "KOMUNIKACJA",
-    desc: "Metoda Marshalla Rosenberg: mówimy o potrzebach, zamiast oceniać — także wtedy, gdy ktoś z nas ma cztery nogi.",
-    color: "var(--rainbow-5)",
-  },
-  {
-    title: "Jeździectwo oparte na dowodach",
-    meta: "EVIDENCE-BASED",
-    desc: "Decyzje oparte na badaniach, nie na tradycji „tak robimy od zawsze”.",
-    color: "var(--rainbow-6)",
+    title: "Rozwój",
+    desc: "Stawiamy na edukację poprzez zachwyt — ciekawość uczy lepiej niż presja. Nasze decyzje opieramy na jeździectwie opartym na dowodach (ISES), a nie na „tak robimy od zawsze”.",
+    color: "var(--rainbow-3)",
   },
 ];
 
@@ -450,15 +435,23 @@ function Index() {
             </div>
           </div>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {inspirations.map((s) => (
+            {pillars.map((p, i) => (
               <div
-                key={s.title}
-                className="rounded-[1.25rem] border-l-4 bg-card p-6 shadow-sm"
-                style={{ borderLeftColor: s.color }}
+                key={p.title}
+                className="rounded-[1.25rem] border-l-4 bg-card p-8 shadow-sm"
+                style={{ borderLeftColor: p.color }}
               >
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.meta}</p>
-                <h3 className="mt-2 font-display text-xl">{s.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
+                <div className="flex items-center gap-3">
+                  <span
+                    className="grid h-9 w-9 shrink-0 place-items-center rounded-full font-display text-sm text-primary-foreground"
+                    style={{ backgroundColor: p.color }}
+                    aria-hidden
+                  >
+                    {i + 1}
+                  </span>
+                  <h3 className="font-display text-2xl">{p.title}</h3>
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
               </div>
             ))}
           </div>
