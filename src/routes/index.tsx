@@ -482,8 +482,8 @@ function Index() {
                 className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_35%]"
               />
               <div className="absolute -bottom-6 -right-4 hidden rounded-3xl border border-border bg-card p-5 shadow-xl sm:block">
-                <p className="font-display text-lg text-primary">Bez ostrogi i wędzidła.</p>
-                <p className="text-sm text-muted-foreground">Ale z cierpliwością i ciekawością.</p>
+                <p className="font-display text-lg text-primary">Bez ostrogi i wędzidła</p>
+                <p className="text-sm text-muted-foreground">Z cierpliwością i ciekawością</p>
               </div>
             </div>
           </div>
