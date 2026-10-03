@@ -847,10 +847,9 @@ function Index() {
       </section>
 
       {/* KONTAKT */}
-      <section id="kontakt" className="px-5 pb-24">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] border border-border bg-card shadow-xl">
-          <div className="h-2 bg-rainbow" />
-          <div className="grid gap-12 p-8 sm:p-12 lg:grid-cols-2">
+      <section id="kontakt" className="px-5 py-24">
+        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-start">
+          <div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kontakt</p>
               <h2 className="mt-3 text-4xl">
@@ -895,7 +894,9 @@ function Index() {
               </div>
             </div>
 
-            <form onSubmit={submit} className="grid gap-4">
+            <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-lg">
+              <div className="h-2 bg-rainbow" />
+              <form onSubmit={submit} className="grid gap-4 p-6 sm:p-8">
               <div className="grid gap-2">
                 <Label htmlFor="name">Imię</Label>
                 <Input id="name" name="name" required placeholder="Jak się do Ciebie zwracać?" />
