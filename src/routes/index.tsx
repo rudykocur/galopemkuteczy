@@ -461,8 +461,10 @@ function Index() {
                 ["∞", "cierpliwości i ciekawości", "text-5xl sm:text-6xl"],
               ].map(([k, v, cls]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-3 sm:p-4">
-                  <dt className={`${cls ? cls : "text-xl sm:text-2xl"} whitespace-nowrap font-display text-primary`}>{k}</dt>
-                  <dd className="mt-1 text-[10px] leading-tight font-medium text-muted-foreground sm:text-xs">{v}</dd>
+                  <div className="flex h-12 items-center sm:h-16">
+                    <dt className={`${cls ? cls : "text-xl sm:text-2xl"} whitespace-nowrap font-display text-primary`}>{k}</dt>
+                  </div>
+                  <dd className="min-h-[2.5em] text-[10px] leading-tight font-medium text-muted-foreground sm:text-xs">{v}</dd>
                 </div>
               ))}
             </dl>
