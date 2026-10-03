@@ -97,6 +97,7 @@ const offers = [
     title: "Spotkania dla osób po końskich traumach",
     meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-4)",
+    metaColor: "var(--rainbow-4)",
     desc: "Jeśli masz złe doświadczenia, jesteś po upadku albo przytłaczają Cię tłumy i presja szkółek – razem zbudujemy bezpieczną przestrzeń, w Twoim tempie.",
     items: ["Zajęcia dostosowane indywidualnie do osoby", "Spokój, cierpliwość i poczucie bezpieczeństwa", "Wsparcie terapeutyczne w radzeniu sobie ze strachem"],
   },
@@ -104,6 +105,7 @@ const offers = [
     title: "Warsztaty końsko-psychologiczne",
     meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-3)",
+    metaColor: "var(--rainbow-3)",
     desc: "Spotkania, w których koń staje się lustrem — dla Ciebie i Twojego układu nerwowego.",
     items: ["„Moja granica, moja kontrola”", "„Przez konie do Twojego układu nerwowego”", "„Uważność w kontakcie z końmi”"],
   },
@@ -692,7 +694,7 @@ function Index() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-auto pt-6 text-xs font-bold uppercase tracking-widest" style={{ color: o.color }}>
+                <p className="mt-auto pt-6 text-xs font-bold uppercase tracking-widest" style={{ color: o.metaColor ?? o.color }}>
                   {o.meta}
                 </p>
               </article>
