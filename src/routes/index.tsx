@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { submitContactMessage } from "@/lib/contactSubmit";
 import { toast } from "sonner";
 import { ChevronLeft, ChevronRight, ExternalLink, Facebook, Instagram, Menu, Quote, X } from "lucide-react";
