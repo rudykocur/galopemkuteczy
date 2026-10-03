@@ -191,7 +191,7 @@ const firstMeeting = [
     desc: "Zapytamy o Twoje oczekiwania, obawy i doświadczenia.",
   },
   {
-    title: "Poznajesz stado",
+    title: "Spotkanie ze stadem",
     desc: "Badgera, Płotkę i Lilith. Możesz je pogłaskać, wyczyścić albo po prostu pobyć obok.",
   },
   {
