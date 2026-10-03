@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { useServerFn } from "@tanstack/react-start";
-import { sendContactMessage } from "@/lib/contact.functions";
+import { submitContactMessage } from "@/lib/contactSubmit";
 import { toast } from "sonner";
 import { ChevronLeft, ChevronRight, Facebook, Instagram, Menu, Quote, X } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
@@ -298,30 +297,26 @@ function Index() {
     return () => clearInterval(timer);
   }, [reviewsPaused]);
 
-  const sendFn = useServerFn(sendContactMessage);
-
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const fd = new FormData(form);
     setSending(true);
     try {
-      const res = await sendFn({
-        data: {
-          name: String(fd.get("name") ?? ""),
-          email: String(fd.get("email") ?? ""),
-          topic: String(fd.get("topic") ?? ""),
-          message: String(fd.get("message") ?? ""),
-        },
+      const res = await submitContactMessage({
+        name: String(fd.get("name") ?? ""),
+        email: String(fd.get("email") ?? ""),
+        topic: String(fd.get("topic") ?? ""),
+        message: String(fd.get("message") ?? ""),
       });
       if (res.ok) {
         toast.success("Dziękujemy! Wiadomość została wysłana — odpowiemy najszybciej, jak się da.");
         form.reset();
       } else {
-        toast.error("Nie udało się wysłać wiadomości. Napisz bezpośrednio na galopemkuteczy@gmail.com.");
+        toast.error("Sprawdź poprawność pól formularza i spróbuj ponownie.");
       }
     } catch {
-      toast.error("Sprawdź poprawność pól formularza i spróbuj ponownie.");
+      toast.error("Nie udało się wysłać wiadomości. Napisz bezpośrednio na galopemkuteczy@gmail.com.");
     } finally {
       setSending(false);
     }
