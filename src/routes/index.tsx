@@ -716,10 +716,10 @@ function Index() {
               <h2 className="mt-3 text-4xl sm:text-5xl">
                 Zdjęcia i filmy
               </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Kadry z zajęć, treningów i zwykłej stajennej sielanki
+              </p>
             </div>
-            <p className="max-w-sm text-sm text-muted-foreground">
-              Kadry z zajęć, treningów i zwykłej stajennej sielanki
-            </p>
           </div>
 
           <div className="mt-10 grid auto-rows-[180px] grid-cols-2 gap-4 sm:auto-rows-[200px] sm:grid-cols-4">
