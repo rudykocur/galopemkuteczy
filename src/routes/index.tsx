@@ -55,6 +55,9 @@ export const Route = createFileRoute("/")({
 
 const nav = [
   { label: "O nas", href: "#o-nas" },
+  { label: "Kim jesteśmy", href: "#kim-jestesmy", sub: true },
+  { label: "Filary naszej pracy", href: "#filary", sub: true },
+  { label: "Pierwsza wizyta", href: "#pierwsza-wizyta", sub: true },
   { label: "Oferta", href: "#oferta" },
   { label: "Galeria", href: "#galeria" },
   { label: "Kontakt", href: "#kontakt" },
@@ -404,9 +407,11 @@ function Index() {
                 key={n.href}
                 href={n.href}
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 rounded-xl px-4 py-3 font-display text-lg text-foreground transition-colors hover:bg-secondary"
+                className={`flex items-center gap-3 rounded-xl py-3 font-display text-foreground transition-colors hover:bg-secondary ${
+                  n.sub ? "pl-11 pr-4 text-base text-muted-foreground" : "px-4 text-lg"
+                }`}
               >
-                <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: `var(--rainbow-${(i % 6) + 1})` }} />
+                <span aria-hidden className={`shrink-0 rounded-full ${n.sub ? "h-1.5 w-1.5" : "h-2.5 w-2.5"}`} style={{ backgroundColor: `var(--rainbow-${(i % 6) + 1})` }} />
                 {n.label}
               </a>
             ))}
@@ -497,7 +502,7 @@ function Index() {
                 className="aspect-square w-full rounded-[2rem] object-cover lg:aspect-auto lg:h-full"
               />
             </div>
-            <div>
+            <div id="kim-jestesmy" className="scroll-mt-24">
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kim jesteśmy</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
                 Dwoje ludzi i trzy konie
@@ -534,7 +539,7 @@ function Index() {
           </div>
 
           <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div>
+            <div id="filary" className="scroll-mt-24">
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
                 Filary naszej pracy
@@ -609,7 +614,7 @@ function Index() {
                 className="aspect-[4/5] w-full rounded-[2rem] object-cover object-center"
               />
             </div>
-            <div>
+            <div id="pierwsza-wizyta" className="scroll-mt-24">
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Pierwsza wizyta</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
                 Jak wygląda pierwsze spotkanie z nami?
