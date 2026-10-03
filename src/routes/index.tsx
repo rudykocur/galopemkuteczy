@@ -455,11 +455,11 @@ function Index() {
               </a>
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">
-              {[
-                ["10+", "kursów i szkoleń", ""],
-                ["15+ lat", "doświadczenia", ""],
+              {([
+                ["10+", "kursów i szkoleń", "", undefined],
+                ["15+ lat", "doświadczenia", "", undefined],
                 ["∞", "cierpliwości i ciekawości", "text-3xl sm:text-4xl", { fontWeight: 500 }],
-              ].map(([k, v, cls, st]) => (
+              ] as [string, string, string, CSSProperties | undefined][]).map(([k, v, cls, st]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-3 sm:p-4">
                   <div className="flex h-12 items-center sm:h-16">
                     <dt style={st} className={`${cls ? cls : "text-xl sm:text-2xl"} whitespace-nowrap font-display text-primary`}>{k}</dt>
