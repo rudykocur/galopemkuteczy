@@ -968,16 +968,7 @@ function Index() {
                 </form>
               </div>
             ) : (
-              <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-lg">
-                <div className="h-2 bg-rainbow" />
-                <div className="grid gap-3 p-6 sm:p-8">
-                  <p className="font-display text-xl font-semibold">Formularz kontaktowy już wkrótce</p>
-                  <p className="text-muted-foreground">
-                    W międzyczasie skontaktuj się z nami telefonicznie, mailowo albo przez Facebooka czy Instagram —
-                    dane znajdziesz obok. Chętnie odpowiemy na każde pytanie!
-                  </p>
-                </div>
-              </div>
+              null
             )}
         </div>
       </section>
