@@ -91,7 +91,7 @@ const offers = [
     color: "var(--rainbow-5)",
     metaColor: "var(--rainbow-5)",
     desc: "Gdy coś nie działa w Twojej współpracy z koniem, przyjedziemy i pomożemy, a po spotkaniu oferujemy wsparcie online.",
-    items: ["Pary koń + jeździec", "Konie z problemami pracujące pod siodłem", "Konie młode i surowe, również źrebaki", "Dojeżdżamy w obrębie województwa wielkopolskiego"],
+    items: ["Pary koń + jeździec", "Konie z problemami pracujące pod siodłem", "Konie młode i surowe, również źrebaki", "Dojazd w obrębie województwa wielkopolskiego"],
   },
   {
     title: "Spotkania dla osób po końskich traumach",
