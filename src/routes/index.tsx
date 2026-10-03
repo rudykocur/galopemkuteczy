@@ -106,7 +106,7 @@ const offers = [
     meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-3)",
     metaColor: "var(--rainbow-3)",
-    desc: "Spotkania, w których koń staje się lustrem — dla Ciebie i Twojego układu nerwowego.",
+    desc: "Spotkania, w których koń staje się lustrem - dla Ciebie i Twojego układu nerwowego.",
     items: ["„Moja granica, moja kontrola”", "„Przez konie do Twojego układu nerwowego”", "„Uważność w kontakcie z końmi”"],
   },
 ];
