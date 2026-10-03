@@ -881,10 +881,10 @@ function Index() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${k} — otwiera się w nowej karcie`}
-                      className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:text-primary"
+                      className="mt-[2px] shrink-0 transition-opacity hover:opacity-70"
                       style={{ color: `var(--rainbow-${i + 1})` }}
                     >
-                      {k === "Facebook" ? <Facebook size={18} /> : <Instagram size={18} />}
+                      {k === "Facebook" ? <Facebook size={16} /> : <Instagram size={16} />}
                     </a>
                   )}
                   {!(k === "Facebook" || k === "Instagram") && (
