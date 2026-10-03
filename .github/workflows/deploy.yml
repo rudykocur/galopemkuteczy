@@ -32,8 +32,15 @@ jobs:
           # so asset and link paths resolve correctly.
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
 
-      - name: Disable Jekyll processing
-        run: touch dist/client/.nojekyll
+      - name: Verify static output exists
+        run: |
+          if [ ! -d dist/client ]; then
+            echo "dist/client missing — build output:" >&2
+            ls -la dist || true
+            exit 1
+          fi
+      # public/.nojekyll is committed, so it lands in dist/client automatically
+      # (disables Jekyll processing on GitHub Pages).
 
       - uses: actions/upload-pages-artifact@v3
         with:
