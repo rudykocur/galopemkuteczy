@@ -59,6 +59,7 @@ const nav = [
   { label: "Filary naszej pracy", href: "#filary", sub: true },
   { label: "Pierwsza wizyta", href: "#pierwsza-wizyta", sub: true },
   { label: "Oferta", href: "#oferta" },
+  { label: "Opinie", href: "#opinie" },
   { label: "Galeria", href: "#galeria" },
   { label: "Kontakt", href: "#kontakt" },
 ];
@@ -766,7 +767,7 @@ function Index() {
       </section>
 
       {/* OPINIE */}
-      <section aria-labelledby="opinie-heading" className="bg-secondary/50 px-5 py-16">
+      <section id="opinie" className="scroll-mt-16 bg-secondary/50 px-5 py-16">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Opinie</p>
