@@ -580,7 +580,7 @@ function Index() {
           </div>
 
           <div className="mt-16">
-            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Nasze wartości</p>
+            <h2 className="text-4xl sm:text-5xl">Fundamenty naszego podejścia</h2>
           </div>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
