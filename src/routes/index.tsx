@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { submitContactMessage } from "@/lib/contactSubmit";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight, Facebook, Instagram, Menu, Quote, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, Facebook, Instagram, Menu, Quote, X } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
