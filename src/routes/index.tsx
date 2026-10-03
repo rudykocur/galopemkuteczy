@@ -710,7 +710,7 @@ function Index() {
       {/* GALERIA */}
       <section id="galeria" className="bg-secondary/50 px-5 py-24">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-4 sm:flex sm:items-end sm:justify-between">
+          <div>
             <div className="min-w-0">
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Galeria</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
