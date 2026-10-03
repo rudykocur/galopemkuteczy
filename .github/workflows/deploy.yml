@@ -28,11 +28,17 @@ jobs:
       - name: Build static site
         run: |
           bun run build 2>&1 | tee /tmp/build.log
-          if [ ! -d dist/client ]; then
-            echo "::error::dist/client missing — full build log above"
-            ls -laR dist || true
+          # Output folder differs by environment: dist/client (Lovable) or .output/public (GitHub runner)
+          if [ -f dist/client/index.html ]; then OUT=dist/client
+          elif [ -f .output/public/index.html ]; then OUT=.output/public
+          else
+            echo "::error::No static output with index.html found"
+            ls -la dist .output .output/public || true
             exit 1
           fi
+          mkdir -p _site && cp -r "$OUT"/. _site/
+          touch _site/.nojekyll
+          ls -la _site
         env:
           # GitHub Pages project sites live under /<repo-name>/ —
           # so asset and link paths resolve correctly.
@@ -42,7 +48,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/client
+          path: _site
 
   deploy:
     needs: build
