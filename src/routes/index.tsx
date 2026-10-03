@@ -98,7 +98,7 @@ const offers = [
     meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-4)",
     metaColor: "var(--rainbow-4)",
-    desc: "Jeśli masz złe doświadczenia, jesteś po upadku albo przytłaczają Cię tłumy i presja szkółek – razem zbudujemy bezpieczną przestrzeń, w Twoim tempie.",
+    desc: "Odbudowywanie zaufania do koni i siebie po trudnych doświadczeniach.",
     items: ["Zajęcia dostosowane indywidualnie do osoby", "Spokój, cierpliwość i poczucie bezpieczeństwa", "Wsparcie terapeutyczne w radzeniu sobie ze strachem"],
   },
   {
