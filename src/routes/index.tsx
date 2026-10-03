@@ -962,7 +962,7 @@ function Index() {
             <span className="whitespace-nowrap font-display">Galopem ku tęczy</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} - Z empatią do koni i ludzi.
+            © {new Date().getFullYear()} - Z empatią do koni i ludzi
           </p>
         </div>
       </footer>
