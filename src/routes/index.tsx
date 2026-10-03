@@ -924,7 +924,6 @@ function Index() {
               </Button>
               </form>
             </div>
-          </div>
         </div>
       </section>
 
