@@ -877,7 +877,7 @@ function Index() {
                 <li key={k} className="flex items-start gap-3">
                   {(k === "Facebook" || k === "Instagram") && (
                     <a
-                      href={href}
+                      href={href ?? undefined}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${k} — otwiera się w nowej karcie`}
