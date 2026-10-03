@@ -668,8 +668,7 @@ function Index() {
               Znajdź swoją drogę do koni
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Bez jazdy albo z jazdą, u nas na łące albo u Ciebie w stajni —
-              każda z tych dróg prowadzi w to samo miejsce: do zaufania.
+              Z końmi liczy się droga, a nie cel. Posłuchaj zewu Puszczy Zielonki i odezwij się do nas – zapraszamy!
             </p>
           </div>
 
