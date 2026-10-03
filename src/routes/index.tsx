@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight, Facebook, Instagram, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Facebook, Instagram, Menu, Quote, X } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -273,6 +273,7 @@ const gallery = [
 
 function Index() {
   const [sending, setSending] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
   const [reviewsPaused, setReviewsPaused] = useState(false);
 
