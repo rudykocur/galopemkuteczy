@@ -599,9 +599,14 @@ function Index() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
+      {/* PIERWSZA WIZYTA */}
+      <section id="pierwsza-wizyta" className="scroll-mt-16 px-5 py-24">
+        <div className="mx-auto max-w-6xl">
           {/* PIERWSZE SPOTKANIE */}
-          <div className="mt-20 grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
               <img
