@@ -83,7 +83,7 @@ const offers = [
     color: "var(--rainbow-2)",
     metaColor: "var(--rainbow-3)",
     desc: "Spotkania dla całej rodziny. Pracujemy nad relacją i komunikacją w towarzystwie koni i natury.",
-    items: ["Pierwsze spotkania z końmi", "Rodzinny czas na łonie natury", "To samo, co na treningach indywidualnych — tylko w większym gronie"],
+    items: ["Pierwsze spotkania z końmi", "Rodzinny czas na łonie natury", "Ten sam program, co na treningach indywidualnych - tylko w większym gronie"],
   },
   {
     title: "Konsultacje behawioralne",
