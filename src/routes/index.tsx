@@ -458,11 +458,11 @@ function Index() {
               {[
                 ["10+", "kursów i szkoleń", ""],
                 ["15+ lat", "doświadczenia", ""],
-                ["∞", "cierpliwości i ciekawości", "text-3xl sm:text-4xl"],
-              ].map(([k, v, cls]) => (
+                ["∞", "cierpliwości i ciekawości", "text-3xl sm:text-4xl", { fontWeight: 400 }],
+              ].map(([k, v, cls, st]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-3 sm:p-4">
                   <div className="flex h-12 items-center sm:h-16">
-                    <dt className={`${cls ? cls : "text-xl sm:text-2xl"} whitespace-nowrap font-display text-primary`}>{k}</dt>
+                    <dt style={st} className={`${cls ? cls : "text-xl sm:text-2xl"} whitespace-nowrap font-display text-primary`}>{k}</dt>
                   </div>
                   <dd className="min-h-[2.5em] text-[10px] leading-tight font-medium text-muted-foreground sm:text-xs">{v}</dd>
                 </div>
