@@ -969,7 +969,6 @@ function Index() {
             ) : (
               null
             )}
-        </div>
       </section>
 
       <footer className="border-t border-border px-5 py-10">
