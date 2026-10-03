@@ -94,7 +94,7 @@ const offers = [
     items: ["Pary koń + jeździec", "Konie z problemami pracujące pod siodłem", "Konie młode i surowe, również źrebaki", "Dojazd w obrębie województwa wielkopolskiego"],
   },
   {
-    title: "Spotkania dla osób po końskich traumach",
+    title: "Spotkania dla osób po traumach",
     meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-4)",
     metaColor: "var(--rainbow-4)",
