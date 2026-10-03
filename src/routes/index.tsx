@@ -320,31 +320,94 @@ function Index() {
 
       {/* NAV */}
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
-        <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:flex sm:justify-between">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <a href="#top" className="flex min-w-0 items-center gap-3">
             <img
               src={logoTransparent}
               alt="Logo Galopem ku tęczy"
               className="h-11 w-11 shrink-0 object-contain"
             />
-            <span className="whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
+            <span className="truncate whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
           </a>
-          <nav className="hidden items-center gap-1 md:flex">
-            {nav.map((n) => (
+          <button
+            type="button"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Otwórz menu"
+            aria-expanded={menuOpen}
+            className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-border bg-card text-foreground transition-colors hover:bg-secondary"
+          >
+            <Menu className="h-5 w-5" />
+          </button>
+        </div>
+      </header>
+
+      {/* SIDE MENU */}
+      <div
+        className={`fixed inset-0 z-[60] transition-opacity duration-300 ${
+          menuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+        }`}
+        aria-hidden={!menuOpen}
+      >
+        <button
+          type="button"
+          aria-label="Zamknij menu"
+          onClick={() => setMenuOpen(false)}
+          className="absolute inset-0 h-full w-full cursor-default bg-foreground/40 backdrop-blur-sm"
+          tabIndex={-1}
+        />
+        <aside
+          className={`absolute inset-y-0 left-0 flex w-[17rem] max-w-[80vw] flex-col border-r border-border bg-card shadow-xl transition-transform duration-300 ${
+            menuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+          role="dialog"
+          aria-label="Menu"
+        >
+          <div className="flex items-center justify-between border-b border-border px-5 py-4">
+            <span className="font-display text-lg">Menu</span>
+            <button
+              type="button"
+              onClick={() => setMenuOpen(false)}
+              aria-label="Zamknij menu"
+              className="grid h-10 w-10 place-items-center rounded-full border border-border bg-background transition-colors hover:bg-secondary"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+          <nav className="flex flex-col gap-1 p-4">
+            {nav.map((n, i) => (
               <a
                 key={n.href}
                 href={n.href}
-                className="rounded-full px-4 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 rounded-xl px-4 py-3 font-display text-lg text-foreground transition-colors hover:bg-secondary"
               >
+                <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: `var(--rainbow-${(i % 6) + 1})` }} />
                 {n.label}
               </a>
             ))}
           </nav>
-          <a href="#kontakt" className="shrink-0 md:hidden">
-            <Button size="sm" className="rounded-full">Kontakt</Button>
-          </a>
-        </div>
-      </header>
+          <div className="mt-auto space-y-4 border-t border-border p-5">
+            <a href="#kontakt" onClick={() => setMenuOpen(false)}>
+              <Button className="w-full rounded-full">Napisz do nas</Button>
+            </a>
+            <div className="flex items-center gap-2">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                >
+                  <s.Icon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </aside>
+      </div>
+
 
       {/* HERO */}
       <section id="top" className="relative isolate overflow-hidden px-5 pt-14 pb-20 sm:pt-20">
