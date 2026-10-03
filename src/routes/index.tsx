@@ -321,14 +321,6 @@ function Index() {
       {/* NAV */}
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <a href="#top" className="flex min-w-0 items-center gap-3">
-            <img
-              src={logoTransparent}
-              alt="Logo Galopem ku tęczy"
-              className="h-11 w-11 shrink-0 object-contain"
-            />
-            <span className="min-w-0 truncate whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
-          </a>
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
@@ -338,6 +330,14 @@ function Index() {
           >
             <Menu className="h-5 w-5" />
           </button>
+          <a href="#top" className="flex min-w-0 items-center gap-3">
+            <img
+              src={logoTransparent}
+              alt="Logo Galopem ku tęczy"
+              className="h-11 w-11 shrink-0 object-contain"
+            />
+            <span className="min-w-0 truncate whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
+          </a>
         </div>
       </header>
 
