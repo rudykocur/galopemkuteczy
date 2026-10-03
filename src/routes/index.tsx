@@ -56,7 +56,7 @@ export const Route = createFileRoute("/")({
 const nav = [
   { label: "O nas", href: "#o-nas" },
   { label: "Kim jesteśmy", href: "#kim-jestesmy", sub: true },
-  { label: "Filary naszej pracy", href: "#filary", sub: true },
+  { label: "O nas", href: "#filary" },
   { label: "Pierwsza wizyta", href: "#pierwsza-wizyta", sub: true },
   { label: "Oferta", href: "#oferta" },
   { label: "Opinie", href: "#opinie" },
