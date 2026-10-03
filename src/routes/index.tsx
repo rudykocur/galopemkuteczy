@@ -882,7 +882,7 @@ function Index() {
               Napisz kilka słów o sobie, a podpowiemy, od czego
               najlepiej zacząć.
             </p>
-            <ul className="mt-8 space-y-4 text-sm">
+            <ul className="mx-auto mt-8 w-fit space-y-4 text-left text-sm">
               {[
                 ["Telefon Ania", "+48 792 693 822", "tel:+48792693822"],
                 ["Telefon Alex", "+48 507 155 401", "tel:+48507155401"],
