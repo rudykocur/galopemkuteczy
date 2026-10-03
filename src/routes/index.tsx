@@ -851,49 +851,45 @@ function Index() {
       <section id="kontakt" className="bg-secondary/50 px-5 py-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-start">
           <div>
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kontakt</p>
-              <h2 className="mt-3 text-4xl">
-                Napisz do nas
-              </h2>
-              <p className="mt-4 text-muted-foreground">
-                Napisz kilka słów o sobie, a podpowiemy, od czego
-                najlepiej zacząć.
-              </p>
-              <ul className="mt-8 space-y-4 text-sm">
-                {[
-                  ["Telefon", "+48 792 693 822 / +48 507 155 401"],
-                  ["E-mail", "galopemkuteczy@gmail.com"],
-                  ["Stajnia", "Kawalkada, okolice Murowanej Gośliny pod Poznaniem"],
-                ].map(([k, v], i) => (
-                  <li key={k} className="flex items-start gap-3">
-                    <span
-                      className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full"
-                      style={{ backgroundColor: `var(--rainbow-${i + 1})` }}
-                    />
-                    <span>
-                      <span className="font-semibold">{k}:</span>{" "}
+            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kontakt</p>
+            <h2 className="mt-3 text-4xl">
+              Napisz do nas
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Napisz kilka słów o sobie, a podpowiemy, od czego
+              najlepiej zacząć.
+            </p>
+            <ul className="mt-8 space-y-4 text-sm">
+              {[
+                ["Telefon", "+48 792 693 822 / +48 507 155 401", null],
+                ["E-mail", "galopemkuteczy@gmail.com", "mailto:galopemkuteczy@gmail.com"],
+                ["Stajnia", "Kawalkada, okolice Murowanej Gośliny pod Poznaniem", null],
+                ["Facebook", "Zobacz nasz profil", socials[0].href],
+                ["Instagram", "Zobacz nasz profil", socials[1].href],
+              ].map(([k, v, href], i) => (
+                <li key={k} className="flex items-start gap-3">
+                  <span
+                    className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full"
+                    style={{ backgroundColor: `var(--rainbow-${i + 1})` }}
+                  />
+                  <span>
+                    <span className="font-semibold">{k}:</span>{" "}
+                    {href ? (
+                      <a
+                        href={href}
+                        className="text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+                        {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      >
+                        {v}
+                      </a>
+                    ) : (
                       <span className="text-muted-foreground">{v}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8 flex items-center gap-3">
-                {socials.map(({ label, href, Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    title={label}
-                    className="grid h-11 w-11 place-items-center rounded-full border border-border bg-background text-foreground transition-colors hover:border-primary hover:bg-secondary hover:text-primary"
-                  >
-                    <Icon size={20} strokeWidth={1.8} />
-                  </a>
-                ))}
-              </div>
-            </div>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
             <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-lg">
               <div className="h-2 bg-rainbow" />
