@@ -873,8 +873,7 @@ function Index() {
 
       {/* KONTAKT */}
       <section id="kontakt" className="bg-secondary/50 px-5 py-24">
-        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-start">
-          <div>
+          <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Kontakt</p>
             <h2 className="mt-3 text-4xl">
               Napisz do nas
@@ -892,7 +891,7 @@ function Index() {
                 ["Facebook", "Galopem ku tęczy", socials[0]!.href],
                 ["Instagram", "@galopem_ku_teczy", socials[1]!.href],
               ].map(([k, v, href], i) => (
-                <li key={k} className="flex items-start gap-3">
+                <li key={k} className="flex items-start justify-center gap-3">
                   {(k === "Facebook" || k === "Instagram") && (
                     <a
                       href={href ?? undefined}
@@ -970,7 +969,6 @@ function Index() {
             ) : (
               null
             )}
-        </div>
       </section>
 
       <footer className="border-t border-border px-5 py-10">
