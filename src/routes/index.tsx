@@ -925,7 +925,8 @@ function Index() {
               <Button type="submit" size="lg" className="rounded-full" disabled={sending}>
                 {sending ? "Wysyłanie..." : "Wyślij wiadomość"}
               </Button>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </section>
