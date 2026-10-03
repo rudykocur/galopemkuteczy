@@ -90,7 +90,7 @@ const offers = [
     meta: "OD 200 ZŁ + DOJAZD",
     color: "var(--rainbow-5)",
     metaColor: "var(--rainbow-5)",
-    desc: "Gdy coś nie działa w Twojej współpracy z koniem, przyjedziemy i pomożemy, a po spotkaniu oferujemy wsparcie online.",
+    desc: "Analiza Twojej współpracy z koniem, wsparcie na miejscu i online po spotkaniu.",
     items: ["Pary koń + jeździec", "Konie z problemami pracujące pod siodłem", "Konie młode i surowe, również źrebaki", "Dojazd w obrębie województwa wielkopolskiego"],
   },
   {
