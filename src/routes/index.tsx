@@ -321,22 +321,24 @@ function Index() {
       {/* NAV */}
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <button
-            type="button"
-            onClick={() => setMenuOpen(true)}
-            aria-label="Otwórz menu"
-            aria-expanded={menuOpen}
-            className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-border bg-card text-foreground transition-colors hover:bg-secondary"
-          >
-            <Menu className="h-5 w-5" />
-          </button>
-          <a href="#top" className="flex min-w-0 items-center gap-3">
+          <div className="flex min-w-0 items-center gap-3">
+            <button
+              type="button"
+              onClick={() => setMenuOpen(true)}
+              aria-label="Otwórz menu"
+              aria-expanded={menuOpen}
+              className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-border bg-card text-foreground transition-colors hover:bg-secondary"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+            <span className="min-w-0 truncate whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
+          </div>
+          <a href="#top" className="shrink-0" aria-label="Logo Galopem ku tęczy — do góry strony">
             <img
               src={logoTransparent}
               alt="Logo Galopem ku tęczy"
-              className="h-11 w-11 shrink-0 object-contain"
+              className="h-11 w-11 object-contain"
             />
-            <span className="min-w-0 truncate whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
           </a>
         </div>
       </header>
