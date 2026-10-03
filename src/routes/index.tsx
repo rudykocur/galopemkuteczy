@@ -615,7 +615,7 @@ function Index() {
                 className="aspect-[4/5] w-full rounded-[2rem] object-cover object-center"
               />
             </div>
-            <div id="pierwsza-wizyta" className="scroll-mt-24">
+            <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Pierwsza wizyta</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
                 Jak wygląda pierwsze spotkanie z nami?
