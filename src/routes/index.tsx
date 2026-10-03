@@ -891,7 +891,7 @@ function Index() {
                 ["Facebook", "Galopem ku tęczy", socials[0]!.href],
                 ["Instagram", "@galopem_ku_teczy", socials[1]!.href],
               ].map(([k, v, href], i) => (
-                <li key={k} className="flex items-start justify-center gap-3">
+                <li key={k} className="flex items-start gap-3">
                   {(k === "Facebook" || k === "Instagram") && (
                     <a
                       href={href ?? undefined}
