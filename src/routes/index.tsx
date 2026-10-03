@@ -441,7 +441,7 @@ function Index() {
               Galopem ku tęczy
             </h1>
             <p className="mt-4 font-display text-sm font-medium uppercase tracking-[0.35em] text-primary sm:text-base">
-              RELACYJNE JEŹDZIECTWO
+              JEŹDZIECTWO RELACYJNE
             </p>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground">
               Nauczymy Cię czytać język konia i budować z nim relację opartą na zaufaniu i poczuciu bezpieczeństwa bez wstydu, presji i pośpiechu.
