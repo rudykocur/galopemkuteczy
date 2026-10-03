@@ -861,7 +861,8 @@ function Index() {
             </p>
             <ul className="mt-8 space-y-4 text-sm">
               {[
-                ["Telefon", "+48 792 693 822 / +48 507 155 401", null],
+                ["Telefon Ania", "+48 792 693 822", "tel:+48792693822"],
+                ["Telefon Alex", "+48 507 155 401", "tel:+48507155401"],
                 ["E-mail", "galopemkuteczy@gmail.com", "mailto:galopemkuteczy@gmail.com"],
                 ["Stajnia", "Kawalkada, okolice Murowanej Gośliny pod Poznaniem", null],
                 ["Facebook", "Zobacz nasz profil", socials[0]!.href],
