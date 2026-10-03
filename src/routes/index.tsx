@@ -579,7 +579,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-16 text-center">
+          <div className="mt-16">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Nasze wartości</p>
           </div>
 
