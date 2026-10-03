@@ -315,12 +315,13 @@ function Index() {
   };
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
+    <div className="min-h-screen overflow-x-clip bg-background text-foreground">
       <Toaster />
 
       {/* NAV */}
-      <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
+      <header className="sticky top-3 z-50 px-4 sm:px-5">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border/60 bg-background/80 py-2 pl-2 pr-2 shadow-lg shadow-primary/10 backdrop-blur-xl sm:py-2.5 sm:pl-3">
+
           <div className="flex min-w-0 items-center gap-3">
             <button
               type="button"
