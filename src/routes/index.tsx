@@ -670,7 +670,7 @@ function Index() {
               Znajdź swoją drogę do koni
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Z końmi liczy się droga, a nie cel. Posłuchaj zewu Puszczy Zielonki i odezwij się do nas – zapraszamy!
+              Z końmi liczy się droga, a nie cel. Poczuj zew Puszczy Zielonki i odezwij się do nas.
             </p>
           </div>
 
