@@ -276,6 +276,15 @@ function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
   const [reviewsPaused, setReviewsPaused] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
 
   useEffect(() => {
     if (reviewsPaused) return;
@@ -319,8 +328,21 @@ function Index() {
       <Toaster />
 
       {/* NAV */}
-      <header className="sticky top-3 z-50 px-4 sm:px-5">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border/60 bg-background/80 py-2 pl-2 pr-2 shadow-lg shadow-primary/10 backdrop-blur-xl sm:py-2.5 sm:pl-3">
+      <header
+        className={
+          "sticky z-50 transition-all duration-300 " +
+          (scrolled ? "top-3 px-4 sm:px-5" : "top-0 px-0")
+        }
+      >
+        <div
+          className={
+            "mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full transition-all duration-300 " +
+            (scrolled
+              ? "border border-border/60 bg-background/80 py-2 pl-2 pr-2 shadow-lg shadow-primary/10 backdrop-blur-xl sm:py-2.5 sm:pl-3"
+              : "border border-transparent bg-transparent px-5 py-3 sm:py-3.5")
+          }
+        >
+
 
           <div className="flex min-w-0 items-center gap-3">
             <button
