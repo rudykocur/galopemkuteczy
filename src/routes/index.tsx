@@ -9,27 +9,27 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import logoTransparent from "@/assets/logo-transparent.png";
-import aboutImg from "@/assets/about-us.jpg.asset.json";
-import galleryField from "@/assets/gallery-field.jpg.asset.json";
-import galleryGrooming from "@/assets/gallery-grooming.jpg.asset.json";
-import galleryWalk from "@/assets/gallery-walk.jpg.asset.json";
-import galleryPony from "@/assets/gallery-pony.jpg.asset.json";
-import gallerySnow from "@/assets/gallery-snow.jpg.asset.json";
-import galleryLesson from "@/assets/gallery-lesson.jpg.asset.json";
-import galleryAgata from "@/assets/gallery-agata.jpg.asset.json";
-import galleryArena from "@/assets/gallery-arena.jpg.asset.json";
-import galleryPortraitHorse from "@/assets/gallery-portrait-horse.jpg.asset.json";
-import galleryHug from "@/assets/gallery-hug.jpg.asset.json";
-import galleryExtraOne from "@/assets/gallery-extra-one.jpg.asset.json";
-import galleryExtraTwo from "@/assets/gallery-extra-two.jpg.asset.json";
-import galleryLiberty from "@/assets/gallery-liberty.jpg.asset.json";
-import gallerySunset from "@/assets/gallery-sunset.jpg.asset.json";
-import galleryWorkshop from "@/assets/gallery-workshop.jpg.asset.json";
-import galleryPortraitSmile from "@/assets/gallery-portrait-smile.jpg.asset.json";
-import videoAsset from "@/assets/konie-jedza.mp4.asset.json";
-import videoPoster from "@/assets/video-poster.jpg.asset.json";
-import video2Asset from "@/assets/film2.mp4.asset.json";
-import video2Poster from "@/assets/film2-poster.jpg.asset.json";
+import aboutImg from "@/assets/about-us.jpg";
+import galleryField from "@/assets/gallery-field.jpg";
+import galleryGrooming from "@/assets/gallery-grooming.jpg";
+import galleryWalk from "@/assets/gallery-walk.jpg";
+import galleryPony from "@/assets/gallery-pony.jpg";
+import gallerySnow from "@/assets/gallery-snow.jpg";
+import galleryLesson from "@/assets/gallery-lesson.jpg";
+import galleryAgata from "@/assets/gallery-agata.jpg";
+import galleryArena from "@/assets/gallery-arena.jpg";
+import galleryPortraitHorse from "@/assets/gallery-portrait-horse.jpg";
+import galleryHug from "@/assets/gallery-hug.jpg";
+import galleryExtraOne from "@/assets/gallery-extra-one.jpg";
+import galleryExtraTwo from "@/assets/gallery-extra-two.jpg";
+import galleryLiberty from "@/assets/gallery-liberty.jpg";
+import gallerySunset from "@/assets/gallery-sunset-tight.jpg";
+import galleryWorkshop from "@/assets/gallery-workshop.jpg";
+import galleryPortraitSmile from "@/assets/gallery-portrait-smile.jpg";
+import videoAsset from "@/assets/konie-jedza.mp4";
+import videoPoster from "@/assets/video-poster.jpg";
+import video2Asset from "@/assets/film2.mp4";
+import video2Poster from "@/assets/film2-poster.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -256,22 +256,22 @@ const reviews = [
 ];
 
 const gallery = [
-  { src: galleryField.url, alt: "Konie z siodłami na łące", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
-  { src: galleryGrooming.url, alt: "Czesanie konia pod wiatą", span: "", pos: "object-center" },
-  { src: galleryWalk.url, alt: "Spacer z koniem leśną ścieżką", span: "", pos: "object-center" },
-  { src: galleryPony.url, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
-  { src: gallerySnow.url, alt: "Zimowy spacer z koniem", span: "", pos: "object-[center_25%]" },
-  { src: galleryLesson.url, alt: "Lekcja jazdy na ujeżdżalni", span: "", pos: "object-center" },
-  { src: galleryAgata.url, alt: "Prowadzenie konia na padoku o zachodzie", span: "", pos: "object-center" },
-  { src: galleryArena.url, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
-  { src: galleryPortraitHorse.url, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
-  { src: galleryHug.url, alt: "Przytulenie konia pod błękitnym niebem", span: "sm:col-span-2 sm:row-span-2", pos: "object-[center_72%]" },
-  { src: gallerySunset.url, alt: "Spokojne spotkanie z koniem o zachodzie słońca", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
-  { src: galleryLiberty.url, alt: "Koń pracujący swobodnie na piaszczystym placu", span: "sm:col-span-2", pos: "object-center" },
-  { src: galleryWorkshop.url, alt: "Warsztaty przy okrągłym wybiegu", span: "sm:row-span-2", pos: "object-center" },
-  { src: galleryExtraTwo.url, alt: "Chwila bliskości z koniem", span: "sm:row-span-2", pos: "object-center" },
-  { src: galleryExtraOne.url, alt: "Relacyjna praca z koniem", span: "", pos: "object-center" },
-  { src: galleryPortraitSmile.url, alt: "Uśmiechnięta opiekunka podczas dnia w stajni", span: "", pos: "object-center" },
+  { src: galleryField, alt: "Konie z siodłami na łące", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
+  { src: galleryGrooming, alt: "Czesanie konia pod wiatą", span: "", pos: "object-center" },
+  { src: galleryWalk, alt: "Spacer z koniem leśną ścieżką", span: "", pos: "object-center" },
+  { src: galleryPony, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
+  { src: gallerySnow, alt: "Zimowy spacer z koniem", span: "", pos: "object-[center_25%]" },
+  { src: galleryLesson, alt: "Lekcja jazdy na ujeżdżalni", span: "", pos: "object-center" },
+  { src: galleryAgata, alt: "Prowadzenie konia na padoku o zachodzie", span: "", pos: "object-center" },
+  { src: galleryArena, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
+  { src: galleryPortraitHorse, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
+  { src: galleryHug, alt: "Przytulenie konia pod błękitnym niebem", span: "sm:col-span-2 sm:row-span-2", pos: "object-[center_72%]" },
+  { src: gallerySunset, alt: "Spokojne spotkanie z koniem o zachodzie słońca", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
+  { src: galleryLiberty, alt: "Koń pracujący swobodnie na piaszczystym placu", span: "sm:col-span-2", pos: "object-center" },
+  { src: galleryWorkshop, alt: "Warsztaty przy okrągłym wybiegu", span: "sm:row-span-2", pos: "object-center" },
+  { src: galleryExtraTwo, alt: "Chwila bliskości z koniem", span: "sm:row-span-2", pos: "object-center" },
+  { src: galleryExtraOne, alt: "Relacyjna praca z koniem", span: "", pos: "object-center" },
+  { src: galleryPortraitSmile, alt: "Uśmiechnięta opiekunka podczas dnia w stajni", span: "", pos: "object-center" },
 ];
 
 function Index() {
@@ -488,7 +488,7 @@ function Index() {
           <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
             <div className="relative lg:h-full">
               <img
-                src={aboutImg.url}
+                src={aboutImg}
                 alt="Dwie opiekunki z końmi na łące o zachodzie słońca"
                 className="aspect-square w-full rounded-[2rem] object-cover lg:aspect-auto lg:h-full"
               />
@@ -567,7 +567,7 @@ function Index() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
               <img
-                src={gallerySnow.url}
+                src={gallerySnow}
                 alt="Jazda z parasolem na śnieżnym polu"
                 className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_35%]"
               />
@@ -610,7 +610,7 @@ function Index() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="pointer-events-none absolute -inset-3 -z-10 animate-drift rounded-full bg-rainbow opacity-20 blur-3xl" />
               <img
-                src={galleryLesson.url}
+                src={galleryLesson}
                 alt="Zajęcia jeździeckie — klientka na koniu, obok opiekunka prowadząca lekcję"
                 className="aspect-[4/5] w-full rounded-[2rem] object-cover object-center"
               />
@@ -740,8 +740,8 @@ function Index() {
             <figure>
               <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-foreground/5 shadow-xl">
                 <video
-                  src={videoAsset.url}
-                  poster={videoPoster.url}
+                  src={videoAsset}
+                  poster={videoPoster}
                   controls
                   playsInline
                   preload="metadata"
@@ -755,8 +755,8 @@ function Index() {
             <figure>
               <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-foreground/5 shadow-xl">
                 <video
-                  src={video2Asset.url}
-                  poster={video2Poster.url}
+                  src={video2Asset}
+                  poster={video2Poster}
                   controls
                   playsInline
                   preload="metadata"
