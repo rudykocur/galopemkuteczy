@@ -407,19 +407,14 @@ function Index() {
                 key={n.href}
                 href={n.href}
                 onClick={() => setMenuOpen(false)}
-                className={`flex items-center gap-3 rounded-xl py-3 font-display text-foreground transition-colors hover:bg-secondary ${
-                  n.sub ? "pl-11 pr-4 text-base text-muted-foreground" : "px-4 text-lg"
-                }`}
+                className="flex items-center gap-3 rounded-xl px-4 py-3 font-display text-lg text-foreground transition-colors hover:bg-secondary"
               >
-                <span aria-hidden className={`shrink-0 rounded-full ${n.sub ? "h-1.5 w-1.5" : "h-2.5 w-2.5"}`} style={{ backgroundColor: `var(--rainbow-${(i % 6) + 1})` }} />
+                <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: `var(--rainbow-${(i % 6) + 1})` }} />
                 {n.label}
               </a>
             ))}
           </nav>
           <div className="mt-auto space-y-4 border-t border-border p-5">
-            <a href="#kontakt" onClick={() => setMenuOpen(false)}>
-              <Button className="w-full rounded-full">Napisz do nas</Button>
-            </a>
             <div className="flex items-center gap-2">
               {socials.map((s) => (
                 <a
