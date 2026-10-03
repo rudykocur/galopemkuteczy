@@ -240,27 +240,27 @@ const horses = [
 
 const reviews = [
   {
-    author: "Gosia Moszyk",
+    author: "Gosia M.",
     text: "To coś innego niż jazda konna. Dziękuję dziewczynom za to, że zaprosiły nas w świat uważności i obcowania z końmi inaczej. Miałam w sobie dużo lęku i obaw, jak to będzie, a pod koniec warsztatów miałam gotowość do jasnego, przytulania i bliskiego kontaktu…",
   },
   {
-    author: "Ola Jastrząbek",
+    author: "Ola J.",
     text: "Byłam w piątek u Aleks i Ani i było genialnie — bez pośpiechu, bez presji, lekko, superciekawie, w wolności. W końcu ktoś dał mi poznać konie, opowiedział o nich i ich potrzebach w inny sposób. Czuję, że już się ich nie boję i lepiej umiem z nimi współdziałać. Wyszłam tak zrelaksowana i odprężona jak rzadko kiedy.",
   },
   {
-    author: "Olga Bober",
+    author: "Olga B.",
     text: "Najlepsi trenerzy, jakich poznałam! Cierpliwi, wyrozumiali i bardzo otwarci. Słuchają, czego potrzebują jeźdźcy i konie. Niesamowicie profesjonalni, ale przy tym luźni i kochani.",
   },
   {
-    author: "Lena Kamińska",
+    author: "Lena K.",
     text: "Polecam z całego serca! Nigdy wcześniej nie spotkałam tak empatycznych i uważnych trenerów jak Alex i Ania. Każdy trening z nimi daje mnóstwo radości, a nawet doświadczonym jeźdźcom pozwala znów poczuć dziecięcy fun z bycia przy koniach. Podchodzą ze zrozumieniem i do ludzi, i do zwierząt - zero oceniania, tylko empatia i relacja. Po tych zajęciach po prostu nie da się już patrzeć na jeździectwo tak jak kiedyś.",
   },
   {
-    author: "Paula Mikołajczyk",
+    author: "Paula M.",
     text: "Naprawdę polecam współpracę z Anią i Alex wszystkim osobom, które pragną nawiązać ze swoim koniem prawdziwą więź, opartą na zrozumieniu i łagodności. Droga do tego prowadzi przez poznanie siebie, własnych emocji i ograniczeń, tak aby stać się finalnie dla konia prawdziwym oparciem, ale ta podróż procentuje. Po roku wspólnej pracy mogę z całą pewnością powiedzieć, że było warto i nie wyobrażam sobie lepszego wsparcia w budowaniu relacji z moimi czterokopytnymi chłopakami.",
   },
   {
-    author: "Ania Kantecka",
+    author: "Ania K.",
     text: "Ogromna polecajka, jeśli chcecie rozumieć swoje konie",
   },
 ];
