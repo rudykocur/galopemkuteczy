@@ -901,7 +901,10 @@ function Index() {
                         className="text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
                         {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       >
-                        {v}
+                        <span className="inline-flex items-center gap-1">
+                          {v}
+                          {href.startsWith("http") && <ExternalLink size={13} aria-hidden className="opacity-60" />}
+                        </span>
                       </a>
                     ) : (
                       <span className="text-muted-foreground">{v}</span>
