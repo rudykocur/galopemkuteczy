@@ -864,8 +864,8 @@ function Index() {
                 ["Telefon", "+48 792 693 822 / +48 507 155 401", null],
                 ["E-mail", "galopemkuteczy@gmail.com", "mailto:galopemkuteczy@gmail.com"],
                 ["Stajnia", "Kawalkada, okolice Murowanej Gośliny pod Poznaniem", null],
-                ["Facebook", "Zobacz nasz profil", socials[0].href],
-                ["Instagram", "Zobacz nasz profil", socials[1].href],
+                ["Facebook", "Zobacz nasz profil", socials[0]!.href],
+                ["Instagram", "Zobacz nasz profil", socials[1]!.href],
               ].map(([k, v, href], i) => (
                 <li key={k} className="flex items-start gap-3">
                   <span
