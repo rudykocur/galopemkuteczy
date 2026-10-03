@@ -458,7 +458,7 @@ function Index() {
               {[
                 ["10+", "kursów i szkoleń", ""],
                 ["15+ lat", "doświadczenia", ""],
-                ["∞", "cierpliwości i ciekawości", "text-6xl sm:text-7xl"],
+                ["∞", "cierpliwości i ciekawości", "text-5xl sm:text-6xl"],
               ].map(([k, v, cls]) => (
                 <div key={v} className="rounded-2xl border border-border bg-card p-3 sm:p-4">
                   <dt className={`${cls ? cls : "text-xl sm:text-2xl"} whitespace-nowrap font-display text-primary`}>{k}</dt>
