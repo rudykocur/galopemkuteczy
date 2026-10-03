@@ -192,7 +192,7 @@ const firstMeeting = [
   },
   {
     title: "Spotkanie ze stadem",
-    desc: "Badgera, Płotkę i Lilith. Możesz je pogłaskać, wyczyścić albo po prostu pobyć obok.",
+    desc: "Poznajemy razem konie i wspólnie dbamy o ich pielęgnację",
   },
   {
     title: "Praca w Twoim tempie",
