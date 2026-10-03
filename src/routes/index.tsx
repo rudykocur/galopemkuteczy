@@ -73,6 +73,7 @@ const offers = [
     title: "Treningi indywidualne",
     meta: "OD 150 ZŁ",
     color: "var(--rainbow-1)",
+    metaColor: "var(--rainbow-2)",
     desc: "Czas z koniem tylko dla Ciebie w dostosowanej do Ciebie formie.",
     items: ["Nauka behawioru", "Praca z siodła i z ziemi", "Kontakt z koniem i pielęgnacja"],
   },
@@ -80,6 +81,7 @@ const offers = [
     title: "Zajęcia rodzinne",
     meta: "OD 200 ZŁ",
     color: "var(--rainbow-2)",
+    metaColor: "var(--rainbow-3)",
     desc: "Spotkania dla całej rodziny. Pracujemy nad relacją i komunikacją w towarzystwie koni i natury.",
     items: ["Pierwsze spotkania z końmi i bycie z koniem", "Rodzinny czas na łonie natury", "To samo, co na treningach indywidualnych — tylko w większym gronie"],
   },
@@ -87,6 +89,7 @@ const offers = [
     title: "Konsultacje behawioralne",
     meta: "OD 200 ZŁ + DOJAZD",
     color: "var(--rainbow-5)",
+    metaColor: "var(--rainbow-5)",
     desc: "Gdy coś nie działa w Twojej współpracy z koniem, przyjedziemy i pomożemy, a po spotkaniu oferujemy wsparcie online.",
     items: ["Pary koń + jeździec", "Konie z problemami pracujące pod siodłem", "Konie młode i surowe, również źrebaki", "Dojeżdżamy w obrębie województwa wielkopolskiego"],
   },
@@ -94,6 +97,7 @@ const offers = [
     title: "Spotkania dla osób po końskich traumach",
     meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-4)",
+    metaColor: "var(--rainbow-4)",
     desc: "Jeśli masz złe doświadczenia, jesteś po upadku albo przytłaczają Cię tłumy i presja szkółek – razem zbudujemy bezpieczną przestrzeń, w Twoim tempie.",
     items: ["Zajęcia dostosowane indywidualnie do osoby", "Spokój, cierpliwość i poczucie bezpieczeństwa", "Wsparcie terapeutyczne w radzeniu sobie ze strachem"],
   },
@@ -101,6 +105,7 @@ const offers = [
     title: "Warsztaty końsko-psychologiczne",
     meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-3)",
+    metaColor: "var(--rainbow-3)",
     desc: "Spotkania, w których koń staje się lustrem — dla Ciebie i Twojego układu nerwowego.",
     items: ["„Moja granica, moja kontrola”", "„Przez konie do Twojego układu nerwowego”", "„Uważność w kontakcie z końmi”"],
   },
@@ -689,7 +694,7 @@ function Index() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-auto pt-6 text-xs font-bold uppercase tracking-widest" style={{ color: o.color }}>
+                <p className="mt-auto pt-6 text-xs font-bold uppercase tracking-widest" style={{ color: o.metaColor ?? o.color }}>
                   {o.meta}
                 </p>
               </article>
