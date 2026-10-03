@@ -488,7 +488,7 @@ function Index() {
 
 
       {/* O NAS */}
-      <section id="o-nas" className="px-5 py-24">
+      <section id="o-nas" className="bg-secondary/50 px-5 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
             <div className="relative lg:h-full">
@@ -655,7 +655,7 @@ function Index() {
       </section>
 
       {/* OFERTA */}
-      <section id="oferta" className="bg-secondary/50 px-5 py-24">
+      <section id="oferta" className="px-5 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Oferta</p>
@@ -702,7 +702,7 @@ function Index() {
       </section>
 
       {/* GALERIA */}
-      <section id="galeria" className="px-5 py-24">
+      <section id="galeria" className="bg-secondary/50 px-5 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-4 sm:flex sm:items-end sm:justify-between">
             <div className="min-w-0">
@@ -767,7 +767,7 @@ function Index() {
       </section>
 
       {/* OPINIE */}
-      <section id="opinie" className="scroll-mt-16 bg-secondary/50 px-5 py-16">
+      <section id="opinie" className="scroll-mt-16 px-5 py-16">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Opinie</p>
@@ -848,7 +848,7 @@ function Index() {
       </section>
 
       {/* KONTAKT */}
-      <section id="kontakt" className="px-5 py-24">
+      <section id="kontakt" className="bg-secondary/50 px-5 py-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <div>
