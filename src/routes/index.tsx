@@ -865,8 +865,8 @@ function Index() {
                 ["Telefon Alex", "+48 507 155 401", "tel:+48507155401"],
                 ["E-mail", "galopemkuteczy@gmail.com", "mailto:galopemkuteczy@gmail.com"],
                 ["Stajnia", "Kawalkada, okolice Murowanej Gośliny pod Poznaniem", null],
-                ["Facebook", "Zobacz nasz profil", socials[0]!.href],
-                ["Instagram", "Zobacz nasz profil", socials[1]!.href],
+                ["Facebook", "Galopem ku tęczy", socials[0]!.href],
+                ["Instagram", "@galopem_ku_teczy", socials[1]!.href],
               ].map(([k, v, href], i) => (
                 <li key={k} className="flex items-start gap-3">
                   <span
