@@ -327,7 +327,7 @@ function Index() {
               alt="Logo Galopem ku tęczy"
               className="h-11 w-11 shrink-0 object-contain"
             />
-            <span className="truncate whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
+            <span className="min-w-0 truncate whitespace-nowrap font-display text-lg sm:text-xl">Galopem ku tęczy</span>
           </a>
           <button
             type="button"
@@ -416,7 +416,7 @@ function Index() {
 
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
           <div>
-            <h1 className="whitespace-nowrap text-5xl leading-[0.95] sm:text-6xl">
+            <h1 className="text-5xl leading-[0.95] sm:whitespace-nowrap sm:text-6xl">
               Galopem ku tęczy
             </h1>
             <p className="mt-4 font-display text-sm font-medium uppercase tracking-[0.35em] text-primary sm:text-base">
