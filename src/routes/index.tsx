@@ -73,6 +73,7 @@ const offers = [
     title: "Treningi indywidualne",
     meta: "OD 150 ZŁ",
     color: "var(--rainbow-1)",
+    metaColor: "var(--rainbow-2)",
     desc: "Czas z koniem tylko dla Ciebie w dostosowanej do Ciebie formie.",
     items: ["Nauka behawioru", "Praca z siodła i z ziemi", "Kontakt z koniem i pielęgnacja"],
   },
