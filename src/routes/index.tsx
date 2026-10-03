@@ -75,7 +75,7 @@ const offers = [
     color: "var(--rainbow-1)",
     metaColor: "var(--rainbow-2)",
     desc: "Czas z koniem tylko dla Ciebie w dostosowanej do Ciebie formie.",
-    items: ["Nauka behawioru", "Praca z siodła i z ziemi", "Kontakt z koniem i pielęgnacja"],
+    items: ["Nauka behawioru", "Praca z siodła i z ziemi", "Praca nad dosiadem", "Nauka ujeżdżenia", "Kontakt z koniem i pielęgnacja"],
   },
   {
     title: "Zajęcia rodzinne",
@@ -83,7 +83,7 @@ const offers = [
     color: "var(--rainbow-2)",
     metaColor: "var(--rainbow-3)",
     desc: "Spotkania dla całej rodziny. Pracujemy nad relacją i komunikacją w towarzystwie koni i natury.",
-    items: ["Pierwsze spotkania z końmi", "Rodzinny czas na łonie natury", "Ten sam program, co na treningach indywidualnych - tylko w większym gronie"],
+    items: ["Pierwsze spotkania z końmi", "Rodzinny czas na łonie natury", "Praca z ziemi i z siodła", "Zajęcia edukacyjne", "Pielęgnacja koni"],
   },
   {
     title: "Konsultacje behawioralne",
