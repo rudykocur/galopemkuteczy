@@ -307,6 +307,10 @@ function Index() {
     return () => clearInterval(timer);
   }, [reviewsPaused]);
 
+  // CONTACT FORM: ustaw CONTACT_FORM_ENABLED na true, aby przywrócić formularz
+  // (przed publikacją podepnij wysyłkę maili — na razie wysyłka jest odłączona).
+  const CONTACT_FORM_ENABLED = false;
+
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -929,39 +933,52 @@ function Index() {
             </ul>
           </div>
 
-            <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-lg">
-              <div className="h-2 bg-rainbow" />
-              <form onSubmit={submit} className="grid gap-4 p-6 sm:p-8">
-              <div className="grid gap-2">
-                <Label htmlFor="name">Imię</Label>
-                <Input id="name" name="name" required placeholder="Jak się do Ciebie zwracać?" />
+            {CONTACT_FORM_ENABLED ? (
+              <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-lg">
+                <div className="h-2 bg-rainbow" />
+                <form onSubmit={submit} className="grid gap-4 p-6 sm:p-8">
+                  <div className="grid gap-2">
+                    <Label htmlFor="name">Imię</Label>
+                    <Input id="name" name="name" required placeholder="Jak się do Ciebie zwracać?" />
+                  </div>
+                  <div className="grid gap-2">
+                    <Label htmlFor="email">E-mail</Label>
+                    <Input id="email" name="email" type="email" required placeholder="ty@example.com" />
+                  </div>
+                  <div className="grid gap-2">
+                    <Label htmlFor="topic">Co Cię interesuje?</Label>
+                    <select
+                      id="topic"
+                      name="topic"
+                      className="h-10 rounded-md border border-input bg-background px-3 text-sm"
+                    >
+                      {offers.map((o) => (
+                        <option key={o.title}>{o.title}</option>
+                      ))}
+                      <option>Inne / nie wiem jeszcze</option>
+                    </select>
+                  </div>
+                  <div className="grid gap-2">
+                    <Label htmlFor="message">Wiadomość</Label>
+                    <Textarea id="message" name="message" rows={5} placeholder="Napisz kilka słów..." />
+                  </div>
+                  <Button type="submit" size="lg" className="rounded-full" disabled={sending}>
+                    {sending ? "Wysyłanie..." : "Wyślij wiadomość"}
+                  </Button>
+                </form>
               </div>
-              <div className="grid gap-2">
-                <Label htmlFor="email">E-mail</Label>
-                <Input id="email" name="email" type="email" required placeholder="ty@example.com" />
+            ) : (
+              <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-lg">
+                <div className="h-2 bg-rainbow" />
+                <div className="grid gap-3 p-6 sm:p-8">
+                  <p className="font-display text-xl font-semibold">Formularz kontaktowy już wkrótce</p>
+                  <p className="text-muted-foreground">
+                    W międzyczasie skontaktuj się z nami telefonicznie, mailowo albo przez Facebooka czy Instagram —
+                    dane znajdziesz obok. Chętnie odpowiemy na każde pytanie!
+                  </p>
+                </div>
               </div>
-              <div className="grid gap-2">
-                <Label htmlFor="topic">Co Cię interesuje?</Label>
-                <select
-                  id="topic"
-                  name="topic"
-                  className="h-10 rounded-md border border-input bg-background px-3 text-sm"
-                >
-                  {offers.map((o) => (
-                    <option key={o.title}>{o.title}</option>
-                  ))}
-                  <option>Inne / nie wiem jeszcze</option>
-                </select>
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="message">Wiadomość</Label>
-                <Textarea id="message" name="message" rows={5} placeholder="Napisz kilka słów..." />
-              </div>
-              <Button type="submit" size="lg" className="rounded-full" disabled={sending}>
-                {sending ? "Wysyłanie..." : "Wyślij wiadomość"}
-              </Button>
-              </form>
-            </div>
+            )}
         </div>
       </section>
 
