@@ -197,7 +197,7 @@ const firstMeeting = [
     desc: "Wspólnie poszerzamy okno tolerancji i strefę komfortu.",
   },
   {
-    title: "Omówienie i plan dalej",
+    title: "Omówienie i dalsze kroki",
     desc: "Odpowiadamy na wszystkie pytania i wspólnie ustalamy plany na kolejne spotkania.",
   },
 ];
