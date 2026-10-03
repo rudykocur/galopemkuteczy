@@ -259,6 +259,10 @@ const reviews = [
     author: "Paula Mikołajczyk",
     text: "Naprawdę polecam współpracę z Anią i Alex wszystkim osobom, które pragną nawiązać ze swoim koniem prawdziwą więź, opartą na zrozumieniu i łagodności. Droga do tego prowadzi przez poznanie siebie, własnych emocji i ograniczeń, tak aby stać się finalnie dla konia prawdziwym oparciem, ale ta podróż procentuje. Po roku wspólnej pracy mogę z całą pewnością powiedzieć, że było warto i nie wyobrażam sobie lepszego wsparcia w budowaniu relacji z moimi czterokopytnymi chłopakami.",
   },
+  {
+    author: "Ania Kantecka",
+    text: "Ogromna polecajka, jeśli chcecie rozumieć swoje konie",
+  },
 ];
 
 const gallery = [
