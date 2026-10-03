@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { submitContactMessage } from "@/lib/contactSubmit";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight, Facebook, Instagram, Menu, Quote, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, Facebook, Instagram, Menu, Quote, X } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -875,10 +875,24 @@ function Index() {
                 ["Instagram", "@galopem_ku_teczy", socials[1]!.href],
               ].map(([k, v, href], i) => (
                 <li key={k} className="flex items-start gap-3">
-                  <span
-                    className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full"
-                    style={{ backgroundColor: `var(--rainbow-${i + 1})` }}
-                  />
+                  {(k === "Facebook" || k === "Instagram") && (
+                    <a
+                      href={href ?? undefined}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${k} — otwiera się w nowej karcie`}
+                      className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:text-primary"
+                      style={{ color: `var(--rainbow-${i + 1})` }}
+                    >
+                      {k === "Facebook" ? <Facebook size={18} /> : <Instagram size={18} />}
+                    </a>
+                  )}
+                  {!(k === "Facebook" || k === "Instagram") && (
+                    <span
+                      className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full"
+                      style={{ backgroundColor: `var(--rainbow-${i + 1})` }}
+                    />
+                  )}
                   <span>
                     <span className="font-semibold">{k}:</span>{" "}
                     {href ? (
@@ -887,7 +901,10 @@ function Index() {
                         className="text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
                         {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       >
-                        {v}
+                        <span className="inline-flex items-center gap-1">
+                          {v}
+                          {href.startsWith("http") && <ExternalLink size={13} aria-hidden className="opacity-60" />}
+                        </span>
                       </a>
                     ) : (
                       <span className="text-muted-foreground">{v}</span>
