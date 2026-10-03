@@ -529,38 +529,15 @@ function Index() {
         </div>
       </section>
 
-      {/* FILARY NASZEJ PRACY */}
+      {/* FUNDAMENTY + FILARY */}
       <section id="filary" className="scroll-mt-16 px-5 py-24">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-4xl sm:text-5xl">Fundamenty naszego podejścia</h2>
-
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {pillars.map((p, i) => (
-              <div
-                key={p.title}
-                className="rounded-[1.25rem] border-l-4 bg-card p-8 shadow-sm"
-                style={{ borderLeftColor: p.color }}
-              >
-                <div className="flex items-center gap-3">
-                  <span
-                    className="grid h-9 w-9 shrink-0 place-items-center rounded-full font-display text-sm text-primary-foreground"
-                    style={{ backgroundColor: p.color }}
-                    aria-hidden
-                  >
-                    {i + 1}
-                  </span>
-                  <h3 className="font-display text-2xl">{p.title}</h3>
-                </div>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-center">
+          {/* FUNDAMENTY NASZEGO PODEJŚCIA */}
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">O nas</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
-                Filary naszej pracy
+                Fundamenty naszego podejścia
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
                 W naszej filozofii pracy z końmi nie stosujemy konkretnej metody ani szkoły. Opieramy nasze działania o najnowszą wiedzę naukową dotyczącą dobrostanu koni oraz teorii uczenia się. Zależy nam przede wszystkim na tym, by nie wywoływać strachu ani nie zadawać bólu.
@@ -593,6 +570,35 @@ function Index() {
                 alt="Jazda z parasolem na śnieżnym polu"
                 className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_35%]"
               />
+            </div>
+          </div>
+
+          {/* FILARY NASZEJ PRACY */}
+          <div className="mt-16">
+            <h2 className="text-4xl sm:text-5xl">
+              Filary naszej pracy
+            </h2>
+
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {pillars.map((p, i) => (
+                <div
+                  key={p.title}
+                  className="rounded-[1.25rem] border-l-4 bg-card p-8 shadow-sm"
+                  style={{ borderLeftColor: p.color }}
+                >
+                  <div className="flex items-center gap-3">
+                    <span
+                      className="grid h-9 w-9 shrink-0 place-items-center rounded-full font-display text-sm text-primary-foreground"
+                      style={{ backgroundColor: p.color }}
+                      aria-hidden
+                    >
+                      {i + 1}
+                    </span>
+                    <h3 className="font-display text-2xl">{p.title}</h3>
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
