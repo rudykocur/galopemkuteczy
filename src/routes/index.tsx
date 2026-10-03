@@ -251,6 +251,14 @@ const reviews = [
     author: "Olga Bober",
     text: "Najlepsi trenerzy, jakich poznałam! Cierpliwi, wyrozumiali i bardzo otwarci. Słuchają, czego potrzebują jeźdźcy i konie. Niesamowicie profesjonalni, ale przy tym luźni i kochani.",
   },
+  {
+    author: "Lena Kamińska",
+    text: "Polecam z całego serca! Nigdy wcześniej nie spotkałam tak empatycznych i uważnych trenerów jak Alex i Ania. Każdy trening z nimi daje mnóstwo radości, a nawet doświadczonym jeźdźcom pozwala znów poczuć dziecięcy fun z bycia przy koniach. Podchodzą ze zrozumieniem i do ludzi, i do zwierząt - zero oceniania, tylko empatia i relacja. Po tych zajęciach po prostu nie da się już patrzeć na jeździectwo tak jak kiedyś.",
+  },
+  {
+    author: "Paula Mikołajczyk",
+    text: "Naprawdę polecam współpracę z Anią i Alex wszystkim osobom, które pragną nawiązać ze swoim koniem prawdziwą więź, opartą na zrozumieniu i łagodności. Droga do tego prowadzi przez poznanie siebie, własnych emocji i ograniczeń, tak aby stać się finalnie dla konia prawdziwym oparciem, ale ta podróż procentuje. Po roku wspólnej pracy mogę z całą pewnością powiedzieć, że było warto i nie wyobrażam sobie lepszego wsparcia w budowaniu relacji z moimi czterokopytnymi chłopakami.",
+  },
 ];
 
 const gallery = [
