@@ -96,7 +96,7 @@ const offers = [
   },
   {
     title: "Spotkania dla osób po traumach",
-    meta: "CENA INDYWIDUALNA - NAPISZ DO NAS",
+    meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-4)",
     metaColor: "var(--rainbow-4)",
     desc: "Odbudowywanie zaufania do koni i siebie po trudnych doświadczeniach.",
@@ -104,7 +104,7 @@ const offers = [
   },
   {
     title: "Warsztaty końsko-psychologiczne",
-    meta: "CENA INDYWIDUALNA - NAPISZ DO NAS",
+    meta: "CENA INDYWIDUALNA",
     color: "var(--rainbow-3)",
     metaColor: "var(--rainbow-3)",
     desc: "Spotkania, w których koń staje się lustrem - dla Ciebie i Twojego układu nerwowego.",
