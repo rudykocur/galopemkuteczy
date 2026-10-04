@@ -272,7 +272,7 @@ const gallery = [
   { src: galleryWalk, alt: "Spacer z koniem leśną ścieżką", span: "", pos: "object-center" },
   { src: galleryPony, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
   { src: galleryAutumn, alt: "Pocałunek ciemnego konia w jesiennym słońcu", span: "", pos: "object-center" },
-  { src: galleryDog, alt: "Opiekunka z psem i koniem na ściernisku", span: "sm:row-span-2", pos: "object-center" },
+  { src: galleryDog, alt: "Opiekunka z psem i koniem na ściernisku", span: "", pos: "object-center" },
   { src: galleryAgata, alt: "Prowadzenie konia na padoku o zachodzie", span: "", pos: "object-center" },
   { src: galleryArena, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
   { src: galleryPortraitHorse, alt: "Opiekunka stojąca obok ciemnego konia", span: "sm:col-span-2 sm:row-span-2", pos: "object-center" },
