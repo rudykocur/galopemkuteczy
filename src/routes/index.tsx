@@ -15,6 +15,7 @@ import galleryGrooming from "@/assets/gallery-grooming.jpg";
 import galleryWalk from "@/assets/gallery-walk.jpg";
 import galleryPony from "@/assets/gallery-pony.jpg";
 import gallerySnow from "@/assets/gallery-snow.jpg";
+import galleryAutumn from "@/assets/gallery-autumn.jpg";
 import galleryLesson from "@/assets/gallery-lesson.jpg";
 import galleryAgata from "@/assets/gallery-agata.jpg";
 import galleryArena from "@/assets/gallery-arena.jpg";
@@ -269,7 +270,7 @@ const gallery = [
   { src: galleryGrooming, alt: "Czesanie konia pod wiatą", span: "", pos: "object-center" },
   { src: galleryWalk, alt: "Spacer z koniem leśną ścieżką", span: "", pos: "object-center" },
   { src: galleryPony, alt: "Dzieci głaszczą kucyka na zajęciach", span: "sm:col-span-2", pos: "object-[center_35%]" },
-  { src: gallerySnow, alt: "Zimowy spacer z koniem", span: "", pos: "object-[center_25%]" },
+  { src: galleryAutumn, alt: "Pocałunek ciemnego konia w jesiennym słońcu", span: "", pos: "object-center" },
   { src: galleryLesson, alt: "Lekcja jazdy na ujeżdżalni", span: "", pos: "object-center" },
   { src: galleryAgata, alt: "Prowadzenie konia na padoku o zachodzie", span: "", pos: "object-center" },
   { src: galleryArena, alt: "Trening na arenie pod chmurnym niebem", span: "", pos: "object-[center_60%]" },
