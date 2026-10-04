@@ -55,8 +55,7 @@ export const Route = createFileRoute("/")({
 const nav = [
   { label: "O nas", href: "#o-nas" },
   { label: "Kim jesteśmy", href: "#kim-jestesmy", sub: true },
-  { label: "O nas", href: "#filary" },
-  { label: "Pierwsza wizyta", href: "#pierwsza-wizyta", sub: true },
+  { label: "Pierwsze spotkanie", href: "#pierwsza-wizyta", sub: true },
   { label: "Oferta", href: "#oferta" },
   { label: "Opinie", href: "#opinie" },
   { label: "Galeria", href: "#galeria" },
@@ -636,7 +635,7 @@ function Index() {
               />
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Pierwsza wizyta</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Pierwsze spotkanie</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
                 Jak wygląda pierwsze spotkanie z nami?
               </h2>
