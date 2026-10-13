@@ -1,30 +1,34 @@
-# Galopem Web Design
+# Galopem ku tęczy
 
-Stwórz prostą i elegancką stronę internetową dla działalności jeździeckiej o nazwie Galopem ku tęczy.
+Strona internetowa działalności jeździeckiej **Galopem ku tęczy** — oferta, galeria, opinie i kontakt.
 
-Strona powinna zawierać sekcję 'O nas' z opisem naszej filozofii pracy z końmi, zakładkę 'Oferta' z opcjami, zakładkę 'Oferta' z opcjami do wyboru, sekcję na zdjęcia i filmy oraz formularz kontaktowy.
+**Live:** [galopemkuteczy.pl](http://galopemkuteczy.pl/)
 
-Całość powinna mieć estetyczny i przejrzysty układ, gotowy do personalizacji. Czy to brzmi odpowiednio na początek?
+## Stack
 
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://galopemkuteczy.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d1a49a1b-f772-493f-a93c-5420fc96ac8e).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- React 19 + TypeScript
+- TanStack Start / Router (statyczny prerender)
+- Tailwind CSS v4 + shadcn/ui
+- Bun + Vite
+- Hosting: GitHub Pages (workflow w `.github/workflows/deploy.yml`)
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Wymagane: [Bun](https://bun.sh).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+git clone https://github.com/rudykocur/galopemkuteczy.git
+cd galopemkuteczy
+bun install
+bun run dev
 ```
+
+| Command | Opis |
+| --- | --- |
+| `bun run dev` | lokalny serwer deweloperski |
+| `bun run build` | build statyczny → `.output/public` |
+| `bun run preview` | podgląd builda |
+| `bun run lint` | ESLint |
+| `bun run format` | Prettier |
+
+Szczegóły dla agentów / dalszego rozwoju: [`AGENTS.md`](./AGENTS.md). Plan: [`roadmap.md`](./roadmap.md).
