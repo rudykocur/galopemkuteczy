@@ -28,7 +28,7 @@ jobs:
       - name: Build static site
         run: |
           bun run build 2>&1 | tee /tmp/build.log
-          # Output folder differs by environment: dist/client (Lovable) or .output/public (GitHub runner)
+          # Prefer TanStack Start static client output; fall back to Nitro public dir.
           if [ -f dist/client/index.html ]; then OUT=dist/client
           elif [ -f .output/public/index.html ]; then OUT=.output/public
           else
