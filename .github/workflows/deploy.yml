@@ -40,11 +40,11 @@ jobs:
           touch _site/.nojekyll
           ls -la _site
         env:
-          # GitHub Pages project sites live under /<repo-name>/ —
-          # so asset and link paths resolve correctly.
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
-      # public/.nojekyll is committed, so it lands in dist/client automatically
-      # (disables Jekyll processing on GitHub Pages).
+          # Custom domain (galopemkuteczy.pl) serves from site root — asset URLs
+          # must be /assets/..., not /<repo-name>/assets/...
+          # For the github.io project URL without a custom domain, use /<repo>/ instead.
+          VITE_BASE_PATH: /
+      # public/.nojekyll (and CNAME) are copied into the static output.
 
       - uses: actions/upload-pages-artifact@v3
         with:

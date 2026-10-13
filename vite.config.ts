@@ -4,8 +4,8 @@ import viteReact from "@vitejs/plugin-react";
 import { nitro } from "nitro/vite";
 import { defineConfig } from "vite";
 
-// GitHub Pages project sites live under /<repo-name>/ —
-// the deploy workflow sets VITE_BASE_PATH to that path; local/custom domain uses "/".
+// Custom domain (galopemkuteczy.pl) serves from "/". Deploy sets VITE_BASE_PATH=/ .
+// Only use "/<repo-name>/" if hosting as a project site without a custom domain.
 const basePath = process.env["VITE_BASE_PATH"] || "/";
 
 export default defineConfig({

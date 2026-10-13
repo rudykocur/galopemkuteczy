@@ -31,7 +31,7 @@ src/
   server.ts        # SSR entry wrapper (error page for catastrophic failures)
   start.ts         # Start middleware (error + CSRF)
   styles.css       # Tailwind + design tokens (rainbow palette, fonts)
-public/            # favicon, robots.txt, .nojekyll
+public/            # favicon, robots.txt, .nojekyll, CNAME
 ```
 
 - Single page today: `src/routes/index.tsx` (sections via hash anchors).
@@ -44,7 +44,8 @@ public/            # favicon, robots.txt, .nojekyll
 - `vite.config.ts` prerenders `/` (`pages` + `autoStaticPathsDiscovery: false`).
 - Deployable folder after `bun run build`: **`.output/public`** (HTML + assets). Workflow falls back to `dist/client` if present.
 - Media must be real files in `src/assets/` imported directly.
-- Project Pages base path: builds set `VITE_BASE_PATH` to `/<repo-name>/` (see deploy workflow). Custom domain / local default is `/`.
+- **Custom domain is primary** (`galopemkuteczy.pl` via `public/CNAME`). Deploy sets `VITE_BASE_PATH=/` so assets resolve at `/assets/...`. Do **not** use `/<repo-name>/` while the custom domain is active — that produces broken URLs like `galopemkuteczy.pl/galopemkuteczy/assets/...`.
+- Side effect: `https://<user>.github.io/<repo>/` may not load assets correctly with base `/`; use the custom domain.
 
 When adding routes that must be public HTML, list them in `tanstackStart.pages` (or turn on discovery carefully).
 
@@ -62,6 +63,6 @@ When adding routes that must be public HTML, list them in `tanstackStart.pages` 
 ```sh
 bun install
 bun run build
-# with GitHub Pages base path:
-VITE_BASE_PATH=/galopemkuteczy/ bun run build
+# production-like (custom domain base):
+VITE_BASE_PATH=/ bun run build
 ```
