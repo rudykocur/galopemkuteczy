@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Zajęcia, warsztaty i spotkania z końmi — z empatią do koni i ludzi, w otwartej, inkluzywnej atmosferze.",
+          "Jeździectwo pełne koloru i empatii — zajęcia, warsztaty i spotkania z końmi w otwartej, inkluzywnej atmosferze.",
       },
       { property: "og:title", content: "Galopem ku tęczy — z empatią do koni i ludzi" },
       {
