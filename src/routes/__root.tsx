@@ -77,16 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Galopem ku tęczy" },
+      { title: "Galopem ku tęczy — z empatią do koni i ludzi" },
       {
         name: "description",
         content:
-          "Jeździectwo pełne koloru i radości — zajęcia, warsztaty i spotkania z końmi w otwartej, inkluzywnej atmosferze.",
+          "Jeździectwo pełne koloru i empatii — zajęcia, warsztaty i spotkania z końmi w otwartej, inkluzywnej atmosferze.",
       },
-      { property: "og:title", content: "Galopem ku tęczy" },
+      { property: "og:title", content: "Galopem ku tęczy — z empatią do koni i ludzi" },
       {
         property: "og:description",
-        content: "Jeździectwo pełne koloru, empatii i radosnej energii.",
+        content: "Z empatią do koni i ludzi — zajęcia, warsztaty i spotkania z końmi.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
