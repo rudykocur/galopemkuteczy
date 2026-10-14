@@ -36,13 +36,13 @@ import video2Poster from "@/assets/film2-poster.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Galopem ku tęczy — jeździectwo pełne koloru" },
+      { title: "Galopem ku tęczy — z empatią do koni i ludzi" },
       {
         name: "description",
         content:
           "Zajęcia jeździeckie, warsztaty i spotkania z końmi w radosnej, inkluzywnej atmosferze. Zobacz naszą ofertę i galerię.",
       },
-      { property: "og:title", content: "Galopem ku tęczy — jeździectwo pełne koloru" },
+      { property: "og:title", content: "Galopem ku tęczy — z empatią do koni i ludzi" },
       {
         property: "og:description",
         content: "Odważna, empatyczna praca z końmi. Zajęcia, warsztaty i obozy dla każdego.",
@@ -235,7 +235,7 @@ const horses = [
     name: "Lilith",
     meta: "6 LAT • DŁUGOWŁOSA PIĘKNOŚĆ",
     color: "var(--rainbow-6)",
-    desc: "Wielka fanka przytulasków. Ogromne końskie serducho w niewielkim ciele.",
+    desc: "Wielka fanka przytulasków. Ogromne końskie serducho w niewielkim ciele. Niedługo dołączy do naszego zespołu.",
   },
 ];
 
